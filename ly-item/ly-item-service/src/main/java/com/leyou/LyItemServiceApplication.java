@@ -3,6 +3,7 @@ package com.leyou;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import tk.mybatis.spring.annotation.MapperScan;
 
 /**
  * @Author: TianCi.Xiong
@@ -11,8 +12,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class LyItemService {
+@MapperScan("com.leyou.item.mapper") // mapper接口的包扫描
+public class LyItemServiceApplication {
     public static void main(String[] args) {
-        SpringApplication.run(LyItemService.class, args);
+        SpringApplication.run(LyItemServiceApplication.class, args);
     }
 }

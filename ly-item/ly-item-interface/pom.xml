@@ -13,5 +13,20 @@
     <artifactId>ly-item-interface</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
+    <dependencies>
+        <!-- jpa依赖 -->
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>1.0</version>
+        </dependency>
 
+        <!--lombok配置-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 </project>
