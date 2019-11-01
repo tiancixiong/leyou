@@ -9,6 +9,7 @@
     <modules>
         <module>ly-registry</module>
         <module>ly-api-gateway</module>
+        <module>ly-item</module>
     </modules>
     <packaging>pom</packaging>
 
