@@ -5,7 +5,11 @@
 
     <groupId>com.leyou.parent</groupId>
     <artifactId>leyou</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
+    <modules>
+        <module>ly-registry</module>
+        <module>ly-api-gateway</module>
+    </modules>
     <packaging>pom</packaging>
 
     <name>leyou</name>
