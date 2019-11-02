@@ -15,7 +15,7 @@
     <packaging>pom</packaging>
 
     <name>leyou</name>
-    <description>乐优</description>
+    <description>乐优商城</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -80,6 +80,16 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <!--lombok配置-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>

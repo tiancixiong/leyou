@@ -20,13 +20,5 @@
             <artifactId>persistence-api</artifactId>
             <version>1.0</version>
         </dependency>
-
-        <!--lombok配置-->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.16.18</version>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 </project>
