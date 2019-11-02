@@ -13,8 +13,8 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableZuulProxy
-public class LyApiGateway {
+public class LyApiGatewayApplication {
     public static void main(String[] args) {
-        SpringApplication.run(LyApiGateway.class, args);
+        SpringApplication.run(LyApiGatewayApplication.class, args);
     }
 }
