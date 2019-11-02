@@ -10,13 +10,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.leyou.service</groupId>
-    <artifactId>ly-item</artifactId>
+    <artifactId>ly-upload</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <modules>
-        <module>ly-item-interface</module>
-        <module>ly-item-service</module>
-    </modules>
-    <!-- 打包方式为pom -->
-    <packaging>pom</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
 </project>

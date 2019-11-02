@@ -11,6 +11,7 @@
         <module>ly-api-gateway</module>
         <module>ly-item</module>
         <module>ly-common</module>
+        <module>ly-upload</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -88,6 +89,12 @@
             <artifactId>lombok</artifactId>
             <version>1.16.18</version>
             <scope>provided</scope>
+        </dependency>
+        <!--lang包-->
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
         </dependency>
     </dependencies>
 
