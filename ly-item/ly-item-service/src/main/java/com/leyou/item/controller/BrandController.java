@@ -59,4 +59,17 @@ public class BrandController {
         this.brandService.saveBrand(brand, cids);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
+
+    /**
+     * 通过bid删除品牌
+     * 删除tb_brand中的数据
+     *
+     * @param bid
+     * @return
+     */
+    @DeleteMapping("/{bid}")
+    public ResponseEntity<Void> deleteBrand(@PathVariable("bid") String bid) {
+        this.brandService.deleteBrand(Long.parseLong(bid));
+        return ResponseEntity.status(HttpStatus.OK).build();
+    }
 }

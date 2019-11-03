@@ -69,4 +69,19 @@ public class BrandService {
             this.brandMapper.insertCategoryBrand(cid, brand.getId());
         }
     }
+
+    /**
+     * 通过bid删除品牌
+     * 删除tb_brand中的数据
+     *
+     * @param bid
+     * @return
+     */
+    @Transactional
+    public void deleteBrand(Long bid) {
+        // 删除品牌信息
+        this.brandMapper.deleteByPrimaryKey(bid);
+        // 维护中间表
+        this.brandMapper.deleteByBrandIdInCategoryBrand(bid);
+    }
 }
