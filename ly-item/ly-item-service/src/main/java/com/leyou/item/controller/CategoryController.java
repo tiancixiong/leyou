@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -15,7 +16,7 @@ import java.util.List;
 
 /**
  * @Author: TianCi.Xiong
- * @Description:
+ * @Description: 商品类目
  * @Date: Created in 2019-11-01 22:03
  */
 @Controller
@@ -50,5 +51,20 @@ public class CategoryController {
         }
         // 响应500
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+    }
+
+    /**
+     * 通过品牌id查询商品分类
+     *
+     * @param bid 品牌id
+     * @return
+     */
+    @GetMapping("/bid/{bid}")
+    public ResponseEntity<List<Category>> queryByBrandId(@PathVariable("bid") Long bid) {
+        List<Category> list = this.categoryService.queryByBrandId(bid);
+        if (list == null || list.size() == 0) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return ResponseEntity.ok(list);
     }
 }
