@@ -35,15 +35,21 @@ public class SpecificationService {
     }
 
     /**
-     * 根据group_id查询规格参数
+     * 根据条件查询规格参数
      *
      * @param gid
+     * @param cid
+     * @param generic
+     * @param searching
      * @return
      */
-    public List<SpecParam> queryParams(Long gid) {
-        SpecParam specParam = new SpecParam();
-        specParam.setGroupId(gid);
-        return this.specParamMapper.select(specParam);
+    public List<SpecParam> queryParams(Long gid, Long cid, Boolean generic, Boolean searching) {
+        SpecParam record = new SpecParam();
+        record.setGroupId(gid);
+        record.setCid(cid);
+        record.setGeneric(generic);
+        record.setSearching(searching);
+        return this.specParamMapper.select(record);
     }
 
     /**
@@ -112,4 +118,5 @@ public class SpecificationService {
     public void deleteSpecParam(Long pid) {
         specParamMapper.deleteByPrimaryKey(pid);
     }
+
 }

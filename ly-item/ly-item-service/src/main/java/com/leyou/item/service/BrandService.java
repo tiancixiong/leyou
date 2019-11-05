@@ -84,4 +84,14 @@ public class BrandService {
         // 维护中间表
         this.brandMapper.deleteByBrandIdInCategoryBrand(bid);
     }
+
+    /**
+     * 根据分类id查询品牌
+     *
+     * @param cid
+     * @return
+     */
+    public List<Brand> queryBrandsByCid(Long cid) {
+        return this.brandMapper.selectBrandByCid(cid);
+    }
 }

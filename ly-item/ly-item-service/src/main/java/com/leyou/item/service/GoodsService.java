@@ -4,17 +4,20 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.leyou.item.bo.SpuBo;
 import com.leyou.item.common.pojo.PageResult;
-import com.leyou.item.mapper.BrandMapper;
-import com.leyou.item.mapper.SpuMapper;
+import com.leyou.item.mapper.*;
 import com.leyou.item.pojo.Brand;
 import com.leyou.item.pojo.Spu;
+import com.leyou.item.pojo.SpuDetail;
+import com.leyou.item.pojo.Stock;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -28,9 +31,15 @@ public class GoodsService {
     @Autowired
     private SpuMapper spuMapper;
     @Autowired
+    private SkuMapper skuMapper;
+    @Autowired
     private BrandMapper brandMapper;
     @Autowired
     private CategoryService categoryService;
+    @Autowired
+    private SpuDetailMapper spuDetailMapper;
+    @Autowired
+    private StockMapper stockMapper;
 
     /**
      * 分页查询SPU
@@ -76,5 +85,46 @@ public class GoodsService {
             return spuBo;
         }).collect(Collectors.toList());
         return new PageResult<>(pageInfo.getTotal(), list);
+    }
+
+    /**
+     * 新增商品
+     *
+     * @param spuBo
+     */
+    @Transactional
+    public void saveGoods(SpuBo spuBo) {
+        // 新增spu
+        // 设置默认属性
+        spuBo.setId(null);
+        spuBo.setSaleable(true);
+        spuBo.setValid(true);
+        spuBo.setCreateTime(new Date());
+        spuBo.setLastUpdateTime(spuBo.getCreateTime());
+        this.spuMapper.insertSelective(spuBo);
+
+        // 新增spuDetail
+        SpuDetail spuDetail = spuBo.getSpuDetail();
+        spuDetail.setSpuId(spuBo.getId());
+        this.spuDetailMapper.insertSelective(spuDetail);
+
+        // 存储spu详细信息
+        this.saveSkuAndStock(spuBo);
+    }
+
+    private void saveSkuAndStock(SpuBo spuBo) {
+        spuBo.getSkus().forEach(sku -> {
+            // 新增sku
+            sku.setSpuId(spuBo.getId());
+            sku.setCreateTime(new Date());
+            sku.setLastUpdateTime(sku.getCreateTime());
+            this.skuMapper.insertSelective(sku);
+
+            // 新增库存
+            Stock stock = new Stock();
+            stock.setSkuId(sku.getId());
+            stock.setStock(sku.getStock());
+            this.stockMapper.insertSelective(stock);
+        });
     }
 }
