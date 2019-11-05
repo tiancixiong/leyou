@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @Author: TianCi.Xiong
@@ -37,5 +38,15 @@ public class CategoryService {
      */
     public List<Category> queryByBrandId(Long bid) {
         return this.categoryMapper.queryByBrandId(bid);
+    }
+
+    /**
+     * 查询spu的商品分类名称，要查三级分类
+     * 通过tb_spu中cid1、cid2、cid3查询
+     * @param ids
+     * @return
+     */
+    public List<String> queryNameByIds(List<Long> ids) {
+        return this.categoryMapper.selectByIdList(ids).stream().map(Category::getName).collect(Collectors.toList());
     }
 }
