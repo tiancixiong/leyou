@@ -24,6 +24,52 @@ public class GoodsController {
     private GoodsService goodsService;
 
     /**
+     * 新增商品
+     *
+     * @param spuBo
+     * @return
+     */
+    @PostMapping("goods")
+    public ResponseEntity<Void> saveGoods(@RequestBody SpuBo spuBo) {
+        try {
+            this.goodsService.saveGoods(spuBo);
+            return new ResponseEntity<>(HttpStatus.CREATED);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    /**
+     * 修改商品信息
+     *
+     * @param spuBo
+     * @return
+     */
+    @PutMapping("goods")
+    public ResponseEntity<Void> updateGoods(@RequestBody SpuBo spuBo) {
+        this.goodsService.updateGoods(spuBo);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
+
+    /**
+     * 通过spu_id删除商品goods
+     *
+     * @param spuId
+     * @return
+     */
+    @DeleteMapping("/goods/{spuId}")
+    public ResponseEntity<Void> deleteGoods(@PathVariable("spuId") Long spuId) {
+        try {
+            this.goodsService.deleteGoods(spuId);
+            return ResponseEntity.ok().build();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    /**
      * 分页查询SPU
      *
      * @param page
@@ -45,23 +91,6 @@ public class GoodsController {
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(result);
-    }
-
-    /**
-     * 新增商品
-     *
-     * @param spuBo
-     * @return
-     */
-    @PostMapping("goods")
-    public ResponseEntity<Void> saveGoods(@RequestBody SpuBo spuBo) {
-        try {
-            this.goodsService.saveGoods(spuBo);
-            return new ResponseEntity<>(HttpStatus.CREATED);
-        } catch (Exception e) {
-            e.printStackTrace();
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
     }
 
     /**
@@ -92,17 +121,5 @@ public class GoodsController {
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(skus);
-    }
-
-    /**
-     * 修改商品信息
-     *
-     * @param spuBo
-     * @return
-     */
-    @PutMapping("goods")
-    public ResponseEntity<Void> updateGoods(@RequestBody SpuBo spuBo) {
-        this.goodsService.updateGoods(spuBo);
-        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 }

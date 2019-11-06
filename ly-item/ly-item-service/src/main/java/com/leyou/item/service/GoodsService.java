@@ -196,4 +196,44 @@ public class GoodsService {
         // 更新spu详情
         this.spuDetailMapper.updateByPrimaryKeySelective(spuBo.getSpuDetail());
     }
+
+    /**
+     * 通过spu_id删除商品goods
+     *
+     * @param spuId
+     * @return
+     */
+    @Transactional
+    public void deleteGoods(Long spuId) {
+        // 先删除sku和库存信息
+        this.deleteSkuAndStock(spuId);
+        // 再删除spu和spu_detail
+        this.spuMapper.deleteByPrimaryKey(spuId);
+        this.spuDetailMapper.deleteByPrimaryKey(spuId);
+    }
+
+    /**
+     * 通过spu_id删除tb_sku
+     * 通过sku_id删除tb_stock
+     *
+     * @param spuId
+     */
+    private void deleteSkuAndStock(Long spuId) {
+        // 通过spu_id查询sku
+        Sku querySku = new Sku();
+        querySku.setSpuId(spuId);
+        List<Sku> skus = this.skuMapper.select(querySku);
+        // 删除sku
+        if (!CollectionUtils.isEmpty(skus)) {
+            // 获得sku_id集合
+            List<Long> ids = skus.stream().map(sku -> sku.getId()).collect(Collectors.toList());
+            // 通过sku_id删除tb_stock
+            Example example = new Example(Stock.class);
+            Example.Criteria criteria = example.createCriteria();
+            criteria.andIn("skuId", ids);
+            this.stockMapper.deleteByExample(example);
+        }
+        // 删除sku
+        this.skuMapper.delete(querySku);
+    }
 }
