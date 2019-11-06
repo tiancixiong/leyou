@@ -236,4 +236,19 @@ public class GoodsService {
         // 删除sku
         this.skuMapper.delete(querySku);
     }
+
+    /**
+     * 通过spu_id修改商品上下架状态
+     *
+     * @param spuId
+     * @return
+     */
+    public void changeSaleable(Long spuId) {
+        // 先查后更新
+        Spu dbSpu = this.spuMapper.selectByPrimaryKey(spuId);
+        if (null != dbSpu) {
+            dbSpu.setSaleable(!dbSpu.getSaleable());
+            this.spuMapper.updateByPrimaryKey(dbSpu);
+        }
+    }
 }

@@ -122,4 +122,16 @@ public class GoodsController {
         }
         return ResponseEntity.ok(skus);
     }
+
+    /**
+     * 通过spu_id修改商品上下架状态
+     *
+     * @param spuId
+     * @return
+     */
+    @PutMapping("/goods/saleable/{spuId}")
+    public ResponseEntity<Void> changeSaleable(@PathVariable("spuId") Long spuId) {
+        this.goodsService.changeSaleable(spuId);
+        return ResponseEntity.ok().build();
+    }
 }
