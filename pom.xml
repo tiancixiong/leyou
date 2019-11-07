@@ -12,6 +12,7 @@
         <module>ly-item</module>
         <module>ly-common</module>
         <module>ly-upload</module>
+        <module>ly-search</module>
     </modules>
     <packaging>pom</packaging>
 
