@@ -168,9 +168,13 @@ public class SearchService {
         queryBuilder.withPageable(PageRequest.of(page - 1, size));
 
         // 4、查询，获取结果
-        Page<Goods> goodsPage = this.goodsRepository.search(queryBuilder.build());
+        Page<Goods> pageInfo = this.goodsRepository.search(queryBuilder.build());
 
-        // 封装结果并返回
-        return new PageResult(goodsPage.getTotalElements(), (long) goodsPage.getTotalPages(), goodsPage.getContent());
+        // 5、封装结果并返回
+        // 5.1、总条数
+        Long total = pageInfo.getTotalElements();
+        // 5.2、总页数
+        Long totalPage = (total + size - 1) / size;
+        return new PageResult(total, totalPage, pageInfo.getContent());
     }
 }
