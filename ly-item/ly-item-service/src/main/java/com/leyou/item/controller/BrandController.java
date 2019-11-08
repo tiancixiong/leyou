@@ -17,7 +17,7 @@ import java.util.List;
  * @Date: Created in 2019-11-02 9:18
  */
 @RestController
-@RequestMapping("brand")
+@RequestMapping("/brand")
 public class BrandController {
     @Autowired
     private BrandService brandService;
@@ -32,7 +32,7 @@ public class BrandController {
      * @param key    搜索关键字
      * @return
      */
-    @GetMapping("page")
+    @GetMapping("/page")
     public ResponseEntity<PageResult<Brand>> queryBrandByPage(
             @RequestParam(value = "page", defaultValue = "1") Integer page,
             @RequestParam(value = "rows", defaultValue = "5") Integer rows,
@@ -80,12 +80,27 @@ public class BrandController {
      * @param cid
      * @return
      */
-    @GetMapping("cid/{cid}")
+    @GetMapping("/cid/{cid}")
     public ResponseEntity<List<Brand>> queryBrandsByCid(@PathVariable("cid") Long cid) {
         List<Brand> list = this.brandService.queryBrandsByCid(cid);
         if (CollectionUtils.isEmpty(list)) {
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(list);
+    }
+
+    /**
+     * 通过id查询品牌
+     *
+     * @param id
+     * @return
+     */
+    @GetMapping("/{id}")
+    public ResponseEntity<Brand> queryBrandById(@PathVariable("id") Long id) {
+        Brand brand = this.brandService.queryBrandById(id);
+        if (brand == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(brand);
     }
 }

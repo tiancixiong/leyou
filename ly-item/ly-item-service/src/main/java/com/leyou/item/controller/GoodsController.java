@@ -29,7 +29,7 @@ public class GoodsController {
      * @param spuBo
      * @return
      */
-    @PostMapping("goods")
+    @PostMapping("/goods")
     public ResponseEntity<Void> saveGoods(@RequestBody SpuBo spuBo) {
         try {
             this.goodsService.saveGoods(spuBo);
@@ -46,7 +46,7 @@ public class GoodsController {
      * @param spuBo
      * @return
      */
-    @PutMapping("goods")
+    @PutMapping("/goods")
     public ResponseEntity<Void> updateGoods(@RequestBody SpuBo spuBo) {
         this.goodsService.updateGoods(spuBo);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
@@ -70,7 +70,7 @@ public class GoodsController {
     }
 
     /**
-     * 分页查询SPU
+     * 分页查询商品
      *
      * @param page
      * @param rows
@@ -79,7 +79,7 @@ public class GoodsController {
      * @return
      */
     @GetMapping("/spu/page")
-    public ResponseEntity<PageResult<SpuBo>> querySpuByPage(
+    public ResponseEntity<PageResult<SpuBo>> querySpuBoByPage(
             @RequestParam(value = "page", defaultValue = "1") Integer page,
             @RequestParam(value = "rows", defaultValue = "5") Integer rows,
             @RequestParam(value = "key", required = false) String key,
@@ -99,7 +99,7 @@ public class GoodsController {
      * @param spuId
      * @return
      */
-    @GetMapping("spu/detail/{spuId}")
+    @GetMapping("/spu/detail/{spuId}")
     public ResponseEntity<SpuDetail> querySpuDetailBySpuId(@PathVariable("spuId") Long spuId) {
         SpuDetail spuDetail = this.goodsService.querySpuDetailBySpuId(spuId);
         if (spuDetail == null) {
@@ -114,7 +114,7 @@ public class GoodsController {
      * @param spuId
      * @return
      */
-    @GetMapping("sku/list")
+    @GetMapping("/sku/list")
     public ResponseEntity<List<Sku>> querySkusBySpuId(@RequestParam("id") Long spuId) {
         List<Sku> skus = this.goodsService.querySkusBySpuId(spuId);
         if (CollectionUtils.isEmpty(skus)) {

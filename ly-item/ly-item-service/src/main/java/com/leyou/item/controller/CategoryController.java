@@ -20,7 +20,7 @@ import java.util.List;
  * @Date: Created in 2019-11-01 22:03
  */
 @Controller
-@RequestMapping("category")
+@RequestMapping("/category")
 public class CategoryController {
     @Autowired
     private CategoryService categoryService;
@@ -31,7 +31,7 @@ public class CategoryController {
      * @param pid
      * @return
      */
-    @GetMapping("list")
+    @GetMapping("/list")
     public ResponseEntity<List<Category>> queryCategoryListByParentId(@RequestParam(value = "pid", defaultValue = "0") Long pid) {
         try {
             if (pid == null || pid.longValue() < 0) {
@@ -64,6 +64,21 @@ public class CategoryController {
         List<Category> list = this.categoryService.queryByBrandId(bid);
         if (list == null || list.size() == 0) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return ResponseEntity.ok(list);
+    }
+
+    /**
+     * 根据商品分类id查询名称
+     *
+     * @param ids 要查询的分类id集合
+     * @return 多个名称的集合
+     */
+    @GetMapping("/names")
+    public ResponseEntity<List<String>> queryNameByIds(@RequestParam("ids") List<Long> ids) {
+        List<String> list = this.categoryService.queryNameByIds(ids);
+        if (list == null || list.size() < 1) {
+            return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(list);
     }

@@ -47,7 +47,7 @@ public class SpecificationController {
      * @return
      */
     @GetMapping("/params")
-    public ResponseEntity<List<SpecParam>> queryParams(
+    public ResponseEntity<List<SpecParam>> querySpecParam(
             @RequestParam(value = "gid", required = false) Long gid,
             @RequestParam(value = "cid", required = false) Long cid,
             @RequestParam(value = "searching", required = false) Boolean searching,
