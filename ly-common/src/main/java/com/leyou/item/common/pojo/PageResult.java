@@ -1,6 +1,8 @@
 package com.leyou.item.common.pojo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
@@ -10,6 +12,8 @@ import java.util.List;
  * @Date: Created in 2019-11-02 9:20
  */
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class PageResult<T> {
     private Long total;// 总条数
     private Long totalPage;// 总页数
