@@ -2,7 +2,7 @@ package com.leyou.item.pojo;
 
 /**
  * @Author: TianCi.Xiong
- * @Description:
+ * @Description: 搜索条件封装类
  * @Date: Created in 2019-11-08 20:52
  */
 public class SearchRequest {

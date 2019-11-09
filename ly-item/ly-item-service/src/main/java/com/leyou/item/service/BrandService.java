@@ -104,4 +104,14 @@ public class BrandService {
     public Brand queryBrandById(Long id) {
         return this.brandMapper.selectByPrimaryKey(id);
     }
+
+    /**
+     * 通过ids查询品牌
+     *
+     * @param ids
+     * @return
+     */
+    public List<Brand> queryBrandByIds(List<Long> ids) {
+        return this.brandMapper.selectByIdList(ids);
+    }
 }
