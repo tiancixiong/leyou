@@ -42,18 +42,18 @@ public class SpecificationController {
      *
      * @param gid
      * @param cid
-     * @param searching
      * @param generic
+     * @param searching
      * @return
      */
     @GetMapping("/params")
     public ResponseEntity<List<SpecParam>> querySpecParam(
             @RequestParam(value = "gid", required = false) Long gid,
             @RequestParam(value = "cid", required = false) Long cid,
-            @RequestParam(value = "searching", required = false) Boolean searching,
-            @RequestParam(value = "generic", required = false) Boolean generic
+            @RequestParam(value = "generic", required = false) Boolean generic,
+            @RequestParam(value = "searching", required = false) Boolean searching
     ) {
-        List<SpecParam> params = this.specificationService.queryParams(gid, cid, searching, generic);
+        List<SpecParam> params = this.specificationService.queryParams(gid, cid, generic, searching);
         if (CollectionUtils.isEmpty(params)) {
             return ResponseEntity.notFound().build();
         }

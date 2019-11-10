@@ -13,12 +13,21 @@ import java.util.List;
 @RequestMapping("/spec")
 public interface SpecificationApi {
 
+    /**
+     * 根据条件查询规格参数
+     *
+     * @param gid
+     * @param cid
+     * @param generic
+     * @param searching
+     * @return
+     */
     @GetMapping("/params")
     List<SpecParam> querySpecParam(
             @RequestParam(value = "gid", required = false) Long gid,
             @RequestParam(value = "cid", required = false) Long cid,
-            @RequestParam(value = "searching", required = false) Boolean searching,
-            @RequestParam(value = "generic", required = false) Boolean generic
+            @RequestParam(value = "generic", required = false) Boolean generic,
+            @RequestParam(value = "searching", required = false) Boolean searching
     );
 
 }

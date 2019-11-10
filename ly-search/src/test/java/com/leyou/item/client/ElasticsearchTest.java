@@ -1,6 +1,6 @@
 package com.leyou.item.client;
 
-import com.leyou.item.LeyouSearchApplication;
+import com.leyou.item.LySearchApplication;
 import com.leyou.item.bo.SpuBo;
 import com.leyou.item.common.pojo.PageResult;
 import com.leyou.item.pojo.Goods;
@@ -22,7 +22,7 @@ import java.util.List;
  * @Date: Created in 2019-11-07 22:17
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = LeyouSearchApplication.class)
+@SpringBootTest(classes = LySearchApplication.class)
 public class ElasticsearchTest {
     @Autowired
     private GoodsRepository goodsRepository;

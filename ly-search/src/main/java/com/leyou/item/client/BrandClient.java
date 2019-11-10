@@ -6,6 +6,6 @@ import org.springframework.cloud.openfeign.FeignClient;
 /**
  * 品牌的FeignClient
  */
-@FeignClient("item-service")
+@FeignClient(value = "item-service")
 public interface BrandClient extends BrandApi {
 }
