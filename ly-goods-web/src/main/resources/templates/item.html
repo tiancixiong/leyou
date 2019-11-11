@@ -111,21 +111,16 @@
     </div>
     <div class="py-container">
         <div id="item">
+            <!--面包屑-->
             <div class="crumb-wrap">
                 <ul class="sui-breadcrumb">
-                    <li>
-                        <a href="#">手机</a>
+                    <li th:each="category : ${categories}">
+                        <a href="#" th:text="${category.name}">手机</a>
                     </li>
                     <li>
-                        <a href="#">手机通讯</a>
+                        <a href="#" th:text="${brand.name}">Apple</a>
                     </li>
-                    <li>
-                        <a href="#">手机</a>
-                    </li>
-                    <li>
-                        <a href="#">Apple</a>
-                    </li>
-                    <li class="active">Apple iPhone 6s</li>
+                    <li class="active" th:text="${spu.title}">Apple iPhone 6s</li>
                 </ul>
             </div>
             <!--product-info-->
