@@ -40,4 +40,13 @@ public interface SpecificationApi {
      */
     @GetMapping("/groups/{cid}")
     List<SpecGroup> queryGroupsByCid(@PathVariable("cid") Long cid);
+
+    /**
+     * 查询规格参数组，及组内参数
+     *
+     * @param cid
+     * @return
+     */
+    @GetMapping("/{cid}")
+    List<SpecGroup> querySpecsByCid(@PathVariable("cid") Long cid);
 }

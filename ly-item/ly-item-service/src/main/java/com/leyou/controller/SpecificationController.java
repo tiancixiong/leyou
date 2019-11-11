@@ -53,7 +53,7 @@ public class SpecificationController {
             @RequestParam(value = "generic", required = false) Boolean generic,
             @RequestParam(value = "searching", required = false) Boolean searching
     ) {
-        List<SpecParam> params = this.specificationService.queryParams(gid, cid, generic, searching);
+        List<SpecParam> params = this.specificationService.querySpecParams(gid, cid, generic, searching);
         if (CollectionUtils.isEmpty(params)) {
             return ResponseEntity.notFound().build();
         }
@@ -130,5 +130,20 @@ public class SpecificationController {
     public ResponseEntity<Void> deleteSpecParam(@PathVariable("pid") Long pid) {
         specificationService.deleteSpecParam(pid);
         return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    /**
+     * 查询规格参数组，及组内参数
+     *
+     * @param cid
+     * @return
+     */
+    @GetMapping("/{cid}")
+    public ResponseEntity<List<SpecGroup>> querySpecsByCid(@PathVariable("cid") Long cid) {
+        List<SpecGroup> list = this.specificationService.querySpecsByCid(cid);
+        if (list == null || list.size() == 0) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return ResponseEntity.ok(list);
     }
 }

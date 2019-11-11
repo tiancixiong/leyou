@@ -80,7 +80,7 @@ public class GoodsController {
     public ResponseEntity<Spu> querySpuById(@PathVariable("id") Long id) {
         Spu spu = this.goodsService.querySpuById(id);
         if (spu == null) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(spu);
     }

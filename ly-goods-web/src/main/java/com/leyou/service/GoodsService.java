@@ -59,10 +59,10 @@ public class GoodsService {
         Brand brand = this.brandClient.queryBrandById(spu.getBrandId());
 
         // 查询规格参数组
-        List<SpecGroup> groups = this.specificationClient.queryGroupsByCid(spu.getCid3());
+        List<SpecGroup> groups = this.specificationClient.querySpecsByCid(spu.getCid3());
 
         // 查询特殊的规格参数
-        List<SpecParam> params = this.specificationClient.querySpecParam(null, spu.getCid3(), null, false);
+        List<SpecParam> params = this.specificationClient.querySpecParam(null, spu.getCid3(), false, null);
         Map<Long, String> paramMap = new HashMap<>();
         params.forEach(param -> {
             paramMap.put(param.getId(), param.getName());

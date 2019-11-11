@@ -98,7 +98,23 @@
             padding-right: 50px;
         }
     </style>
-
+    <!--<script th:inline="javascript">
+        const a = /*[[${groups}]]*/ [];
+        const b = /*[[${paramMap}]]*/ [];
+        const c = /*[[${categories}]]*/ [];
+        const d = /*[[${spu}]]*/ {};
+        const e = /*[[${spuDetail}]]*/ {};
+        const f = /*[[${skus}]]*/ [];
+        const g = /*[[${brand}]]*/ {};
+    </script>-->
+    <script th:inline="javascript">
+        // sku集合
+        const skus = /*[[${skus}]]*/ [];
+        // 规格参数id与name对
+        const paramMap = /*[[${paramMap}]]*/ {};
+        // 特有规格参数集合
+        const specialSpec = JSON.parse(/*[[${spuDetail.specialSpec}]]*/ "");
+    </script>
 </head>
 
 <body>
@@ -159,7 +175,7 @@
                     <div class="sku-name">
                         <h4>Apple iPhone 6s（A1700）64G玫瑰金色 移动通信电信4G手机</h4>
                     </div>
-                    <div class="news"><span>推荐选择下方[移动优惠购],手机套餐齐搞定,不用换号,每月还有花费返</span></div>
+                    <div class="news"><span th:utext="${spu.subTitle}"></span></div>
                     <div class="summary">
                         <div class="summary-wrap">
                             <div class="fl title"><i>价　　格</i></div>
@@ -199,54 +215,19 @@
                     </div>
                     <div class="clearfix choose">
                         <div id="specification" class="summary-wrap clearfix">
-                            <dl>
+                            <dl v-for="(v,k) in specialSpec" :key="k">
                                 <dt>
                                     <div class="fl title">
-                                        <i>选择颜色</i>
+                                        <i>{{paramMap[k]}}</i>
                                     </div>
                                 </dt>
-                                <dd>
+                                <dd v-for="(str,j) in v" :key="j">
                                     <a href="javascript:;" class="selected">
-                                        金色<span title="点击取消选择">&nbsp;</span>
+                                        {{str}}<span title="点击取消选择">&nbsp;</span>
                                     </a>
                                 </dd>
-                                <dd><a href="javascript:;">银色</a></dd>
-                                <dd><a href="javascript:;">黑色</a></dd>
-                            </dl>
-                            <dl>
-                                <dt>
-                                    <div class="fl title">
-                                        <i>内存容量</i>
-                                    </div>
-                                </dt>
-                                <dd><a href="javascript:;" class="selected">16G<span title="点击取消选择">&nbsp;</span>
-                                </a></dd>
-                                <dd><a href="javascript:;">64G</a></dd>
-                                <dd><a href="javascript:;" class="locked">128G</a></dd>
-                            </dl>
-                            <dl>
-                                <dt>
-                                    <div class="fl title">
-                                        <i>选择版本</i>
-                                    </div>
-                                </dt>
-                                <dd><a href="javascript:;" class="selected">公开版<span title="点击取消选择">&nbsp;</span>
-                                </a></dd>
-                                <dd><a href="javascript:;">移动版</a></dd>
-                            </dl>
-                            <dl>
-                                <dt>
-                                    <div class="fl title">
-                                        <i>购买方式</i>
-                                    </div>
-                                </dt>
-                                <dd><a href="javascript:;" class="selected">官方标配<span title="点击取消选择">&nbsp;</span>
-                                </a></dd>
-                                <dd><a href="javascript:;">移动优惠版</a></dd>
-                                <dd><a href="javascript:;" class="locked">电信优惠版</a></dd>
                             </dl>
                         </div>
-
                         <div class="summary-wrap">
                             <div class="fl title">
                                 <div class="control-group">
@@ -698,7 +679,12 @@
 <script>
     var itemVm = new Vue({
         el: "#itemApp",
-        data: {},
+        data: {
+            ly,
+            skus,
+            paramMap,
+            specialSpec
+        },
         components: {
             lyTop: () => import('/js/pages/top.js')
         }
