@@ -114,6 +114,11 @@
         const paramMap = /*[[${paramMap}]]*/ {};
         // 特有规格参数集合
         const specialSpec = JSON.parse(/*[[${spuDetail.specialSpec}]]*/ "");
+
+        const indexes = {};
+        Object.keys(specialSpec).forEach(key => {
+            indexes[key] = 0;
+        });
     </script>
 </head>
 
@@ -222,8 +227,8 @@
                                     </div>
                                 </dt>
                                 <dd v-for="(str,j) in v" :key="j">
-                                    <a href="javascript:;" class="selected">
-                                        {{str}}<span title="点击取消选择">&nbsp;</span>
+                                    <a href="javascript:;" :class="{selected: j===indexes[k]}" @click="indexes[k]=j">
+                                        {{str}}<span v-if="j===indexes[k]" title="点击取消选择">&nbsp;</span>
                                     </a>
                                 </dd>
                             </dl>
@@ -683,7 +688,8 @@
             ly,
             skus,
             paramMap,
-            specialSpec
+            specialSpec,
+            indexes,
         },
         components: {
             lyTop: () => import('/js/pages/top.js')
