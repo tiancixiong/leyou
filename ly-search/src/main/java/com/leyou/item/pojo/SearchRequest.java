@@ -1,10 +1,15 @@
 package com.leyou.item.pojo;
 
+import lombok.Data;
+
+import java.util.Map;
+
 /**
  * @Author: TianCi.Xiong
  * @Description: 搜索条件封装类
  * @Date: Created in 2019-11-08 20:52
  */
+@Data
 public class SearchRequest {
     private String key;// 搜索条件
 
@@ -14,16 +19,10 @@ public class SearchRequest {
 
     private Boolean descending;// 是否降序
 
+    private Map<String, String> filter; // 过滤条件
+
     private static final Integer DEFAULT_SIZE = 20;// 每页大小，不从页面接收，而是固定大小
     private static final Integer DEFAULT_PAGE = 1;// 默认页
-
-    public String getKey() {
-        return key;
-    }
-
-    public void setKey(String key) {
-        this.key = key;
-    }
 
     public Integer getPage() {
         if (page == null) {
@@ -33,27 +32,8 @@ public class SearchRequest {
         return Math.max(DEFAULT_PAGE, page);
     }
 
-    public void setPage(Integer page) {
-        this.page = page;
-    }
-
     public Integer getSize() {
         return DEFAULT_SIZE;
     }
 
-    public String getSortBy() {
-        return sortBy;
-    }
-
-    public void setSortBy(String sortBy) {
-        this.sortBy = sortBy;
-    }
-
-    public Boolean getDescending() {
-        return descending;
-    }
-
-    public void setDescending(Boolean descending) {
-        this.descending = descending;
-    }
 }
