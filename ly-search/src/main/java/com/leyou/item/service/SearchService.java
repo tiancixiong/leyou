@@ -212,7 +212,7 @@ public class SearchService {
         }
 
         // 返回结果
-        return new SearchResult(goodsPage.getTotalElements(), goodsPage.getTotalPages(), goodsPage.getContent(), categories, brands, specs);
+        return new SearchResult(total, totalPage, goodsPage.getContent(), categories, brands, specs);
     }
 
     /**
@@ -252,7 +252,6 @@ public class SearchService {
                 // 收集桶中的key-规格参数值
                 List<Object> options = new ArrayList<>();
                 // 解析每个聚合
-                Aggregation value = entry.getValue();
                 StringTerms terms = (StringTerms) entry.getValue();
                 // 遍历每个聚合中桶，把桶中key放入收集规格参数的集合中
                 terms.getBuckets().forEach(bucket -> {
