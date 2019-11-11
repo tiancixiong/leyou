@@ -1,14 +1,16 @@
 package com.leyou.item.controller;
 
 import com.leyou.item.common.pojo.PageResult;
+import com.leyou.item.pojo.Category;
 import com.leyou.item.pojo.Goods;
 import com.leyou.item.pojo.SearchRequest;
 import com.leyou.item.service.SearchService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * @Author: TianCi.Xiong
@@ -19,6 +21,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class SearchController {
     @Autowired
     private SearchService searchService;
+    @Autowired
+    private Category
 
     /**
      * 搜索商品
