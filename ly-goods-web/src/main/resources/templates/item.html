@@ -114,6 +114,8 @@
         const paramMap = /*[[${paramMap}]]*/ {};
         // 特有规格参数集合
         const specialSpec = JSON.parse(/*[[${spuDetail.specialSpec}]]*/ "");
+        const genericSpec = JSON.parse(/*[[${spuDetail.genericSpec}]]*/ "");
+        let groups = /*[[${groups}]]*/ [];
 
         const indexes = {};
         Object.keys(specialSpec).forEach(key => {
@@ -465,6 +467,7 @@
                         </ul>
                         <div class="clearfix"></div>
                         <div class="tab-content tab-wraped">
+                            <!--商品介绍-->
                             <div id="one" class="tab-pane active">
                                 <!--属性列表-->
                                 <ul class="goods-intro-list unstyled" style="list-style: none;">
@@ -474,54 +477,27 @@
                                 <div class="intro-detail" th:utext="${spuDetail.description}">
                                 </div>
                             </div>
+                            <!--规格与包装-->
                             <div id="two" class="tab-pane">
                                 <div class="Ptable">
-                                    <div class="Ptable-item">
-                                        <h3>主体</h3>
+                                    <div class="Ptable-item" v-for="group in groups" :key="group.id">
+                                        <h3>{{group.name}}</h3>
                                         <dl>
-                                            <dt>品牌</dt>
-                                            <dd>华为（HUAWEI）</dd>
-                                            <dt>型号</dt>
-                                            <dd>CLT-AL00</dd>
-                                            <dt>入网型号</dt>
-                                            <dd>CLT-AL00</dd>
-                                            <dt>上市年份</dt>
-                                            <dd>2018年</dd>
-                                            <dt>上市月份</dt>
-                                            <dd>4月</dd>
-                                        </dl>
-                                    </div>
-                                    <div class="Ptable-item">
-                                        <h3>基本信息</h3>
-                                        <dl>
-                                            <dt>机身颜色</dt>
-                                            <dd>宝石蓝</dd>
-                                            <dt>机身长度（mm）</dt>
-                                            <dd>155.0</dd>
-                                            <dt>机身宽度（mm）</dt>
-                                            <dd>73.9</dd>
-                                            <dt>机身厚度（mm）</dt>
-                                            <dd>7.8</dd>
-                                            <dt>机身重量（g）</dt>
-                                            <dd>约180g（含电池）</dd>
-                                            <dt>输入方式</dt>
-                                            <dd>触控</dd>
-                                            <dt>运营商标志或内容</dt>
-                                            <dd>无</dd>
-                                            <dt>机身材质分类</dt>
-                                            <dd>玻璃后盖</dd>
+                                            <div v-for="param in group.params">
+                                                <dt>{{param.name}}</dt>
+                                                <dd>{{param.v + (param.unit || '')}}</dd>
+                                            </div>
                                         </dl>
                                     </div>
                                 </div>
                                 <div class="package-list">
                                     <h3>包装清单</h3>
-                                    <p>手机X1、快速指南X1、华为SuperCharge 充电器X1、三包凭证X1、Type-C 数字耳机X1、Type-C
-                                        数据线X1、取卡针X1、TPU保护壳X1、USB Type-C转3.5mm耳机转接线X1（备注：最终以实物为准）</p>
+                                    <p th:text="${spuDetail.packingList}"></p>
                                 </div>
-
                             </div>
                             <div id="three" class="tab-pane">
                                 <p>售后保障</p>
+                                <p th:text="${spuDetail.afterService}"></p>
                             </div>
                             <div id="four" class="tab-pane">
                                 <p>商品评价</p>
@@ -672,6 +648,7 @@
             skus,
             paramMap,
             specialSpec,
+            genericSpec,
             indexes,
             param,
         },
@@ -680,6 +657,20 @@
             sku() {
                 const index = Object.values(this.indexes).join("_");
                 return this.skus.find(s => s.indexes == index);
+            },
+            groups() {
+                groups.forEach(group => {
+                    group.params.forEach(param => {
+                        if (param.generic) {
+                            // 通用属性，去spu的genericSpec中获取
+                            param.v = this.genericSpec[param.id] || '其它';
+                        } else {
+                            // 特有属性值，去SKU中获取
+                            param.v = JSON.parse(this.sku.ownSpec)[param.id]
+                        }
+                    });
+                });
+                return groups;
             },
             // 将图片字符串转变为数组
             images() {
