@@ -471,10 +471,7 @@
                                     <li v-for="(param,i) in param">{{i}}:{{param}}</li>
                                 </ul>
                                 <!--商品详情-->
-                                <div class="intro-detail">
-                                    <img src="/img/_/intro01.png"/>
-                                    <img src="/img/_/intro02.png"/>
-                                    <img src="/img/_/intro03.png"/>
+                                <div class="intro-detail" th:utext="${spuDetail.description}">
                                 </div>
                             </div>
                             <div id="two" class="tab-pane">
