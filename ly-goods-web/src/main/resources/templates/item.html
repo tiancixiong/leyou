@@ -151,9 +151,9 @@
                     <div class="zoom">
                         <!--默认第一个预览-->
                         <div id="preview" class="spec-preview">
-							<span class="jqzoom">
-								<img jqimg="/img/_/b1.png" src="/img/_/s1.png" width="400px" height="400px"/>
-							</span>
+                            <span class="jqzoom">
+                                <img :jqimg="images[0]" :src="images[0]" width="400px" height="400px"/>
+                            </span>
                         </div>
                         <!--下方的缩略图-->
                         <div class="spec-scroll">
@@ -161,31 +161,26 @@
                             <!--左右按钮-->
                             <div class="items">
                                 <ul>
-                                    <li><img src="/img/_/s1.png" bimg="/img/_/b1.png" onmousemove="preview(this)"/></li>
-                                    <li><img src="/img/_/s2.png" bimg="/img/_/b2.png" onmousemove="preview(this)"/></li>
-                                    <li><img src="/img/_/s3.png" bimg="/img/_/b3.png" onmousemove="preview(this)"/></li>
-                                    <li><img src="/img/_/s1.png" bimg="/img/_/b1.png" onmousemove="preview(this)"/></li>
-                                    <li><img src="/img/_/s2.png" bimg="/img/_/b2.png" onmousemove="preview(this)"/></li>
-                                    <li><img src="/img/_/s3.png" bimg="/img/_/b3.png" onmousemove="preview(this)"/></li>
-                                    <li><img src="/img/_/s1.png" bimg="/img/_/b1.png" onmousemove="preview(this)"/></li>
-                                    <li><img src="/img/_/s2.png" bimg="/img/_/b2.png" onmousemove="preview(this)"/></li>
-                                    <li><img src="/img/_/s3.png" bimg="/img/_/b3.png" onmousemove="preview(this)"/></li>
+                                    <li v-for="(image, i) in images" :key="i">
+                                        <img :src="image" :bimg="image" onmousemove="preview(this)"/>
+                                    </li>
                                 </ul>
                             </div>
                             <a class="next">&gt;</a>
                         </div>
                     </div>
                 </div>
+                <!--商品展示-->
                 <div class="fr itemInfo-wrap">
                     <div class="sku-name">
-                        <h4>Apple iPhone 6s（A1700）64G玫瑰金色 移动通信电信4G手机</h4>
+                        <h4 v-text="sku.title"></h4>
                     </div>
                     <div class="news"><span th:utext="${spu.subTitle}"></span></div>
                     <div class="summary">
                         <div class="summary-wrap">
                             <div class="fl title"><i>价　　格</i></div>
                             <div class="fl price">
-                                <i>¥</i><em>5299.00</em><span>降价通知</span>
+                                <i>¥</i><em v-text="ly.formatPrice(sku.price)"></em><span>降价通知</span>
                             </div>
                             <div class="fr remark"><i>累计评价</i><em>612188</em></div>
                         </div>
@@ -690,6 +685,17 @@
             paramMap,
             specialSpec,
             indexes,
+        },
+        computed: {
+            // 获得用户选中的sku
+            sku() {
+                const index = Object.values(this.indexes).join("_");
+                return this.skus.find(s => s.indexes == index);
+            },
+            // 将图片字符串转变为数组
+            images() {
+                return this.sku.images ? this.sku.images.split(",") : [''];
+            }
         },
         components: {
             lyTop: () => import('/js/pages/top.js')
