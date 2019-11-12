@@ -119,6 +119,9 @@
         Object.keys(specialSpec).forEach(key => {
             indexes[key] = 0;
         });
+
+        const param = {};
+        Object.keys(paramMap).forEach(k => Object.keys(specialSpec).includes(k) ? param[paramMap[k]] = specialSpec[k][indexes[k]] : param[paramMap[k]] = genericSpec[k]);
     </script>
 </head>
 
@@ -463,21 +466,9 @@
                         <div class="clearfix"></div>
                         <div class="tab-content tab-wraped">
                             <div id="one" class="tab-pane active">
+                                <!--属性列表-->
                                 <ul class="goods-intro-list unstyled" style="list-style: none;">
-                                    <li>分辨率：1920*1080(FHD)</li>
-                                    <li>后置摄像头：1200万像素</li>
-                                    <li>前置摄像头：500万像素</li>
-                                    <li>核 数：其他</li>
-                                    <li>频 率：以官网信息为准</li>
-                                    <li>品牌： Apple</li>
-                                    <li>商品名称：APPLEiPhone 6s Plus</li>
-                                    <li>商品编号：1861098</li>
-                                    <li>商品毛重：0.51kg</li>
-                                    <li>商品产地：中国大陆</li>
-                                    <li>热点：指纹识别，Apple Pay，金属机身，拍照神器</li>
-                                    <li>系统：苹果（IOS）</li>
-                                    <li>像素：1000-1600万</li>
-                                    <li>机身内存：64GB</li>
+                                    <li v-for="(param,i) in param">{{i}}:{{param}}</li>
                                 </ul>
                                 <!--商品详情-->
                                 <div class="intro-detail">
@@ -685,6 +676,7 @@
             paramMap,
             specialSpec,
             indexes,
+            param,
         },
         computed: {
             // 获得用户选中的sku
