@@ -1,6 +1,7 @@
 package com.leyou.pojo;
 
 import com.leyou.common.pojo.PageResult;
+import com.leyou.item.pojo.Brand;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

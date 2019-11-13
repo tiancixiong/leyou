@@ -4,7 +4,7 @@ import com.leyou.client.BrandClient;
 import com.leyou.client.CategoryClient;
 import com.leyou.client.GoodsClient;
 import com.leyou.client.SpecificationClient;
-import com.leyou.pojo.*;
+import com.leyou.item.pojo.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

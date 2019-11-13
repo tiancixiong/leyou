@@ -1,11 +1,11 @@
 package com.leyou.client;
 
-import com.leyou.bo.SpuBo;
-import com.leyou.common.pojo.PageResult;
 import com.leyou.LySearchApplication;
+import com.leyou.item.bo.SpuBo;
+import com.leyou.common.pojo.PageResult;
+import com.leyou.service.SearchService;
 import com.leyou.pojo.Goods;
 import com.leyou.repository.GoodsRepository;
-import com.leyou.service.SearchService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

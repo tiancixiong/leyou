@@ -6,6 +6,7 @@ import com.leyou.client.BrandClient;
 import com.leyou.client.CategoryClient;
 import com.leyou.client.GoodsClient;
 import com.leyou.client.SpecificationClient;
+import com.leyou.item.pojo.*;
 import com.leyou.pojo.*;
 import com.leyou.repository.GoodsRepository;
 import org.apache.commons.lang.StringUtils;

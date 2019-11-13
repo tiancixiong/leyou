@@ -14,10 +14,11 @@ eureka:
     instance-id: ${spring.application.name}:${server.port}
 zuul:
   prefix: /api # 添加路由前缀
-  retryable: true
+  retryable: true # 开启重试
   routes:
     item-service: /item/** # 将商品微服务映射到/item/**
-    search-service: /search/**
+    search-service: /search/** # 搜索微服务
+    user-service: /user/** # 用户微服务
   ignored-services:
     - upload-service # 忽略upload-service服务
 ribbon:
