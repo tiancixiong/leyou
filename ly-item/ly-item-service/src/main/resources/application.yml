@@ -10,6 +10,14 @@ spring:
     hikari:
       maximum-pool-size: 30
       minimum-idle: 10
+  rabbitmq:
+    host: 192.168.56.101
+    username: leyou
+    password: 123456
+    virtual-host: /leyou
+    template:
+      exchange: leyou.item.exchange
+    publisher-confirms: true
 eureka:
   client:
     service-url:
@@ -20,4 +28,3 @@ eureka:
     prefer-ip-address: true
     ip-address: 127.0.0.1
     instance-id: ${spring.application.name}:${server.port}
-

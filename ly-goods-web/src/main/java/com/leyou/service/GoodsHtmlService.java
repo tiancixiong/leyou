@@ -24,7 +24,7 @@ public class GoodsHtmlService {
     @Autowired
     private TemplateEngine templateEngine;
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(GoodsHtmlService.class);
+    private static final Logger logger = LoggerFactory.getLogger(GoodsHtmlService.class);
 
     /**
      * 创建html页面
@@ -49,7 +49,7 @@ public class GoodsHtmlService {
             // 执行页面静态化方法
             templateEngine.process("item", context, writer);
         } catch (Exception e) {
-            LOGGER.error("页面静态化出错：{}，" + e, spuId);
+            logger.error("页面静态化出错：{}，" + e, spuId);
         } finally {
             if (writer != null) {
                 writer.close();
@@ -70,5 +70,15 @@ public class GoodsHtmlService {
                 createHtml(spuId);
             }
         });*/
+    }
+
+    /**
+     * 删除页面
+     *
+     * @param id
+     */
+    public void deleteHtml(Long id) {
+        File file = new File("D:\\JAVA\\nginx-1.12.2\\html\\leyou\\", id + ".html");
+        file.deleteOnExit();
     }
 }

@@ -375,4 +375,27 @@ public class SearchService {
 
         return boolQueryBuilder;
     }
+
+    /**
+     * 创建索引
+     *
+     * @param id
+     */
+    public void createIndex(Long id) throws IOException {
+        Spu spu = this.goodsClient.querySpuById(id);
+        // 构建商品
+        Goods goods = this.buildGoods(spu);
+
+        // 保存数据到索引库
+        this.goodsRepository.save(goods);
+    }
+
+    /**
+     * 删除索引
+     *
+     * @param id
+     */
+    public void deleteIndex(Long id) {
+        this.goodsRepository.deleteById(id);
+    }
 }
