@@ -1,4 +1,4 @@
-package com.leyou.common.Utils;
+package com.leyou.common.utils;
 
 import java.util.Random;
 
