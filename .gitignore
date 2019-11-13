@@ -29,3 +29,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# 阿里大鱼配置文件
+**/SmsProperties.java
