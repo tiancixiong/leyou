@@ -13,5 +13,12 @@
     <artifactId>ly-common</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
+    <dependencies>
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

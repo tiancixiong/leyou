@@ -9,7 +9,7 @@ import com.leyou.client.SpecificationClient;
 import com.leyou.item.pojo.*;
 import com.leyou.pojo.*;
 import com.leyou.repository.GoodsRepository;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.Operator;

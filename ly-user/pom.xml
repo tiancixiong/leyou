@@ -18,6 +18,4 @@
         <module>ly-user-interface</module>
         <module>ly-user-service</module>
     </modules>
-
-
 </project>

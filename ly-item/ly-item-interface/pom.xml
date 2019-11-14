@@ -26,6 +26,11 @@
             <artifactId>spring-webmvc</artifactId>
             <version>5.0.6.RELEASE</version>
         </dependency>
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>com.leyou.common</groupId>

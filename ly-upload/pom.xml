@@ -32,5 +32,10 @@
             <groupId>com.github.tobato</groupId>
             <artifactId>fastdfs-client</artifactId>
         </dependency>
+        <!-- commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
     </dependencies>
 </project>

@@ -4,7 +4,7 @@ import com.leyou.common.utils.NumberUtils;
 import com.leyou.user.mapper.UserMapper;
 import com.leyou.user.pojo.User;
 import com.leyou.user.utils.CodecUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.AmqpTemplate;

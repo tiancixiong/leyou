@@ -2,13 +2,11 @@ package com.leyou.item.service;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
-import com.leyou.item.bo.SpuBo;
 import com.leyou.common.pojo.PageResult;
+import com.leyou.item.bo.SpuBo;
 import com.leyou.item.mapper.*;
 import com.leyou.item.pojo.*;
-import com.leyou.mapper.*;
-import com.leyou.pojo.*;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.AmqpTemplate;

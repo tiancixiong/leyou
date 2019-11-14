@@ -3,7 +3,7 @@ package com.leyou.sms.listener;
 import com.aliyuncs.dysmsapi.model.v20170525.SendSmsResponse;
 import com.leyou.sms.config.SmsProperties;
 import com.leyou.sms.utils.SmsUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.amqp.rabbit.annotation.Exchange;
 import org.springframework.amqp.rabbit.annotation.Queue;
 import org.springframework.amqp.rabbit.annotation.QueueBinding;
