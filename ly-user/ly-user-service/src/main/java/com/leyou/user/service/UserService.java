@@ -116,4 +116,28 @@ public class UserService {
         }
         return b;
     }
+
+    /**
+     * 根据用户名和密码查询用户
+     *
+     * @param username
+     * @param password
+     * @return
+     */
+    public User queryUser(String username, String password) {
+        // 查询
+        User record = new User();
+        record.setUsername(username);
+        User user = this.userMapper.selectOne(record);
+        // 校验用户名
+        if (user == null) {
+            return null;
+        }
+        // 校验密码
+        if (!user.getPassword().equals(CodecUtils.md5Hex(password, user.getSalt()))) {
+            return null;
+        }
+        // 用户名密码都正确
+        return user;
+    }
 }
