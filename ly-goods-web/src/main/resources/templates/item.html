@@ -237,17 +237,17 @@
                             <div class="fl title">
                                 <div class="control-group">
                                     <div class="controls">
-                                        <input autocomplete="off" type="text" disabled value="1" minnum="1"
-                                               class="itxt"/>
-                                        <a href="javascript:void(0)" class="increment plus">+</a>
-                                        <a href="javascript:void(0)" class="increment mins">-</a>
+                                        <input autocomplete="off" type="text" v-model="num" disabled value="1"
+                                               minnum="1" class="itxt"/>
+                                        <a href="javascript:void(0)" class="increment plus" @click="increment">+</a>
+                                        <a href="javascript:void(0)" class="increment mins" @click="decrement">-</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="fl">
                                 <ul class="btn-choose unstyled">
                                     <li>
-                                        <a href="success-cart.html" target="_blank"
+                                        <a href="javascript:void(0);" @click="addCart()"
                                            class="sui-btn  btn-danger addshopcar">加入购物车</a>
                                     </li>
                                 </ul>
@@ -645,12 +645,56 @@
         el: "#itemApp",
         data: {
             ly,
-            skus,
+            skus, // skus集合
             paramMap,
-            specialSpec,
-            genericSpec,
-            indexes,
+            specialSpec, // sku特有规格属性模板
+            genericSpec, // 全局规格属性
+            indexes, // 已选择规格属性的下标
             param,
+            num: 1, // 购物车数量
+        },
+        methods: {
+            // 购物车数量加1
+            increment() {
+                this.num++;
+            },
+            // 购物车数量减1
+            decrement() {
+                if (this.num > 1) {
+                    this.num--;
+                }
+            },
+            // 加入购物车
+            addCart() {
+                ly.verifyUser().then(res => {
+                    // 已登录发送信息到后台，保存到redis中
+                }).catch(() => {
+                    // 未登录保存在浏览器本地的localStorage中
+                    // 1、查询本地购物车
+                    let carts = ly.store.get("carts") || [];
+                    let cart = carts.find(c => c.skuId === this.sku.id);
+                    // 2、判断是否存在
+                    if (cart) {
+                        // 3、存在更新数量
+                        cart.num += this.num;
+                    } else {
+                        // 4、不存在，新增
+                        cart = {
+                            skuId: this.sku.id,
+                            title: this.sku.title,
+                            price: this.sku.price,
+                            image: this.sku.images,
+                            num: this.num,
+                            ownSpec: this.ownSpec
+                        }
+                        carts.push(cart);
+                    }
+                    // 把carts写回localstorage
+                    ly.store.set("carts", carts);
+                    // 跳转
+                    window.location.href = "http://www.leyou.com/cart.html";
+                })
+            }
         },
         computed: {
             // 获得用户选中的sku
