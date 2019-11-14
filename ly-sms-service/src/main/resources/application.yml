@@ -12,7 +12,7 @@ spring:
     host: 192.168.56.101
 leyou:
   sms:
-    #accessKeyId: JWffwFJIwada # 你自己的accessKeyId
-    #accessKeySecret: aySRliswq8fe7rF9gQyy1Izz4MQ # 你自己的AccessKeySecret
-    #signName: 乐优商城 # 签名名称
-    #verifyCodeTemplate: SMS_133976814 # 模板名称
+    accessKeyId: LTAI4FkBpYg435XnJd9MRF6v # 你自己的accessKeyId
+    accessKeySecret: CntYYhCURpQ9ZCbyitdjED0SrDgfVB # 你自己的AccessKeySecret
+    signName: 乐优商城 # 签名名称
+    verifyCodeTemplate: SMS_177355065 # 模板名称
