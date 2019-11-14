@@ -17,6 +17,7 @@
         <module>ly-user</module>
         <module>ly-sms-service</module>
         <module>ly-auth</module>
+        <module>ly-cart</module>
     </modules>
     <packaging>pom</packaging>
 
