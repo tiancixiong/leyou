@@ -44,7 +44,7 @@
         <leyou.latest.version>1.0.0-SNAPSHOT</leyou.latest.version>
         <fastDFS.client.version>1.26.1-RELEASE</fastDFS.client.version>
         <lombok.version>1.16.18</lombok.version>
-        <jackson.version>2.9.6</jackson.version>
+        <jackson.version>2.9.10.1</jackson.version>
     </properties>
 
     <dependencyManagement>
