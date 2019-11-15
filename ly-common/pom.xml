@@ -12,6 +12,7 @@
     <groupId>com.leyou.common</groupId>
     <artifactId>ly-common</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <description>通用工具模块</description>
 
     <dependencies>
         <!-- 日志 -->

@@ -12,6 +12,8 @@
     <groupId>com.leyou.service</groupId>
     <artifactId>ly-item</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <description>商品服务模块</description>
+
     <modules>
         <module>ly-item-interface</module>
         <module>ly-item-service</module>
