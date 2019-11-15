@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
  * @Author: TianCi.Xiong
- * @Description:
+ * @Description: 支付有关配置
  * @Date: Created in 2019-11-15 9:54
  */
 @Getter

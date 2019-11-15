@@ -50,8 +50,8 @@ mapper:
   identity: mysql
 leyou:
   worker:
-    workerId: 1
-    datacenterId: 1
+    workerId: 1 # 当前机器id
+    datacenterId: 1 # 序列号
   jwt:
     pubKeyPath: C:\\tmp\\rsa\\rsa.pub # 公钥地址
     cookieName: LY_TOKEN # cookie的名称

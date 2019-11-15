@@ -21,6 +21,7 @@ zuul:
     user-service: /user/** # 用户微服务
     auth-service: /auth/** # 授权中心微服务
     cart-service: /cart/** # 购物车微服务
+    order-service: /** # 订单中心微服务,由于整合了Swagger,所以前缀配置在Controller中
   ignored-services:
     - upload-service # 忽略upload-service服务
   add-host-header: true # 携带请求本身的head头信息

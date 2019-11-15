@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @Author: TianCi.Xiong
- * @Description:
+ * @Description: 支付工具类
  * @Date: Created in 2019-11-15 10:12
  */
 @Component
@@ -32,9 +32,9 @@ public class PayHelper {
     private OrderService orderService;
 
     public PayHelper(PayConfig payConfig) {
-        // 真实开发时
+        // TODO 真实开发时
         wxPay = new WXPay(payConfig);
-        // 测试时
+        // TODO 测试时
         // wxPay = new WXPay(payConfig, WXPayConstants.SignType.MD5, true);
     }
 

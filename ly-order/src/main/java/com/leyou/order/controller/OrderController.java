@@ -49,7 +49,7 @@ public class OrderController {
      * @param id
      * @return
      */
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     @ApiOperation(value = "根据订单编号查询订单，返回订单对象", notes = "查询订单")
     @ApiImplicitParam(name = "id", required = true, value = "订单的编号")
     public ResponseEntity<Order> queryOrderById(@PathVariable("id") Long id) {
@@ -66,7 +66,7 @@ public class OrderController {
      * @param status 订单状态
      * @return 分页订单数据
      */
-    @GetMapping("list")
+    @GetMapping("/list")
     @ApiOperation(value = "分页查询当前用户订单，并且可以根据订单状态过滤", notes = "分页查询当前用户订单")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "page", value = "当前页", defaultValue = "1", type = "Integer"),
@@ -96,7 +96,7 @@ public class OrderController {
      * @param status
      * @return
      */
-    @PutMapping("{id}/{status}")
+    @PutMapping("/{id}/{status}")
     @ApiOperation(value = "更新订单状态", notes = "更新订单状态")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "id", value = "订单编号", type = "Long"),
@@ -124,7 +124,7 @@ public class OrderController {
      * @param orderId
      * @return
      */
-    @GetMapping("url/{id}")
+    @GetMapping("/url/{id}")
     @ApiOperation(value = "生成微信扫码支付付款链接", notes = "生成付款链接")
     @ApiImplicitParam(name = "id", value = "订单编号", type = "Long")
     @ApiResponses({
@@ -147,7 +147,7 @@ public class OrderController {
      * @param orderId
      * @return 0, 状态查询失败 1,支付成功 2,支付失败
      */
-    @GetMapping("state/{id}")
+    @GetMapping("/state/{id}")
     @ApiOperation(value = "查询扫码支付付款状态", notes = "查询付款状态")
     @ApiImplicitParam(name = "id", value = "订单编号", type = "Long")
     @ApiResponses({
