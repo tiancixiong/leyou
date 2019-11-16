@@ -18,7 +18,7 @@
 
 乐优商城架构缩略图：
 
-![1573821025276](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/1573821025276.png)
+![1573821025276](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/README/1573821025276.png)
 
 整个乐优商城可以分为两部分：后台管理系统、前台门户系统。
 
@@ -31,7 +31,7 @@
     - 权限管理，整个网站的权限控制，采用JWT鉴权方案，对用户及API进行权限控制
     - 统计，各种数据的统计分析展示
   - 后台系统会采用前后端分离开发，而且整个后台管理系统会使用Vue.js框架搭建出单页应用（SPA）。
-  - 预览图：![1573821246869](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/1573821246869.png)
+  - 预览图：![1573821246869](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/README/1573821246869.png)
 
 - 前台门户
 
@@ -41,7 +41,7 @@
     - 下单
     - 评价商品等等
   - 前台系统我们会使用Thymeleaf模板引擎技术来完成页面开发。出于SEO优化的考虑，我们将不采用单页应用。
-  - 预览图：![1573821296666](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/1573821296666.png)
+  - 预览图：![1573821296666](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/README/1573821296666.png)
 
 
 
@@ -110,9 +110,8 @@
 
 ```
 # 乐优商城
-127.0.0.1 www.leyou.com
 127.0.0.1 api.leyou.com # 网关Zuul
-127.0.0.1 manage.leyou.com	# 后台系统
+127.0.0.1 manage.leyou.com # 后台系统
 127.0.0.1 www.leyou.com # 乐优门户
 192.168.56.101 image.leyou.com	# 图片服务器，虚拟机地址
 ```
