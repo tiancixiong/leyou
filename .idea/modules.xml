@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/leyou.iml" filepath="$PROJECT_DIR$/leyou.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-api-gateway/ly-api-gateway.iml" filepath="$PROJECT_DIR$/ly-api-gateway/ly-api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-auth/ly-auth.iml" filepath="$PROJECT_DIR$/ly-auth/ly-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-auth/ly-auth-common/ly-auth-common.iml" filepath="$PROJECT_DIR$/ly-auth/ly-auth-common/ly-auth-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-auth/ly-auth-service/ly-auth-service.iml" filepath="$PROJECT_DIR$/ly-auth/ly-auth-service/ly-auth-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-cart/ly-cart.iml" filepath="$PROJECT_DIR$/ly-cart/ly-cart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-common/ly-common.iml" filepath="$PROJECT_DIR$/ly-common/ly-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-goods-web/ly-goods-web.iml" filepath="$PROJECT_DIR$/ly-goods-web/ly-goods-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-item/ly-item.iml" filepath="$PROJECT_DIR$/ly-item/ly-item.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-item/ly-item-interface/ly-item-interface.iml" filepath="$PROJECT_DIR$/ly-item/ly-item-interface/ly-item-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-item/ly-item-service/ly-item-service.iml" filepath="$PROJECT_DIR$/ly-item/ly-item-service/ly-item-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-order/ly-order.iml" filepath="$PROJECT_DIR$/ly-order/ly-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-registry/ly-registry.iml" filepath="$PROJECT_DIR$/ly-registry/ly-registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-search/ly-search.iml" filepath="$PROJECT_DIR$/ly-search/ly-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-sms-service/ly-sms-service.iml" filepath="$PROJECT_DIR$/ly-sms-service/ly-sms-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-upload/ly-upload.iml" filepath="$PROJECT_DIR$/ly-upload/ly-upload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-user/ly-user.iml" filepath="$PROJECT_DIR$/ly-user/ly-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-user/ly-user-interface/ly-user-interface.iml" filepath="$PROJECT_DIR$/ly-user/ly-user-interface/ly-user-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-user/ly-user-service/ly-user-service.iml" filepath="$PROJECT_DIR$/ly-user/ly-user-service/ly-user-service.iml" />
+    </modules>
+  </component>
+</project>

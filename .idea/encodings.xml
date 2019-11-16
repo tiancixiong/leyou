@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-api-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-auth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-auth/ly-auth-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-auth/ly-auth-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-cart" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-goods-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-item" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-item/ly-item-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-item/ly-item-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-registry" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-sms-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-upload" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-user/ly-user-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ly-user/ly-user-service" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
