@@ -75,11 +75,11 @@
 
 每次在C盘寻找hosts文件并修改是非常麻烦的，给大家推荐一个快捷修改host的工具，在课前资料中可以找到：
 
- ![1526014883706](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526014883706.png)
+ ![1526014883706](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526014883706.png)
 
 效果：
 
- ![1526015022365](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526015022365.png)
+ ![1526015022365](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526015022365.png)
 
 我们添加了两个映射关系：
 
@@ -88,7 +88,7 @@
 
 现在，ping一下域名试试是否畅通：
 
- ![1526015211298](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526015211298.png)
+ ![1526015211298](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526015211298.png)
 
 OK！
 
@@ -102,7 +102,7 @@ OK！
 
 ### 1.4.1.什么是Nginx
 
-![1526187409033](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526187409033.png)
+![1526187409033](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526187409033.png)
 
 NIO：not-blocking-io 非阻塞IO
 
@@ -150,7 +150,7 @@ nginx可以当做反向代理服务器来使用：
 
 利用反向代理，就可以解决我们前面所说的端口问题，如图
 
-![1526016663674](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526016663674.png)
+![1526016663674](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526016663674.png)
 
 ### 1.4.4.安装和使用
 
@@ -158,15 +158,15 @@ nginx可以当做反向代理服务器来使用：
 
 安装非常简单，把课前资料提供的nginx直接解压即可，绿色免安装，舒服！
 
-![img](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/0C36B84E.gif) 
+![img](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/0C36B84E.gif) 
 
 我们在本地安装一台nginx：
 
- ![1526016829605](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526016829605.png)
+ ![1526016829605](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526016829605.png)
 
 目录结构：
 
- ![1526188477802](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526188477802.png)
+ ![1526188477802](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526188477802.png)
 
 
 
@@ -184,7 +184,7 @@ nginx可以通过命令行来启动，操作命令：
 
 示例：
 
- ![1526188831504](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526188831504.png)
+ ![1526188831504](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526188831504.png)
 
 nginx中的每个server就是一个反向代理配置，可以有多个server
 
@@ -246,11 +246,11 @@ http {
 
 启动nginx，然后用域名访问后台管理系统：
 
-![1526017010289](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526017010289.png)
+![1526017010289](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526017010289.png)
 
 现在实现了域名访问网站了，中间的流程是怎样的呢？
 
-![1526189945180](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526189945180.png)
+![1526189945180](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526189945180.png)
 
 1. 浏览器准备发起请求，访问http://mamage.leyou.com，但需要进行域名解析
 
@@ -272,7 +272,7 @@ http {
 
 商城的核心自然是商品，而商品多了以后，肯定要进行分类，并且不同的商品会有不同的品牌信息，其关系如图所示：
 
-![1525999005260](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1525999005260.png)
+![1525999005260](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1525999005260.png)
 
 - 一个商品分类下有很多商品
 - 一个商品分类下有很多品牌
@@ -287,11 +287,11 @@ http {
 
 首先导入课前资料提供的sql：
 
- ![1525999677772](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1525999677772.png)
+ ![1525999677772](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1525999677772.png)
 
 我们先看商品分类表：
 
- ![1525999774439](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1525999774439.png)
+ ![1525999774439](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1525999774439.png)
 
 ```mysql
 CREATE TABLE `tb_category` (
@@ -315,13 +315,13 @@ CREATE TABLE `tb_category` (
 
 首先我们看下要实现的效果：
 
-![1525999250932](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1525999250932.png)
+![1525999250932](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1525999250932.png)
 
 商品分类之间是会有层级关系的，采用树结构去展示是最直观的方式。
 
 一起来看页面，对应的是/pages/item/Category.vue：
 
- ![1526000313361](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526000313361.png)
+ ![1526000313361](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526000313361.png)
 
 页面模板：
 
@@ -342,17 +342,17 @@ CREATE TABLE `tb_category` (
 
 - `v-card`：卡片，是vuetify中提供的组件，提供一个悬浮效果的面板，一般用来展示一组数据。
 
-  ![1526000692741](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526000692741.png)
+  ![1526000692741](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526000692741.png)
 
 - `v-flex`：布局容器，用来控制响应式布局。与BootStrap的栅格系统类似，整个屏幕被分为12格。我们可以控制所占的格数来控制宽度：
 
-  ![1526001573140](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526001573140.png)
+  ![1526001573140](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526001573140.png)
 
   本例中，我们用`sm10`控制在小屏幕及以上时，显示宽度为10格
 
 - `v-tree`：树组件。Vuetify并没有提供树组件，这个是我们自己编写的自定义组件：
 
-   ![1526001762446](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526001762446.png)
+   ![1526001762446](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526001762446.png)
 
   里面涉及一些vue的高级用法，大家暂时不要关注其源码，会用即可。
 
@@ -441,7 +441,7 @@ CREATE TABLE `tb_category` (
 
 刷新页面，可以看到：
 
-![1526004282868](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526004282868.png)
+![1526004282868](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526004282868.png)
 
 页面中的树没有了，并且发起了一条请求：http://localhost/api/item/category/list?pid=0 
 
@@ -457,17 +457,17 @@ http://localhost/api/item/category/list?pid=0
 
 这是因为，我们有一个全局的配置文件，对所有的请求路径进行了约定：
 
- ![1526005059829](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526005059829.png)
+ ![1526005059829](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526005059829.png)
 
- ![1526005071153](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526005071153.png)
+ ![1526005071153](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526005071153.png)
 
 路径是localhost，并且默认加上了/api的前缀，这恰好与我们的网关设置匹配，我们只需要把地址改成网关的地址即可,因为我们使用了nginx反向代理，这里可以写域名：
 
- ![1526017217473](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526017217473.png)
+ ![1526017217473](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526017217473.png)
 
 再次查看页面，发现地址已经变成了正确的地址了：
 
- ![1526017265625](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526017265625.png)
+ ![1526017265625](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526017265625.png)
 
 接下来，我们要做的事情就是编写后台接口，返回对应的数据即可。
 
@@ -477,7 +477,7 @@ http://localhost/api/item/category/list?pid=0
 
 在`ly-item-interface`中添加category实体类：
 
- ![1527483519579](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1527483519579.png)
+ ![1527483519579](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1527483519579.png)
 
 ```java
 @Table(name="tb_category")
@@ -506,7 +506,7 @@ public class Category {
 
 结构：
 
- ![1526006869782](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526006869782.png)
+ ![1526006869782](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526006869782.png)
 
 ### 2.3.3.controller
 
@@ -519,7 +519,7 @@ public class Category {
 
 在刚才页面发起的请求中，我们就能得到绝大多数信息：
 
- ![1527473096007](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1527473096007.png)
+ ![1527473096007](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1527473096007.png)
 
 - 请求方式：Get
 
@@ -632,7 +632,7 @@ public class LyItemService {
 
 项目结构：
 
- ![1527483458604](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1527483458604.png)
+ ![1527483458604](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1527483458604.png)
 
 
 
@@ -640,17 +640,17 @@ public class LyItemService {
 
 我们不经过网关，直接访问：
 
- ![1526009785484](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526009785484.png)
+ ![1526009785484](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526009785484.png)
 
 然后试试网关是否畅通：
 
-  ![1526017422684](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526017422684.png)
+  ![1526017422684](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526017422684.png)
 
 一切OK！
 
 然后刷新页面查看：
 
-![1526017362418](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526017362418.png)
+![1526017362418](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526017362418.png)
 
 发现报错了！
 
@@ -772,7 +772,7 @@ CORS需要浏览器和服务器同时支持。目前，所有浏览器都支持�
 
 当浏览器发现发现的ajax请求是简单请求时，会在请求头中携带一个字段：`Origin`.
 
- ![1526019242125](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526019242125.png)
+ ![1526019242125](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526019242125.png)
 
 Origin中会指出当前请求属于哪个域（协议+域名+端口）。服务会根据这个值决定是否允许其跨域。
 
@@ -905,7 +905,7 @@ public class GlobalCorsConfig {
 
 结构：
 
- ![1526021505774](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526021505774.png)
+ ![1526021505774](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526021505774.png)
 
 
 
@@ -913,11 +913,11 @@ public class GlobalCorsConfig {
 
 访问正常：
 
- ![1526021419016](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526021419016.png)
+ ![1526021419016](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526021419016.png)
 
 页面也OK了：
 
-![1526021447335](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526021447335.png)
+![1526021447335](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526021447335.png)
 
 
 
@@ -931,7 +931,7 @@ public class GlobalCorsConfig {
 
 先看看我们要实现的效果：
 
-![1526021968036](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526021968036.png)
+![1526021968036](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526021968036.png)
 
 
 
@@ -941,7 +941,7 @@ public class GlobalCorsConfig {
 
 为了方便看到效果，我们新建一个MyBrand.vue（注意先停掉服务器），从0开始搭建。
 
- ![1526023142926](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526023142926.png)
+ ![1526023142926](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526023142926.png)
 
 内容初始化一下：
 
@@ -965,11 +965,11 @@ public class GlobalCorsConfig {
 
 改变router新的index.js，将路由地址指向MyBrand.vue
 
-![1526023276997](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526023276997.png)
+![1526023276997](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526023276997.png)
 
 打开服务器，再次查看页面：
 
-![1526023471428](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526023471428.png)
+![1526023471428](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526023471428.png)
 
 
 
@@ -983,7 +983,7 @@ public class GlobalCorsConfig {
 
 大家看到这个原型页面肯定能看出，其主体就是一个table。我们去Vuetify查看有关table的文档：
 
-![1526023540226](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526023540226.png)
+![1526023540226](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526023540226.png)
 
 仔细阅读，发现`v-data-table`中有以下核心属性：
 
@@ -1033,7 +1033,7 @@ public class GlobalCorsConfig {
 
 找到这样一条：
 
-![1526023837773](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526023837773.png)
+![1526023837773](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526023837773.png)
 
 其它的案例都是由Vuetify帮我们对查询到的当前页数据进行排序和分页，这显然不是我们想要的。我们希望能在服务端完成对整体品牌数据的排序和分页，而这个案例恰好合适。
 
@@ -1099,7 +1099,7 @@ public class GlobalCorsConfig {
 
 - loading：boolean类型，true：代表数据正在加载，会有进度条。false：数据加载完毕。
 
-  ![1526029254159](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526029254159.png)
+  ![1526029254159](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526029254159.png)
 
 
 
@@ -1408,7 +1408,7 @@ mounted(){ // 渲染后执行
 
 刷新页面查看：
 
-![1526029445561](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526029445561.png)
+![1526029445561](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526029445561.png)
 
 
 
@@ -1418,7 +1418,7 @@ mounted(){ // 渲染后执行
 
 我们将来要对品牌进行增删改，需要给每一行数据添加 修改删除的按钮，一般放到改行的最后一列：
 
-![1526029907794](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526029907794.png)
+![1526029907794](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526029907794.png)
 
 其实就是多了一列，只是这一列没有数据，而是两个按钮而已。
 
@@ -1450,11 +1450,11 @@ headers: [
 
 因为不知道按钮怎么写，先放个普通文本看看：
 
-![1526030236992](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526030236992.png)
+![1526030236992](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526030236992.png)
 
 然后在官方文档中找到按钮的用法：
 
-![1526030329303](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526030329303.png)
+![1526030329303](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526030329303.png)
 
 修改我们的模板：
 
@@ -1471,17 +1471,17 @@ headers: [
 </template>
 ```
 
-![1526030431704](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526030431704.png)
+![1526030431704](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526030431704.png)
 
 #### 新增按钮
 
 因为新增根某个品牌无关，是独立的，因此我们可以放到表格的外面：
 
- ![1526030663178](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526030663178.png)
+ ![1526030663178](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526030663178.png)
 
 效果：
 
-![1526030540341](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526030540341.png)
+![1526030540341](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526030540341.png)
 
 
 
@@ -1491,7 +1491,7 @@ headers: [
 
 我们去官网查看卡片的用法：
 
-![1526031159242](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526031159242.png)
+![1526031159242](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526031159242.png)
 
 卡片`v-card`包含四个基本组件：
 
@@ -1536,7 +1536,7 @@ headers: [
 
 效果：
 
-![1526031720583](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526031720583.png)
+![1526031720583](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526031720583.png)
 
 #### 添加搜索框
 
@@ -1544,7 +1544,7 @@ headers: [
 
 查看官网中，文本框的用法：
 
-![1526031897445](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526031897445.png)
+![1526031897445](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526031897445.png)
 
 - name：字段名，表单中会用到
 - label：提示文字
@@ -1564,13 +1564,13 @@ headers: [
 
 效果：
 
-![1526032177687](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526032177687.png)
+![1526032177687](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526032177687.png)
 
 发现输入框变的超级长！！！
 
 这个时候，我们可以使用Vuetify提供的一个空间隔离工具：
 
-![1526032321057](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526032321057.png)
+![1526032321057](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526032321057.png)
 
 修改代码：
 
@@ -1586,7 +1586,7 @@ headers: [
 
 
 
-![1526032398630](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526032398630.png)
+![1526032398630](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526032398630.png)
 
 
 
@@ -1594,7 +1594,7 @@ headers: [
 
 查看textfiled的文档，发现：
 
- ![1526033007616](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526033007616.png)
+ ![1526033007616](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526033007616.png)
 
 通过append-icon属性可以为 输入框添加后置图标，所有可用图标名称可以到 [material-icons官网](https://material.io/tools/icons/)去查看。
 
@@ -1604,7 +1604,7 @@ headers: [
 <v-text-field label="输入关键字搜索" v-model="search" append-icon="search"/>
 ```
 
-![1526033167381](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526033167381.png)
+![1526033167381](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526033167381.png)
 
 
 
@@ -1612,7 +1612,7 @@ headers: [
 
 搜索框看起来高度比较高，页面不够紧凑。这其实是因为默认在文本框下面预留有错误提示空间。通过下面的属性可以取消提示：
 
-![1526033439890](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526033439890.png)
+![1526033439890](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526033439890.png)
 
 修改代码：
 
@@ -1622,7 +1622,7 @@ headers: [
 
 效果：
 
-![1526033500219](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526033500219.png)
+![1526033500219](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526033500219.png)
 
 几乎已经达到了原来一样的效果了吧！
 
@@ -1667,7 +1667,7 @@ CREATE TABLE `tb_category_brand` (
 
 ### 3.3.2.实体类
 
- ![1527483519579](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1527483519579.png)
+ ![1527483519579](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1527483519579.png)
 
 ```java
 @Table(name = "tb_brand")
@@ -1765,7 +1765,7 @@ public interface BrandMapper extends Mapper<Brand> {
 
   另外，这个PageResult以后可能在其它项目中也有需求，因此我们将其抽取到`ly-common`中，提高复用性：
 
-   ![1526046620269](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526046620269.png)
+   ![1526046620269](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526046620269.png)
 
 接下来，我们编写Controller
 
@@ -1830,7 +1830,7 @@ public class BrandService {
 
 完整结构：
 
- ![1527483582757](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1527483582757.png)
+ ![1527483582757](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1527483582757.png)
 
 
 
@@ -1838,7 +1838,7 @@ public class BrandService {
 
 通过浏览器访问试试：http://api.leyou.com/api/item/brand/page
 
- ![1526047708748](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526047708748.png)
+ ![1526047708748](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526047708748.png)
 
 接下来，去页面请求数据并渲染
 
@@ -1852,7 +1852,7 @@ public class BrandService {
 
 Vue官方推荐的ajax请求框架叫做：axios，看下demo：
 
-![1526033988251](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526033988251.png)
+![1526033988251](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526033988251.png)
 
 axios的Get请求语法：
 
@@ -1895,7 +1895,7 @@ PUT和DELETE请求与POST请求类似
 
 而在我们的项目中，已经引入了axios，并且进行了简单的封装，在src下的http.js中：
 
- ![1526034150067](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526034150067.png)
+ ![1526034150067](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526034150067.png)
 
 http.js中对axios进行了一些默认配置：
 
@@ -1913,7 +1913,7 @@ Vue.prototype.$http = axios;// 将axios赋值给Vue原型的$http属性，这样
 
 - http.js中导入了config的配置，还记得吗？
 
-      ![1526041205846](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526041205846.png)
+      ![1526041205846](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526041205846.png)
 
 - http.js对axios进行了全局配置：`baseURL=config.api`，即`http://api.leyou.com/api`。因此以后所有用axios发起的请求，都会以这个地址作为前缀。
 
@@ -1923,15 +1923,15 @@ Vue.prototype.$http = axios;// 将axios赋值给Vue原型的$http属性，这样
 
 我们在组件`MyBrand.vue`的getDataFromServer方法，通过$http发起get请求，测试查询品牌的接口，看是否能获取到数据：
 
-   ![1526048221750](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526048079191.png)
+   ![1526048221750](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526048079191.png)
 
 网络监视：
 
- ![1526048143014](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526048143014.png)
+ ![1526048143014](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526048143014.png)
 
 控制台结果：
 
-![1526048275064](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526048275064.png)
+![1526048275064](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526048275064.png)
 
 可以看到，在请求成功的返回结果response中，有一个data属性，里面就是真正的响应数据。
 
@@ -1955,7 +1955,7 @@ Vue.prototype.$http = axios;// 将axios赋值给Vue原型的$http属性，这样
 
 而页面中分页信息应该是在pagination对象中，我们通过浏览器工具，查看pagination中有哪些属性：
 
- ![](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526042136135.png)
+ ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526042136135.png)
 
 分别是：
 
@@ -1995,11 +1995,11 @@ this.$http.get("/item/brand/page",{
 
 查看网络请求：
 
- ![1526049810351](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526049810351.png)
+ ![1526049810351](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526049810351.png)
 
 效果：
 
-![1526049139244](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526049139244.png)
+![1526049139244](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526049139244.png)
 
 
 
@@ -2013,17 +2013,17 @@ this.$http.get("/item/brand/page",{
 
 虽然点击分页，不会发起请求，但是通过浏览器工具查看，会发现pagination对象的属性一直在变化：
 
- ![](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/9.gif)
+ ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/9.gif)
 
 我们可以利用Vue的监视功能：watch，当pagination发生改变时，会调用我们的回调函数，我们在回调函数中进行数据的查询即可！
 
 具体实现：
 
-![1526049643506](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526049643506.png)
+![1526049643506](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526049643506.png)
 
 成功实现分页功能：
 
-![1526049720200](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526049720200.png)
+![1526049720200](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526049720200.png)
 
 
 
@@ -2031,15 +2031,15 @@ this.$http.get("/item/brand/page",{
 
 分页实现了，过滤也很好实现了。过滤字段对应的是search属性，我们只要监视这个属性即可:
 
- ![1526049939985](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526049939985.png)
+ ![1526049939985](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526049939985.png)
 
 查看网络请求：
 
- ![1526050032436](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526050032436.png)
+ ![1526050032436](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526050032436.png)
 
 页面结果：
 
-![1526050071442](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day07/1526050071442.png)
+![1526050071442](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day07/1526050071442.png)
 
 
 

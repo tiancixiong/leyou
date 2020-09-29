@@ -22,7 +22,7 @@
 
 SpringBoot是Spring项目中的一个子工程，与我们所熟知的Spring-framework 同属于spring的产品:
 
-![1527681455097](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527681455097.png)
+![1527681455097](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527681455097.png)
 
 我们可以看到下面的一段介绍：
 
@@ -81,7 +81,7 @@ Spring Boot 主要特征是：
 
 环境要求：
 
-![1527695636167](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527695636167.png)
+![1527695636167](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527695636167.png)
 
 
 
@@ -89,29 +89,29 @@ Spring Boot 主要特征是：
 
 我们先新建一个空的demo工程，如下：
 
-![1527690475282](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527690475282.png)
+![1527690475282](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527690475282.png)
 
-![1527690564245](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527690564245.png)
+![1527690564245](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527690564245.png)
 
 创建以moduel：
 
-![1527690810779](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527690810779.png)
+![1527690810779](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527690810779.png)
 
 使用maven来构建：
 
-![1527694194289](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527694194289.png)
+![1527694194289](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527694194289.png)
 
 填写坐标信息：
 
-![1527694371964](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527694371964.png)
+![1527694371964](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527694371964.png)
 
 目录结构：
 
-![1527694504570](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527694504570.png)
+![1527694504570](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527694504570.png)
 
 创建完成后的目录结构：
 
-![1527694634778](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527694634778.png)
+![1527694634778](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527694634778.png)
 
 
 
@@ -121,7 +121,7 @@ Spring Boot 主要特征是：
 
 别着急，现在我们的项目与SpringBoot还没有什么关联。SpringBoot提供了一个名为spring-boot-starter-parent的工程，里面已经对各种常用依赖（并非全部）的版本进行了管理，我们的项目需要以这个项目为父工程，这样我们就不用操心依赖的版本问题了，需要什么依赖，直接引入坐标即可！
 
- ![1527751740943](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527751740943.png)
+ ![1527751740943](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527751740943.png)
 
 ### 2.2.1.添加父工程坐标
 
@@ -150,7 +150,7 @@ Spring Boot 主要特征是：
 
 这个时候，我们会发现项目中多出了大量的依赖：
 
-![1573866735649](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1573866735649.png)
+![1573866735649](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1573866735649.png)
 
 这些都是SpringBoot根据spring-boot-starter-web这个依赖自动引入的，而且所有的版本都已经管理好，不会出现冲突。
 
@@ -195,7 +195,7 @@ Spring Boot 主要特征是：
 
 ## 2.3.编写HelloController
 
- ![1540894662227](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1540894662227.png)
+ ![1540894662227](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1540894662227.png)
 
 代码：
 
@@ -219,11 +219,11 @@ public class HelloController {
 
 ## 2.4.启动测试
 
-![1527755353246](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527755353246.png)
+![1527755353246](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527755353246.png)
 
-![1527755521637](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527755521637.png)
+![1527755521637](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527755521637.png)
 
-![1527755975973](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527755975973.png)
+![1527755975973](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527755975973.png)
 
 bingo！访问成功！
 
@@ -250,7 +250,7 @@ bingo！访问成功！
 
 这个时候，我们会发现项目中多出了大量的依赖：
 
- ![1540894098029](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1540894098029.png)
+ ![1540894098029](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1540894098029.png)
 
 这些都是SpringBoot根据spring-boot-starter-web这个依赖自动引入的，而且所有的版本都已经管理好，不会出现冲突。
 
@@ -278,7 +278,7 @@ bingo！访问成功！
 
 添加Hello2Controller：
 
- ![1527949030771](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527949030771.png)
+ ![1527949030771](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527949030771.png)
 
 代码：
 
@@ -296,7 +296,7 @@ public class Hello2Controller {
 
 启动重新启动，访问show2测试，失败：
 
-![1528087951866](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528087951866.png)
+![1528087951866](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528087951866.png)
 
 难道要在每一个Controller中都添加一个main方法和@EnableAutoConfiguration注解，这样启动一个springboot程序也太麻烦了。也无法同时启动多个Controller，因为每个main方法都监听8080端口。所以，一个springboot程序应该只有一个springboot的main方法。
 
@@ -310,7 +310,7 @@ public class Hello2Controller {
 
 在springboot的程序的基包下（引导类和Controller包在同级目录下），创建TestApplication.class：
 
- ![1527760765673](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527760765673.png)
+ ![1527760765673](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527760765673.png)
 
 内容如下：
 
@@ -339,7 +339,7 @@ public class HelloController {
 
 启动引导类，访问show测试：
 
-![1528088990216](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528088990216.png)
+![1528088990216](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528088990216.png)
 
 发现所有的Controller都不能访问，为什么？
 
@@ -367,15 +367,15 @@ public class TestApplication {
 
 重新启动，访问show或者show2：
 
-![1528089792848](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528089792848.png)
+![1528089792848](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528089792848.png)
 
-![1527772795552](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527772795552.png)
+![1527772795552](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527772795552.png)
 
 
 
 我们跟进该注解的源码，并没有看到什么特殊的地方。我们查看注释：
 
-![1527818066552](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527818066552.png)
+![1527818066552](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527818066552.png)
 
 大概的意思：
 
@@ -408,7 +408,7 @@ public class TestApplication {
 
 点击进入，查看源码：
 
-![1528093556068](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528093556068.png)
+![1528093556068](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528093556068.png)
 
 发现@SpringBootApplication其实是一个组合注解，这里重点的注解有3个：
 
@@ -424,7 +424,7 @@ public class TestApplication {
 
 我们继续点击查看源码：
 
-![1528095223949](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528095223949.png)
+![1528095223949](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528095223949.png)
 
 通过这段我们可以看出，在这个注解上面，又有一个`@Configuration`注解。通过上面的注释阅读我们知道：这个注解的作用就是声明当前类是一个配置类，然后Spring会自动扫描到添加了`@Configuration`的类，并且读取其中的配置信息。而`@SpringBootConfiguration`是来声明当前类是SpringBoot应用的配置类，项目中只能有一个。所以一般我们无需自己添加。
 
@@ -479,7 +479,7 @@ java配置主要靠java类和一些注解来达到和xml配置一样的效果，
 
 我们接下来用java配置来尝试实现连接池配置
 
- ![1540895699735](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1540895699735.png)
+ ![1540895699735](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1540895699735.png)
 
 
 
@@ -570,7 +570,7 @@ public class HelloController {
 
 在test方法中打一个断点，然后Debug运行并查看：
 
-![1528098961065](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528098961065.png)
+![1528098961065](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528098961065.png)
 
 属性注入成功了！
 
@@ -584,7 +584,7 @@ public class HelloController {
 
 1）新建`JdbcProperties`，用来进行属性注入：
 
- ![1540895952978](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1540895952978.png)
+ ![1540895952978](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1540895952978.png)
 
 代码：
 
@@ -678,13 +678,13 @@ public class JdbcProperties {
 
 3）测试结果：
 
-![1527783292437](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527783292437.png)
+![1527783292437](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527783292437.png)
 
 
 
 大家会觉得这种方式似乎更麻烦了，事实上这种方式有更强大的功能，也是SpringBoot推荐的注入方式。两者对比关系：
 
-![1528103259908](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528103259908.png)
+![1528103259908](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528103259908.png)
 
 优势：
 
@@ -718,7 +718,7 @@ public class JdbcConfiguration {
 
 我们将jdbc的url改成：/heima，再次测试：
 
-![1528103369170](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528103369170.png)
+![1528103369170](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528103369170.png)
 
 
 
@@ -732,11 +732,11 @@ public class JdbcConfiguration {
 
 其实在我们的项目中，已经引入了一个依赖：spring-boot-autoconfigure，其中定义了大量自动配置类：
 
- ![1527931944702](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527931944702.png)
+ ![1527931944702](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527931944702.png)
 
 还有：
 
- ![1527931968031](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527931968031.png)
+ ![1527931968031](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527931968031.png)
 
 非常多，几乎涵盖了现在主流的开源框架，例如：
 
@@ -756,11 +756,11 @@ public class JdbcConfiguration {
 
 我们来看一个我们熟悉的，例如SpringMVC，查看mvc 的自动配置类：
 
-  ![1527933162533](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527933162533.png)
+  ![1527933162533](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527933162533.png)
 
 打开WebMvcAutoConfiguration：
 
-![1527933633048](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527933633048.png)
+![1527933633048](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527933633048.png)
 
 我们看到这个类上的4个注解：
 
@@ -782,11 +782,11 @@ public class JdbcConfiguration {
 
 视图解析器：
 
-![1527933646831](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527933646831.png)
+![1527933646831](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527933646831.png)
 
 处理器适配器（HandlerAdapter）：
 
-![1527933659948](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1527933659948.png)
+![1527933659948](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1527933659948.png)
 
 还有很多，这里就不一一截图了。
 
@@ -794,19 +794,19 @@ public class JdbcConfiguration {
 
 另外，这些默认配置的属性来自哪里呢？
 
-![1528096733440](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528096733440.png)
+![1528096733440](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528096733440.png)
 
 我们看到，这里通过@EnableAutoConfiguration注解引入了两个属性：WebMvcProperties和ResourceProperties。
 
 我们查看这两个属性类：
 
-![1528096851318](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528096851318.png)
+![1528096851318](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528096851318.png)
 
 找到了内部资源视图解析器的prefix和suffix属性。
 
 ResourceProperties中主要定义了静态资源（.js,.html,.css等)的路径：
 
-![1528096892588](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528096892588.png)
+![1528096892588](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528096892588.png)
 
 如果我们要覆盖这些默认属性，只需要在application.properties中定义与其前缀prefix和字段名一致的属性即可。
 
@@ -839,15 +839,15 @@ SpringBoot为我们提供了默认配置，而默认配置生效的条件一般�
 
 ## 4.1.创建工程
 
-![1540896476056](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1540896476056.png)
+![1540896476056](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1540896476056.png)
 
-![1540896950344](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1540896950344.png)
+![1540896950344](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1540896950344.png)
 
-![1540896657008](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1540896657008.png)
+![1540896657008](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1540896657008.png)
 
 ## 4.2.编写基本代码
 
- ![1540898508682](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1540898508682.png)
+ ![1540898508682](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1540898508682.png)
 
 pom.xml:
 
@@ -915,11 +915,11 @@ public class UserController {
 
 添加全局配置文件：application.properties
 
- ![1540898582724](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1540898582724.png)
+ ![1540898582724](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1540898582724.png)
 
 端口通过以下方式配置
 
- ![1540898053088](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1540898053088.png)
+ ![1540898053088](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1540898053088.png)
 
 ```properties
 # 映射端口
@@ -928,9 +928,9 @@ server.port=80
 
 重启服务后测试：
 
-![1528116232569](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528116232569.png)
+![1528116232569](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528116232569.png)
 
- ![1528116322747](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528116322747.png)
+ ![1528116322747](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528116322747.png)
 
 
 
@@ -938,7 +938,7 @@ server.port=80
 
 现在，我们的项目是一个jar工程，那么就没有webapp，我们的静态资源该放哪里呢？
 
-回顾我们上面看的源码，有一个叫做ResourceProperties的类，里面就定义了静态资源的默认查找路径： ![1528096892588](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528096892588.png)
+回顾我们上面看的源码，有一个叫做ResourceProperties的类，里面就定义了静态资源的默认查找路径： ![1528096892588](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528096892588.png)
 
 默认的静态资源路径为：
 
@@ -951,11 +951,11 @@ server.port=80
 
 我们习惯会把静态资源放在`classpath:/static/`目录下。我们创建目录，并且添加一些静态资源：
 
- ![1540898730442](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1540898730442.png)
+ ![1540898730442](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1540898730442.png)
 
 重启项目后测试：
 
-![1540898831238](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1540898831238.png)
+![1540898831238](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1540898831238.png)
 
 
 
@@ -981,7 +981,7 @@ server.port=80
 
 实现如下：
 
- ![1540899012303](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1540899012303.png)
+ ![1540899012303](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1540899012303.png)
 
 首先我们定义一个拦截器：
 
@@ -1049,7 +1049,7 @@ logging.level.org.springframework=debug
 
 再次运行查看：
 
-![1540899090277](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1540899090277.png)
+![1540899090277](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1540899090277.png)
 
 
 
@@ -1059,7 +1059,7 @@ jdbc连接池是spring配置中的重要一环，在SpringBoot中该如何处理
 
 答案是不需要处理，我们只要找到SpringBoot提供的启动器即可：
 
-![1528126755717](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528126755717.png)
+![1528126755717](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528126755717.png)
 
 在pom.xml中引入jdbc的启动器：
 
@@ -1078,11 +1078,11 @@ jdbc连接池是spring配置中的重要一环，在SpringBoot中该如何处理
 
 SpringBoot已经自动帮我们引入了一个连接池：
 
- ![1528126862203](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528126862203.png)
+ ![1528126862203](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528126862203.png)
 
 HikariCP应该是目前速度最快的连接池了，我们看看它与c3p0的对比：
 
- ![1525516441005](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1525516441005.png)
+ ![1525516441005](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1525516441005.png)
 
 因此，我们只需要指定连接池参数即可：
 
@@ -1155,7 +1155,7 @@ mybatis.mapper-locations=classpath:mappers/*.xml
 
 需要注意，这里没有配置mapper接口扫描包，因此我们需要给每一个Mapper接口添加`@Mapper`注解，才能被识别。
 
- ![1528128785010](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528128785010.png)
+ ![1528128785010](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528128785010.png)
 
 ```java
 @Mapper
@@ -1165,7 +1165,7 @@ public interface UserMapper {
 
 user对象参照课前资料，需要通用mapper的注解：
 
-![1540899330478](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1540899330478.png)
+![1540899330478](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1540899330478.png)
 
 接下来，就去集成通用mapper。
 
@@ -1198,7 +1198,7 @@ public interface UserMapper extends tk.mybatis.mapper.common.Mapper<User>{
 
 其实，我们引入jdbc或者web的启动器，就已经引入事务相关的依赖及默认配置了
 
- ![1528128711716](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528128711716.png)
+ ![1528128711716](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528128711716.png)
 
 至于事务，SpringBoot中通过注解来控制。就是我们熟知的`@Transactional`
 
@@ -1250,13 +1250,13 @@ public class UserController {
 
 我们启动项目，查看：
 
-![1540900351215](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1540900351215.png)
+![1540900351215](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1540900351215.png)
 
 
 
 ## 4.8.完整项目结构
 
- ![1540900302611](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1540900302611.png)
+ ![1540900302611](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1540900302611.png)
 
 完整的pom.xml：
 
@@ -1335,7 +1335,7 @@ mybatis.type-aliases-package=cn.itcast.pojo
 
 SpringBoot并不推荐使用jsp，但是支持一些模板引擎技术：
 
-![1525517263421](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1525517263421.png)
+![1525517263421](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1525517263421.png)
 
 以前大家用的比较多的是Freemarker，但是我们今天的主角是Thymeleaf！
 
@@ -1387,11 +1387,11 @@ public String all(ModelMap model) {
 
 SpringBoot会自动为Thymeleaf注册一个视图解析器：
 
- ![1528133744136](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528133744136.png)
+ ![1528133744136](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528133744136.png)
 
 与解析JSP的InternalViewResolver类似，Thymeleaf也会根据前缀和后缀来确定模板文件的位置：
 
-![1528133816179](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528133816179.png)
+![1528133816179](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528133816179.png)
 
 - 默认前缀：`classpath:/templates/`
 - 默认后缀：`.html`
@@ -1404,7 +1404,7 @@ SpringBoot会自动为Thymeleaf注册一个视图解析器：
 
 根据上面的文档介绍，模板默认放在classpath下的templates文件夹，我们新建一个html文件放入其中：
 
- ![1528134057401](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528134057401.png)
+ ![1528134057401](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528134057401.png)
 
 编写html模板，渲染模型中的数据：
 
@@ -1461,7 +1461,7 @@ SpringBoot会自动为Thymeleaf注册一个视图解析器：
 
 接下来，我们打开页面测试一下：
 
-![1528134027726](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day01/1528134027726.png)
+![1528134027726](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day01/1528134027726.png)
 
 
 

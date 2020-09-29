@@ -19,7 +19,7 @@
 
 当网站流量很小时，只需一个应用，将所有功能都部署在一起，以减少部署节点和成本。此时，用于简化增删改查工作量的数据访问框架(ORM)是影响项目开发的关键。
 
- ![1525529091749](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525529091749.png)
+ ![1525529091749](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525529091749.png)
 
 存在的问题：
 
@@ -34,7 +34,7 @@
 
 当访问量逐渐增大，单一应用无法满足需求，此时为了应对更高的并发和业务需求，我们根据业务功能对系统进行拆分：
 
- ![1525529671801](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525529671801.png)
+ ![1525529671801](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525529671801.png)
 
 优点：
 
@@ -50,7 +50,7 @@
 
 当垂直应用越来越多，应用之间交互不可避免，将核心业务抽取出来，作为独立的服务，逐渐形成稳定的服务中心，使前端应用能更快速的响应多变的市场需求。此时，用于提高业务复用及整合的分布式调用是关键。
 
- ![1525530657919](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525530657919.png)
+ ![1525530657919](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525530657919.png)
 
 优点：
 
@@ -66,7 +66,7 @@
 
 当服务越来越多，容量的评估，小服务资源的浪费等问题逐渐显现，此时需增加一个调度中心基于访问压力实时管理集群容量，提高集群利用率。此时，用于提高机器利用率的资源调度和治理中心(SOA)是关键
 
-![1525530804753](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525530804753.png)
+![1525530804753](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525530804753.png)
 
 以前出现了什么问题？
 
@@ -91,7 +91,7 @@
 
 前面说的SOA，英文翻译过来是面向服务。微服务，似乎也是服务，都是对系统进行拆分。因此两者非常容易混淆，但其实缺有一些差别：
 
-![1525532344817](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525532344817.png)
+![1525532344817](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525532344817.png)
 
 微服务的特点：
 
@@ -109,7 +109,7 @@
 
 微服务结构图：
 
-![1526860071166](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1526860071166.png)
+![1526860071166](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1526860071166.png)
 
 
 
@@ -146,7 +146,7 @@ RPC，即 Remote Procedure Call（远程过程调用），是一个计算机通�
 
 RPC调用流程图：
 
-![1525568965976](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525568965976.png)
+![1525568965976](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525568965976.png)
 
 想要了解详细的RPC实现，给大家推荐一篇文章：[自己动手实现RPC](https://legacy.gitbook.com/book/huge0612/tour-of-rpc/details)
 
@@ -164,7 +164,7 @@ Http协议：超文本传输协议，是一种应用层协议。规定了网络�
 
 例如我们通过浏览器访问网站，就是通过Http协议。只不过浏览器把请求封装，发起请求以及接收响应，解析响应的事情都帮我们做了。如果是不通过浏览器，那么这些事情都需要自己去完成。
 
-![1525569352313](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525569352313.png)
+![1525569352313](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525569352313.png)
 
 
 
@@ -207,7 +207,7 @@ HttpClient是Apache公司的产品，是Http Components下的一个组件。
 
 [官网地址：http://hc.apache.org/index.html](http://hc.apache.org/index.html)
 
-![1525570921966](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525570921966.png)
+![1525570921966](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525570921966.png)
 
 特点：
 
@@ -306,7 +306,7 @@ HttpClient请求数据后是json字符串，需要我们自己把Json字符串�
 
 结果：
 
-![1526877496885](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1526877496885.png)
+![1526877496885](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1526877496885.png)
 
 
 
@@ -333,7 +333,7 @@ public void testJson() throws IOException {
 
 结果：
 
-![1526877647406](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1526877647406.png)
+![1526877647406](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1526877647406.png)
 
 
 
@@ -367,7 +367,7 @@ public void testJson() throws IOException {
 
 结果：
 
-![1526877995530](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1526877995530.png)
+![1526877995530](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1526877995530.png)
 
 #### json转任意复杂类型
 
@@ -397,7 +397,7 @@ public void testJson() throws IOException {
 
 结果：
 
- ![1526877988488](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1526877988488.png)
+ ![1526877988488](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1526877988488.png)
 
 
 
@@ -449,7 +449,7 @@ public class HttpDemoApplicationTests {
 
 - 通过RestTemplate的getForObject()方法，传递url地址及实体类的字节码，RestTemplate会自动发起请求，接收响应，并且帮我们对响应结果进行反序列化。
 
-![1525573702492](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525573702492.png)
+![1525573702492](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525573702492.png)
 
 学习完了Http客户端工具，接下来就可以正式学习微服务了。
 
@@ -486,7 +486,7 @@ netflix
 
 以上只是其中一部分，架构图：
 
-![1525575656796](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525575656796.png)
+![1525575656796](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525575656796.png)
 
 
 
@@ -494,7 +494,7 @@ netflix
 
 SpringCloud的版本命名比较特殊，因为它不是一个组件，而是许多组件的集合，它的命名是以A到Z的为首字母的一些单词组成：
 
- ![1525575903675](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525575903675.png)
+ ![1525575903675](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525575903675.png)
 
 我们在项目中，会是以Finchley的版本。
 
@@ -537,27 +537,27 @@ SpringCloud的版本命名比较特殊，因为它不是一个组件，而是许
 
 借助于Spring提供的快速搭建工具：
 
-![1525576816916](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525576816916.png)
+![1525576816916](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525576816916.png)
 
 填写项目信息：
 
- ![1525576909381](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525576909381.png)
+ ![1525576909381](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525576909381.png)
 
 添加web依赖：
 
-![1525576950842](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525576950842.png)
+![1525576950842](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525576950842.png)
 
 添加mybatis依赖：
 
-![1525576999052](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525576999052.png)
+![1525576999052](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525576999052.png)
 
 填写项目位置：
 
-![1525577029150](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525577029150.png)
+![1525577029150](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525577029150.png)
 
 生成的项目结构：
 
- ![1525577106711](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525577106711.png)
+ ![1525577106711](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525577106711.png)
 
 依赖也已经全部自动引入：
 
@@ -756,7 +756,7 @@ public class UserController {
 
 #### 5.1.2.6.项目结构
 
- ![1525577911331](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525577911331.png)
+ ![1525577911331](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525577911331.png)
 
 
 
@@ -764,7 +764,7 @@ public class UserController {
 
 启动项目，访问接口：http://localhost:8081/user/7
 
- ![1525593139364](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525593139364.png)
+ ![1525593139364](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525593139364.png)
 
 
 
@@ -957,7 +957,7 @@ public class ConsumerController {
 
 因为我们没有配置端口，那么默认就是8080，我们访问：http://localhost:8080/consume?ids=6,7,8
 
- ![1525594222408](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525594222408.png)
+ ![1525594222408](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525594222408.png)
 
 一个简单的远程服务调用案例就实现了。
 
@@ -972,7 +972,7 @@ public class ConsumerController {
 
 流程如下：
 
-![1525595012668](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525595012668.png)
+![1525595012668](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525595012668.png)
 
 存在什么问题？
 
@@ -1028,7 +1028,7 @@ Eureka就好比是滴滴，负责管理、记录服务提供者的信息。服�
 
 > 基本架构：
 
- ![1525597885059](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525597885059.png)
+ ![1525597885059](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525597885059.png)
 
 
 
@@ -1047,11 +1047,11 @@ Eureka就好比是滴滴，负责管理、记录服务提供者的信息。服�
 
 依然使用spring提供的快速搭建工具：
 
-![1525598231170](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525598231170.png)
+![1525598231170](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525598231170.png)
 
 选择依赖：EurekaServer-服务注册中心依赖，Eureka Discovery-服务提供方和服务消费方。因为，对于eureka来说：服务提供方和服务消费方都属于客户端
 
-![1525598312368](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525598312368.png)
+![1525598312368](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525598312368.png)
 
 完整的Pom文件：
 
@@ -1158,9 +1158,9 @@ eureka:
 
 启动服务，并访问：http://127.0.0.1:10086/eureka
 
-![1525604959508](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525604959508.png)
+![1525604959508](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525604959508.png)
 
-![1525605081129](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525605081129.png)
+![1525605081129](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525605081129.png)
 
 
 
@@ -1261,7 +1261,7 @@ eureka:
 
 > 重启项目，访问[Eureka监控页面](http://127.0.0.1:10086/eureka)查看
 
-![1525609225152](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525609225152.png)
+![1525609225152](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525609225152.png)
 
 我们发现user-service服务已经注册成功了
 
@@ -1393,15 +1393,15 @@ public class UserService {
 
 5）Debug跟踪运行：
 
-![1525613025086](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525613025086.png)
+![1525613025086](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525613025086.png)
 
 生成的URL：
 
-![1525613051210](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525613051210.png)
+![1525613051210](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525613051210.png)
 
 访问结果：
 
- ![1525613160920](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525613160920.png)
+ ![1525613160920](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525613160920.png)
 
 
 
@@ -1477,17 +1477,17 @@ eureka:
 
 注意：idea中一个应用不能启动两次，我们需要重新配置一个启动器：
 
- ![1525615070033](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525615070033.png)
+ ![1525615070033](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525615070033.png)
 
- ![1525615095693](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525615095693.png)
+ ![1525615095693](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525615095693.png)
 
-![1525615026937](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525615026937.png)
+![1525615026937](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525615026937.png)
 
 然后启动即可。
 
 3）启动测试：
 
-![1525615165157](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525615165157.png)
+![1525615165157](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525615165157.png)
 
 4）客户端注册服务到集群
 
@@ -1545,7 +1545,7 @@ eureka:
 
 在Eureka监控页面，查看服务注册信息：
 
-![1525617060656](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525617060656.png)
+![1525617060656](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525617060656.png)
 
 在status一列中，显示以下信息：
 
@@ -1564,7 +1564,7 @@ eureka:
 
 重启服务再试试看：
 
-![1525617542081](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525617542081.png)
+![1525617542081](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525617542081.png)
 
 
 
@@ -1600,7 +1600,7 @@ eureka:
 
 我们关停一个服务，就会在Eureka面板看到一条警告：
 
-![1525618396076](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525618396076.png)
+![1525618396076](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525618396076.png)
 
 这是触发了Eureka的自我保护机制。当一个服务未按时进行心跳续约时，Eureka会统计最近15分钟心跳失败的服务实例的比例是否超过了85%。在生产环境下，因为网络延迟等原因，心跳失败实例的比例很有可能超标，但是此时就把服务剔除列表并不妥当，因为服务可能没有宕机。Eureka就会把当前实例的注册信息保护起来，不予剔除。生产环境下这很有效，保证了大多数服务依然可用。
 
@@ -1627,7 +1627,7 @@ eureka:
 
 什么是Ribbon：
 
-![1525619257397](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525619257397.png)
+![1525619257397](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525619257397.png)
 
 接下来，我们就来使用Ribbon实现负载均衡。
 
@@ -1637,11 +1637,11 @@ eureka:
 
 首先我们启动两个user-service实例，一个8081，一个8082。
 
- ![1525619515586](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525619515586.png)
+ ![1525619515586](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525619515586.png)
 
 Eureka监控面板：
 
-![1525619546904](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525619546904.png)
+![1525619546904](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525619546904.png)
 
 
 
@@ -1692,7 +1692,7 @@ public class UserService {
 
 访问页面，查看结果：
 
- ![1525620305704](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525620305704.png)
+ ![1525620305704](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525620305704.png)
 
 完美！
 
@@ -1706,15 +1706,15 @@ public class UserService {
 
 我们进行源码跟踪：
 
-![1525620483637](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525620483637.png)
+![1525620483637](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525620483637.png)
 
 继续跟入execute方法：发现获取了8082端口的服务
 
-![1525620787090](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525620787090.png)
+![1525620787090](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525620787090.png)
 
 再跟下一次，发现获取的是8081：
 
- ![1525620835911](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525620835911.png)
+ ![1525620835911](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525620835911.png)
 
 
 
@@ -1724,7 +1724,7 @@ Ribbon默认的负载均衡策略是简单的轮询，我们可以测试一下�
 
 编写测试类，在刚才的源码中我们看到拦截中是使用RibbonLoadBalanceClient来进行负载均衡的，其中有一个choose方法，是这样介绍的：
 
- ![1525622320277](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525622320277.png)
+ ![1525622320277](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525622320277.png)
 
 现在这个就是负载均衡获取实例的方法。
 
@@ -1751,7 +1751,7 @@ public class LoadBalanceTest {
 
 结果：
 
- ![1525622357371](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525622357371.png)
+ ![1525622357371](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525622357371.png)
 
 符合了我们的预期推测，确实是轮询方式。
 
@@ -1761,27 +1761,27 @@ public class LoadBalanceTest {
 
 继续跟踪源码，发现这么一段代码：
 
- ![1525622652849](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525622652849.png)
+ ![1525622652849](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525622652849.png)
 
 我们看看这个rule是谁：
 
- ![1525622699666](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525622699666.png)
+ ![1525622699666](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525622699666.png)
 
 这里的rule默认值是一个`RoundRobinRule`，看类的介绍：
 
- ![1525622754316](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525622754316.png)
+ ![1525622754316](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525622754316.png)
 
 这不就是轮询的意思嘛。
 
 我们注意到，这个类其实是实现了接口IRule的，查看一下：
 
- ![1525622817451](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525622817451.png)
+ ![1525622817451](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525622817451.png)
 
 定义负载均衡的规则接口。
 
 它有以下实现：
 
- ![1525622876842](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525622876842.png)
+ ![1525622876842](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525622876842.png)
 
 SpringBoot也帮我们提供了修改负载均衡规则的配置入口：
 
@@ -1818,7 +1818,7 @@ user-service:
 
 再次测试，发现结果变成了随机：
 
- ![1525623193949](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525623193949.png)
+ ![1525623193949](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525623193949.png)
 
 
 
@@ -1830,11 +1830,11 @@ Eureka的服务治理强调了CAP原则中的AP，即可用性和可靠性。它
 
 我们现在关闭一个user-service实例：
 
- ![1525653565855](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525653565855.png)
+ ![1525653565855](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525653565855.png)
 
 因为服务剔除的延迟，consumer并不会立即得到最新的服务列表，此时再次访问你会得到错误提示：
 
-![1525653715488](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525653715488.png)
+![1525653715488](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525653715488.png)
 
 但是此时，8081服务其实是正常的。
 
@@ -1874,7 +1874,7 @@ user-service:
 
 我们重启user-consumer-demo，测试，发现即使user-service2宕机，也能通过另一台服务实例获取到结果！
 
- ![1525658269456](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day02/1525658269456.png)
+ ![1525658269456](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day02/1525658269456.png)
 
 
 

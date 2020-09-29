@@ -17,7 +17,7 @@ Hystrix也是Netflix公司的一款组件。
 
 主页：https://github.com/Netflix/Hystrix/
 
-![1525658740266](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1525658740266.png)
+![1525658740266](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1525658740266.png)
 
 那么Hystix的作用是什么呢？具体要保护什么呢？
 
@@ -29,17 +29,17 @@ Hystix是Netflix开源的一个延迟和容错库，用于隔离访问远程服�
 
 微服务中，服务间调用关系错综复杂，一个请求，可能需要调用多个微服务接口才能实现，会形成非常复杂的调用链路：
 
- ![1533829099748](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1533829099748.png)
+ ![1533829099748](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1533829099748.png)
 
 如图，一次业务请求，需要调用A、P、H、I四个服务，这四个服务又可能调用其它服务。
 
 如果此时，某个服务出现异常：
 
- ![1533829198240](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1533829198240.png)
+ ![1533829198240](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1533829198240.png)
 
 例如微服务I发生异常，请求阻塞，用户不会得到响应，则tomcat的这个线程不会释放，于是越来越多的用户请求到来，越来越多的线程会阻塞：
 
- ![1533829307389](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1533829307389.png)
+ ![1533829307389](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1533829307389.png)
 
 服务器支持的线程和并发数有限，请求一直阻塞，会导致服务器资源耗尽，从而导致所有其它服务都不可用，形成雪崩效应。
 
@@ -60,7 +60,7 @@ Hystix解决雪崩问题的手段有两个：
 
 线程隔离示意图：
 
- ![1533829598310](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1533829598310.png)
+ ![1533829598310](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1533829598310.png)
 
 解读：
 
@@ -98,11 +98,11 @@ Hystrix为每个依赖服务调用分配一个小的线程池，如果线程池�
 
 #### 1.3.2.2.开启熔断
 
-![1535341341482](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1535341341482.png)
+![1535341341482](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1535341341482.png)
 
 可以看到，我们类上的注解越来越多，在微服务中，经常会引入上面的三个注解，于是Spring就提供了一个组合注解：@SpringCloudApplication
 
-![1535341390087](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1535341390087.png)
+![1535341390087](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1535341390087.png)
 
 因此，我们可以使用这个组合注解来代替之前的3个注解。
 
@@ -160,7 +160,7 @@ public class UserController {
 
 当itcast-service-provder正常提供服务时，访问与以前一致。但是当我们将itcast-service-provider停机时，会发现页面返回了降级处理信息：
 
-![1535852634763](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1535852634763.png)
+![1535852634763](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1535852634763.png)
 
 
 
@@ -201,7 +201,7 @@ public class UserController {
 - @HystrixCommand：在方法上直接使用该注解，使用默认的剪辑方法。
 - defaultFallback：默认降级方法，不用任何参数，以匹配更多方法，但是返回值一定一致
 
-![1535852634763](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1535852634763.png)
+![1535852634763](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1535852634763.png)
 
 
 
@@ -245,7 +245,7 @@ public User queryUserById(@PathVariable("id") Long id) {
 
 熔断器，也叫断路器，其英文单词为：Circuit Breaker 
 
-![1525658640314](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1525658640314.png)
+![1525658640314](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1525658640314.png)
 
 
 
@@ -284,7 +284,7 @@ public String queryUserById(@PathVariable("id") Long id){
 
 此时你访问id为2的请求，会发现返回的也是失败，而且失败时间很短，只有几毫秒左右：
 
-![1543053265477](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1543053265477.png)
+![1543053265477](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1543053265477.png)
 
 
 
@@ -322,7 +322,7 @@ String user = this.restTemplate.getForObject("http://service-provider/user/" + i
 
 有道词典的英文解释：
 
-![1528855057359](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1528855057359.png)
+![1528855057359](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1528855057359.png)
 
 为什么叫伪装？
 
@@ -332,7 +332,7 @@ Feign可以把Rest的请求进行隐藏，伪装成类似SpringMVC的Controller�
 
 项目主页：https://github.com/OpenFeign/feign
 
-![1525652009416](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1525652009416.png)
+![1525652009416](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1525652009416.png)
 
 
 
@@ -374,7 +374,7 @@ public class ItcastServiceConsumerApplication {
 
 在itcast-service-consumer工程中，添加UserClient接口：
 
- ![1540683659305](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1540683659305.png)
+ ![1540683659305](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1540683659305.png)
 
 内容：
 
@@ -417,7 +417,7 @@ public class UserController {
 
 访问接口： 
 
-![1535346290987](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1535346290987.png)
+![1535346290987](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1535346290987.png)
 
 正常获取到了结果。
 
@@ -427,7 +427,7 @@ public class UserController {
 
 Feign中本身已经集成了Ribbon依赖和自动配置：
 
-![1528859608579](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1528859608579.png)
+![1528859608579](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1528859608579.png)
 
 因此我们不需要额外引入依赖，也不需要再注册`RestTemplate`对象。
 
@@ -437,7 +437,7 @@ Feign中本身已经集成了Ribbon依赖和自动配置：
 
 Feign默认也有对Hystrix的集成：
 
-![1528861288636](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1528861288636.png)
+![1528861288636](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1528861288636.png)
 
 只不过，默认情况下是关闭的。我们需要通过下面的参数来开启：(在itcast-service-consumer工程添加配置内容)
 
@@ -451,7 +451,7 @@ feign:
 
 1）首先，我们要定义一个类UserClientFallback，实现刚才编写的UserClient，作为fallback的处理类
 
- ![1540683742479](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1540683742479.png)
+ ![1540683742479](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1540683742479.png)
 
 ```java
 @Component
@@ -479,7 +479,7 @@ public interface UserClient {
 
 3）重启测试：
 
-![1535346896313](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1535346896313.png)
+![1535346896313](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1535346896313.png)
 
 
 
@@ -525,7 +525,7 @@ logging:
 
 2）编写配置类，定义日志级别
 
- ![1529113196740](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1529113196740.png)
+ ![1529113196740](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1529113196740.png)
 
 内容：
 
@@ -542,7 +542,7 @@ public class FeignLogConfiguration {
 
 这里指定的Level级别是FULL，Feign支持4种级别：
 
-![1528863525224](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1528863525224.png)
+![1528863525224](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1528863525224.png)
 
 - NONE：不记录任何日志信息，这是默认值。
 - BASIC：仅记录请求的方法，URL以及响应状态码和执行时间
@@ -563,7 +563,7 @@ public interface UserFeignClient {
 
 4）重启项目，即可看到每次访问的日志：
 
-![1528863489923](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1528863489923.png)
+![1528863489923](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1528863489923.png)
 
 
 
@@ -571,7 +571,7 @@ public interface UserFeignClient {
 
 通过前面的学习，使用Spring Cloud实现微服务的架构基本成型，大致是这样的：
 
-![1525674644660](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1525674644660.png)
+![1525674644660](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1525674644660.png)
 
 	我们使用Spring Cloud Netflix中的Eureka实现了服务注册中心以及服务注册与发现；而服务间通过Ribbon或Feign实现服务的消费以及均衡负载。为了使得服务集群更为健壮，使用Hystrix的融断机制来避免在微服务架构中个别服务出现异常时引起的故障蔓延。
 	
@@ -585,7 +585,7 @@ public interface UserFeignClient {
 
   	为了保证对外服务的安全性，我们需要实现对服务访问的权限控制，而开放服务的权限控制机制将会贯穿并污染整个开放服务的业务逻辑，这会带来的最直接问题是，破坏了服务集群中REST API无状态的特点。
 
-  	从具体开发和测试的角度来说，在工作中除了要考虑实际的业务逻辑之外，还需要额外考虑对接口访问的控制处理。
+    	从具体开发和测试的角度来说，在工作中除了要考虑实际的业务逻辑之外，还需要额外考虑对接口访问的控制处理。
 - 无法直接复用既有接口。
 
   	当我们需要对一个即有的集群内访问接口，实现外部服务访问时，我们不得不通过在原有接口上增加校验逻辑，或增加一个代理调用来实现权限控制，无法直接复用原有的接口。
@@ -608,7 +608,7 @@ public interface UserFeignClient {
 
 官网：https://github.com/Netflix/zuul
 
- ![](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1525675037152.png)
+ ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1525675037152.png)
 
 Zuul：维基百科
 
@@ -616,13 +616,13 @@ Zuul：维基百科
 
 事实上，在微服务架构中，Zuul就是守门的大Boss！一夫当关，万夫莫开！
 
-![1525675168152](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1525675168152.png)
+![1525675168152](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1525675168152.png)
 
 
 
 ## 3.2.Zuul加入后的架构
 
- ![1525675648881](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1525675648881.png)
+ ![1525675648881](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1525675648881.png)
 
 不管是来自于客户端（PC或移动端）的请求，还是服务内部调用。一切对服务的请求都会经过Zuul这个网关，然后再由网关来实现 鉴权、动态路由等等操作。Zuul就是我们服务的统一入口。
 
@@ -634,11 +634,11 @@ Zuul：维基百科
 
 填写基本信息：
 
-![1529112749084](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1529112749084.png)
+![1529112749084](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1529112749084.png)
 
 添加Zuul依赖：
 
-![1529112691169](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1529112691169.png)
+![1529112691169](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1529112691169.png)
 
 
 
@@ -675,7 +675,7 @@ public class ItcastZuulApplication {
 
 我们需要用Zuul来代理service-provider服务，先看一下控制面板中的服务状态：
 
-![1542672192226](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1542672192226.png)
+![1542672192226](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1542672192226.png)
 
 - ip为：127.0.0.1
 - 端口为：8081
@@ -705,7 +705,7 @@ zuul:
 
 访问的路径中需要加上配置规则的映射路径，我们访问：http://127.0.0.1:10010/service-provider/user/1
 
-![1543054030005](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1543054030005.png)
+![1543054030005](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1543054030005.png)
 
 
 
@@ -772,7 +772,7 @@ zuul:
 
 再次启动，这次Zuul进行代理时，会利用Ribbon进行负载均衡访问：
 
-![1543054030005](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1543054030005.png)
+![1543054030005](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1543054030005.png)
 
 
 
@@ -821,7 +821,7 @@ zuul:
 
 我们通过`zuul.prefix=/api`来指定了路由的前缀，这样在发起请求时，路径就要以/api开头。
 
-![1543054221479](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1543054221479.png)
+![1543054221479](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1543054221479.png)
 
 
 
@@ -863,7 +863,7 @@ public abstract ZuulFilter implements IZuulFilter{
 
 这张是Zuul官网提供的请求生命周期图，清晰的表现了一个请求在各个过滤器的执行顺序。
 
-![1529152248172](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1529152248172.png)
+![1529152248172](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1529152248172.png)
 
 正常流程：
 - 请求到达首先会经过pre类型过滤器，而后到达route类型，进行路由，请求就到达真正的服务提供者，执行请求，返回结果后，会到达post过滤器。而后返回响应。
@@ -875,7 +875,7 @@ public abstract ZuulFilter implements IZuulFilter{
 
 所有内置过滤器列表：
 
- ![](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1525682427811.png)
+ ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1525682427811.png)
 
 
 
@@ -895,7 +895,7 @@ public abstract ZuulFilter implements IZuulFilter{
 
 ### 3.9.1.定义过滤器类
 
- ![1529136926454](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1529136926454.png)
+ ![1529136926454](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1529136926454.png)
 
 内容：
 
@@ -964,11 +964,11 @@ public class LoginFilter extends ZuulFilter {
 
 没有token参数时，访问失败：
 
-![1529161460740](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1529161460740.png)
+![1529161460740](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1529161460740.png)
 
 添加token参数后：
 
-![1529161252733](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day03/1529161252733.png)
+![1529161252733](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day03/1529161252733.png)
 
 
 

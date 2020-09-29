@@ -44,7 +44,7 @@
 
 - 随后，在node的基础上，涌现出了一大批的前端框架：
 
-   ![1525825983230](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525825983230.png)
+   ![1525825983230](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525825983230.png)
 
 
 > MVVM模式
@@ -62,7 +62,7 @@
 
 把开发人员从繁琐的DOM操作中解放出来，把关注点放在如何操作Model上。
 
- ![1525828854056](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525828854056.png)
+ ![1525828854056](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525828854056.png)
 
 
 
@@ -80,11 +80,11 @@ Vue (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**
 
 参考：https://cn.vuejs.org/v2/guide/
 
-![1525829249048](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525829249048.png)
+![1525829249048](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525829249048.png)
 
 Git地址：https://github.com/vuejs
 
-![1525829030730](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525829030730.png)
+![1525829030730](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525829030730.png)
 
 **尤雨溪**，Vue.js 创作者，Vue Technology创始人，致力于Vue的研究开发。
 
@@ -96,7 +96,7 @@ Git地址：https://github.com/vuejs
 
 下载地址：[https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
-![1525830686367](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525830686367.png)
+![1525830686367](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525830686367.png)
 
 推荐下载LTS版本。
 
@@ -110,13 +110,13 @@ node -v
 
 看到版本信息：
 
- ![1525831616514](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525831616514.png)
+ ![1525831616514](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525831616514.png)
 
 ## 2.2.NPM
 
 安装完成Node应该自带了NPM了，在控制台输入`npm -v`查看：
 
- ![1525831670850](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525831670850.png)
+ ![1525831670850](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525831670850.png)
 
 
 
@@ -130,15 +130,15 @@ npm install nrm -g
 
 然后通过`nrm ls`命令查看npm的仓库列表,带*的就是当前选中的镜像仓库：
 
- ![1525831918982](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525831918982.png)
+ ![1525831918982](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525831918982.png)
 
 通过`nrm use taobao`来指定要使用的镜像源：
 
-![1525831983603](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525831983603.png)
+![1525831983603](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525831983603.png)
 
 然后通过`nrm test npm `来测试速度：
 
- ![1525832070968](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525832070968.png)
+ ![1525832070968](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525832070968.png)
 
 
 
@@ -161,23 +161,23 @@ npm install nrm -g
 
 创建一个新的工程：
 
- ![1525830180378](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525830180378.png)
+ ![1525830180378](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525830180378.png)
 
 选中一个空的：
 
- ![1525832233385](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525832233385.png)
+ ![1525832233385](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525832233385.png)
 
 然后新建一个module：
 
- ![1525832250071](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525832250071.png)
+ ![1525832250071](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525832250071.png)
 
 选中static web，静态web项目：
 
- ![1525832275532](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525832275532.png)
+ ![1525832275532](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525832275532.png)
 
 位置信息：
 
- ![1525832294322](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525832294322.png)
+ ![1525832294322](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525832294322.png)
 
 
 
@@ -213,25 +213,25 @@ npm install nrm -g
 
 在idea的左下角，有个Terminal按钮，点击打开控制台：
 
- ![1525832726161](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525832726161.png)
+ ![1525832726161](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525832726161.png)
 
 进入hello-vue目录：
 
- ![1525833019284](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525833019284.png)
+ ![1525833019284](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525833019284.png)
 
 
 
 先输入：`npm init -y` 进行初始化
 
-  ![1525833057884](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525833057884.png)
+  ![1525833057884](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525833057884.png)
 
 安装Vue，输入命令：`npm install vue --save`
 
-![1525833109155](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525833109155.png)
+![1525833109155](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525833109155.png)
 
 然后就会在hello-vue目录发现一个node_modules目录，并且在下面有一个vue目录。
 
- ![1525833163686](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525833163686.png)
+ ![1525833163686](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525833163686.png)
 
 node_modules是通过npm安装的所有模块的默认位置。
 
@@ -239,11 +239,11 @@ node_modules是通过npm安装的所有模块的默认位置。
 
 ### 3.3.1.HTML模板
 
- 在hello-vue目录新建一个HTML![1525833345526](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525833345526.png)
+ 在hello-vue目录新建一个HTML![1525833345526](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525833345526.png)
 
 在hello.html中，我们编写一段简单的代码：
 
-![1525833809054](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525833809054.png)
+![1525833809054](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525833809054.png)
 
 h2中要输出一句话：xx 非常帅。前面的xx是要渲染的数据。
 
@@ -276,11 +276,11 @@ h2中要输出一句话：xx 非常帅。前面的xx是要渲染的数据。
 
 打开页面查看效果：
 
- ![1525834212902](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525834212902.png)
+ ![1525834212902](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525834212902.png)
 
 更神奇的在于，当你修改name属性时，页面会跟着变化：
 
- ![](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/ScreenGif-1525834621341.gif)
+ ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/ScreenGif-1525834621341.gif)
 
 
 
@@ -315,7 +315,7 @@ h2中要输出一句话：xx 非常帅。前面的xx是要渲染的数据。
 
 效果：
 
- ![](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/2.gif)
+ ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/2.gif)
 
 我们可以观察到，输入框的变化引起了data中的num的变化，同时页面输出也跟着变化。
 
@@ -337,7 +337,7 @@ h2中要输出一句话：xx 非常帅。前面的xx是要渲染的数据。
 
 效果：
 
- ![](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/3.gif)
+ ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/3.gif)
 
 
 
@@ -459,7 +459,7 @@ var vm = new Vue({
 
 生命周期：
 
-![Vue life cycle](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/lifecycle.png)
+![Vue life cycle](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/lifecycle.png)
 
 ### 4.5.2.钩子函数
 
@@ -493,7 +493,7 @@ var vm = new Vue({
 
 结果：
 
- ![1525843098485](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525843098485.png)
+ ![1525843098485](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525843098485.png)
 
 
 
@@ -516,7 +516,7 @@ var vm = new Vue({
 
  控制台的输出：
 
-![1525843381094](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525843381094.png)
+![1525843381094](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525843381094.png)
 
  
 
@@ -575,11 +575,11 @@ var app = new Vue({
 
 我们将网速调慢一些，然后试试看刚才的案例：
 
-![1525843894502](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525843894502.png)
+![1525843894502](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525843894502.png)
 
 刷新页面：
 
- ![](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/4.gif)
+ ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/4.gif)
 
 
 
@@ -616,7 +616,7 @@ var vm = new Vue({
 
 效果：
 
- ![1525844448278](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525844448278.png)
+ ![1525844448278](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525844448278.png)
 
 
 
@@ -670,7 +670,7 @@ html：
 
 效果：
 
- ![1525845481512](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525845481512.png)
+ ![1525845481512](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525845481512.png)
 
 
 
@@ -714,7 +714,7 @@ v-on:事件名="js片段或函数名"
 
 效果：
 
- ![](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/5.gif)
+ ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/5.gif)
 
 另外，事件绑定可以简写，例如`v-on:click='add'`可以简写为`@click='add'`
 
@@ -831,7 +831,7 @@ v-for="item in items"
 
 效果：
 
- ![1525848812000](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525848812000.png)
+ ![1525848812000](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525848812000.png)
 
 
 
@@ -863,7 +863,7 @@ v-for="(item,index) in items"
 
 > 效果：
 
- ![1525849039930](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525849039930.png)
+ ![1525849039930](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525849039930.png)
 
 ### 5.4.3.遍历对象
 
@@ -904,7 +904,7 @@ v-for="(value,key,index) in object"
 
 > 效果：
 
- ![1525849552865](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525849552865.png)
+ ![1525849552865](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525849552865.png)
 
 
 
@@ -962,7 +962,7 @@ v-if="布尔表达式"
 
 > 效果：
 
- ![](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/ScreenGif-1525850553649.gif)
+ ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/ScreenGif-1525850553649.gif)
 
 ### 5.5.2.与v-for结合
 
@@ -997,7 +997,7 @@ v-if="布尔表达式"
 
 效果：
 
- ![1525850816434](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525850816434.png)
+ ![1525850816434](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525850816434.png)
 
 ### 5.5.3.v-else
 
@@ -1070,7 +1070,7 @@ v-if="布尔表达式"
 
 代码：
 
- ![](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1.gif)
+ ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1.gif)
 
 ## 5.6.v-bind
 
@@ -1203,7 +1203,7 @@ var vm = new Vue({
 
 效果：
 
- ![1525861635758](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525861635758.png)
+ ![1525861635758](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525861635758.png)
 
 
 
@@ -1235,7 +1235,7 @@ watch可以让我们监控一个值的变化。从而做出相应的反应。
 
 效果：
 
- ![1525865657611](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525865657611.png)
+ ![1525865657611](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525865657611.png)
 
 
 
@@ -1281,7 +1281,7 @@ watch可以让我们监控一个值的变化。从而做出相应的反应。
 
 效果：
 
- ![](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/6.gif)
+ ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/6.gif)
 
 
 
@@ -1300,7 +1300,7 @@ watch可以让我们监控一个值的变化。从而做出相应的反应。
 
 效果：
 
- ![1525854127169](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525854127169.png)
+ ![1525854127169](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525854127169.png)
 
 你会发现每个组件互不干扰，都有自己的count值。怎么实现的？
 
@@ -1368,7 +1368,7 @@ var app = new Vue({
 
 通常一个单页应用会以一棵嵌套的组件树的形式来组织：
 
-![1525855149491](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525855149491.png)
+![1525855149491](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525855149491.png)
 
 - 页面首先分成了顶部导航、左侧内容区、右侧边栏三部分
 - 左侧内容区又分为上下两个组件
@@ -1414,7 +1414,7 @@ Vue.component("introduce",{
 
 效果：
 
-  ![1525857338270](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525857338270.png)
+  ![1525857338270](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525857338270.png)
 
 
 
@@ -1475,7 +1475,7 @@ var app = new Vue({
 
 效果：
 
-  ![1525857477274](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525857477274.png)
+  ![1525857477274](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525857477274.png)
 
 ### 6.3.3.子向父的通信
 
@@ -1511,11 +1511,11 @@ var app = new Vue({
 
 我们尝试运行：
 
- ![1525859093172](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525859093172.png)
+ ![1525859093172](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525859093172.png)
 
 好像没问题，点击按钮试试：
 
-![1525859138607](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/1525859138607.png)
+![1525859138607](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525859138607.png)
 
 子组件接收到父组件属性后，默认是不允许修改的。怎么办？
 
@@ -1576,7 +1576,7 @@ var app = new Vue({
 
 效果：
 
- ![](https://dev.tencent.com/u/xiongtianci/p/myHexoBlog/git/raw/master/blog/20191115_leyou/day05/7.gif)
+ ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/7.gif)
 
 
 
