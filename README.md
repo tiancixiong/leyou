@@ -100,7 +100,7 @@
 
 ### 3.1.数据库
 
-[leyou.sql](https://github.com/tiancixiong/leyou/raw/db/leyou.sql)
+[leyou.sql](https://github.com/tiancixiong/leyou/tree/db)
 
 
 
