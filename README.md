@@ -1,5 +1,9 @@
 # 乐优商城
 
+[![stars](https://img.shields.io/github/stars/tiancixiong/leyou?color=42b883&logo=github&style=flat-square)](https://github.com/tiancixiong/leyou/stargazers)
+[![forks](https://img.shields.io/github/forks/tiancixiong/leyou?color=42b883&logo=github&style=flat-square)](https://github.com/tiancixiong/leyou/network/members)
+[![license](https://img.shields.io/github/license/tiancixiong/leyou?color=42b883&style=flat-square)](https://github.com/tiancixiong/leyou/blob/master/LICENSE)
+
 ## 1.项目介绍
 
 ### 1.1.项目简介
@@ -98,15 +102,20 @@
 
 ## 3.资料
 
-### 3.1.数据库
+### 3.1.笔记
+
+- GitHub：https://github.com/tiancixiong/leyou/tree/notes
+- Gitee：https://gitee.com/tiancixiong/leyou/tree/notes
+
+### 3.2.数据库
 
 [leyou.sql](https://github.com/tiancixiong/leyou/tree/db)
 
 
 
-### 3.2.配置文件
+### 3.3.配置文件
 
-#### 3.2.1.hosts
+#### 3.3.1.hosts
 
 ```
 # 乐优商城
@@ -118,7 +127,7 @@
 
 
 
-#### 3.2.2nginx
+#### 3.3.2.nginx
 
 ```nginx
 # 乐优商城
