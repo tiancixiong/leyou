@@ -291,9 +291,9 @@ public String queryUserById(@PathVariable("id") Long id){
 不过，默认的熔断触发要求较高，休眠时间窗较短，为了测试方便，我们可以通过配置修改熔断策略：
 
 ```properties
-circuitBreaker.requestVolumeThreshold=10
-circuitBreaker.sleepWindowInMilliseconds=10000
-circuitBreaker.errorThresholdPercentage=50
+hystrix.command.default.circuitBreaker.requestVolumeThreshold=10
+hystrix.command.default.circuitBreaker.sleepWindowInMilliseconds=10000
+hystrix.command.default.circuitBreaker.errorThresholdPercentage=50
 ```
 
 解读：
