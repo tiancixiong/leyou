@@ -15,9 +15,9 @@
 
 创建module：
 
-![1532178218793](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532178218793.png)
+![1532178218793](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532178218793.png)
 
-![1532178276070](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532178276070.png)
+![1532178276070](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532178276070.png)
 
 Pom文件：
 
@@ -109,7 +109,7 @@ public class LeyouSearchService {
 
 大家来看下搜索结果页：
 
-![1532180648745](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532180648745.png)
+![1532180648745](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532180648745.png)
 
 可以看到，每一个搜索结果都有至少1个商品，当我们选择大图下方的小图，商品会跟着变化。
 
@@ -123,7 +123,7 @@ public class LeyouSearchService {
 
 再来看看页面中有什么数据：
 
- ![1526607712207](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526607712207.png) 
+ ![1526607712207](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526607712207.png) 
 
 直观能看到的：图片、价格、标题、副标题
 
@@ -133,7 +133,7 @@ public class LeyouSearchService {
 
 另外，页面还有过滤条件：
 
- ![1526608095471](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526608095471.png)
+ ![1526608095471](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526608095471.png)
 
 这些过滤条件也都需要存储到索引库中，包括：
 
@@ -252,7 +252,7 @@ public ResponseEntity<List<String>> queryNamesByIds(@RequestParam("ids")List<Lon
 
 测试：
 
-![1532213731039](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532213731039.png)
+![1532213731039](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532213731039.png)
 
 
 
@@ -282,7 +282,7 @@ public ResponseEntity<List<String>> queryNamesByIds(@RequestParam("ids")List<Lon
 
 第二步，编写FeignClient
 
- ![1543416825258](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1543416825258.png)
+ ![1543416825258](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1543416825258.png)
 
 ```java
 @FeignClient(value = "item-service")
@@ -343,7 +343,7 @@ public interface GoodsClient {
 
 第一步：服务的提供方在`leyou-item-interface`中提供API接口，并编写接口声明：
 
- ![1543416889053](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1543416889053.png)
+ ![1543416889053](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1543416889053.png)
 
 商品分类服务接口：
 
@@ -442,7 +442,7 @@ public interface SpecificationApi {
 
 第二步：在调用方`leyou-search`中编写FeignClient，但不要写方法声明了，直接继承`leyou-item-interface`提供的api接口：
 
- ![1543417084636](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1543417084636.png)
+ ![1543417084636](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1543417084636.png)
 
 商品的FeignClient：
 
@@ -496,9 +496,9 @@ public interface SpecificationClient extends SpecificationApi {
 
 在接口上按快捷键：`Ctrl + Shift + T`
 
- ![1532216103709](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532216103709.png)
+ ![1532216103709](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532216103709.png)
 
- ![1532216169168](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532216169168.png)
+ ![1532216169168](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532216169168.png)
 
 测试代码：
 
@@ -520,7 +520,7 @@ public class CategoryClientTest {
 
 结果：
 
-![1532216884221](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532216884221.png)
+![1532216884221](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532216884221.png)
 
 
 
@@ -528,7 +528,7 @@ public class CategoryClientTest {
 
 ### 1.4.1.创建GoodsRepository
 
- ![1543418137705](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1543418137705.png)
+ ![1543418137705](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1543418137705.png)
 
 java代码：
 
@@ -543,7 +543,7 @@ public interface GoodsRepository extends ElasticsearchRepository<Goods, Long> {
 
 我们新建一个测试类，在里面进行数据的操作：
 
- ![1543417536876](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1543417536876.png)
+ ![1543417536876](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1543417536876.png)
 
 ```java
 @RunWith(SpringRunner.class)
@@ -567,7 +567,7 @@ public class ElasticsearchTest {
 
 通过kibana查看：
 
-![1532217819818](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532217819818.png)
+![1532217819818](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532217819818.png)
 
 
 
@@ -696,7 +696,7 @@ public class SearchService {
 
 因为过滤参数中有一类比较特殊，就是数值区间：
 
- ![1526608095471](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526608095471.png)
+ ![1526608095471](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526608095471.png)
 
 所以我们在存入时要进行处理：
 
@@ -767,7 +767,7 @@ public void createIndex(){
 
 通过kibana查询， 可以看到数据成功导入：
 
-![1532228358310](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532228358310.png)
+![1532228358310](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532228358310.png)
 
 
 
@@ -779,13 +779,13 @@ public void createIndex(){
 
 在首页的顶部，有一个输入框：
 
-![1526629923970](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526629923970.png)
+![1526629923970](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526629923970.png)
 
 当我们输入任何文本，点击搜索，就会跳转到搜索页`search.html`了：
 
 并且将搜索关键字以请求参数携带过来：
 
-![1532229236516](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532229236516.png)
+![1532229236516](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532229236516.png)
 
 
 
@@ -861,17 +861,17 @@ methods: {
 
 在leyou-gateway中的CORS配置类中，添加允许信任域名：
 
-![1532233280898](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532233280898.png)
+![1532233280898](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532233280898.png)
 
 并在leyou-gateway工程的Application.yml中添加网关映射：
 
-![1532233247824](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532233247824.png)
+![1532233247824](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532233247824.png)
 
 
 
 刷新页面试试：
 
-![1532233086523](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532233086523.png)
+![1532233086523](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532233086523.png)
 
 因为后台没有提供接口，所以无法访问。没关系，接下来我们实现后台接口
 
@@ -881,7 +881,7 @@ methods: {
 
 ### 2.2.1.controller
 
- ![1543418199310](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1543418199310.png)
+ ![1543418199310](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1543418199310.png)
 
 首先分析几个问题：
 
@@ -960,7 +960,7 @@ public class SearchController {
 
 ### 2.2.2.service
 
- ![1543418304067](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1543418304067.png)
+ ![1543418304067](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1543418304067.png)
 
 ```java
 @Service
@@ -1009,9 +1009,9 @@ public class SearchService {
 
 刷新页面测试：
 
-![1532237344249](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532237344249.png)
+![1532237344249](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532237344249.png)
 
-![1532237401249](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532237401249.png)
+![1532237401249](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532237401249.png)
 
 数据是查到了，但是因为我们只查询部分字段，所以结果json 数据中有很多null，这很不优雅。
 
@@ -1029,7 +1029,7 @@ spring:
 
 结果：
 
-![1532237986819](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532237986819.png)
+![1532237986819](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532237986819.png)
 
 
 
@@ -1041,11 +1041,11 @@ spring:
 
 首先，在data中定义属性，保存搜索的结果：
 
-![1532239032197](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532239032197.png)
+![1532239032197](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532239032197.png)
 
 在`loadData`的异步查询中，将结果赋值给`goodsList`：
 
-![1532239117076](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532239117076.png)
+![1532239117076](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532239117076.png)
 
 
 
@@ -1053,13 +1053,13 @@ spring:
 
 在search.html的中部，有一个`div`，用来展示所有搜索到的商品：
 
-![1532238893722](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532238893722.png)
+![1532238893722](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532238893722.png)
 
 可以看到，`div`中有一个无序列表`ul`，内部的每一个`li`就是一个商品spu了。
 
 我们删除多余的，只保留一个`li`，然后利用vue的循环来展示搜索到的结果：
 
-![1532239244410](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532239244410.png)
+![1532239244410](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532239244410.png)
 
 
 
@@ -1069,13 +1069,13 @@ spring:
 
 接下来展示具体的商品信息，来看图：
 
- ![1526607712207](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526607712207.png)
+ ![1526607712207](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526607712207.png)
 
 这里我们可以发现，一个商品位置，是多个sku的信息集合。**当用户鼠标选择某个sku，对应的图片、价格、标题会随之改变！**
 
 我们先来实现sku的选择，才能去展示不同sku的数据。
 
- ![1526654252710](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526654252710.png)
+ ![1526654252710](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526654252710.png)
 
 可以看到，在列表中默认第一个是被选中的，那我们就需要做两件事情：
 
@@ -1089,13 +1089,13 @@ spring:
 
 查询出的结果集skus是一个json类型的字符串，不是js对象
 
-![1532240220800](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532240220800.png)
+![1532240220800](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532240220800.png)
 
 我们在查询成功的回调函数中，对goods进行遍历，把skus转化成json对象集合，并添加一个selected属性保存被选中的sku：
 
-![1532240609206](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532240609206.png)
+![1532240609206](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532240609206.png)
 
-![1532240586769](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532240586769.png)
+![1532240586769](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532240586769.png)
 
 
 
@@ -1103,7 +1103,7 @@ spring:
 
 接下来，我们看看多个sku的图片列表位置：
 
-![1532240706261](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532240706261.png)
+![1532240706261](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532240706261.png)
 
 看到又是一个无序列表，这里我们也一样删掉多余的，保留一个`li`，需要注意选中的项有一个样式类：selected
 
@@ -1130,13 +1130,13 @@ spring:
 
 现在，我们已经可以通过`goods.selected获取`用户选中的sku，那么我们就可以在页面展示了：
 
-![1526656197524](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526656197524.png)
+![1526656197524](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526656197524.png)
 
 
 
 刷新页面：
 
- ![1526656243166](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526656243166.png)
+ ![1526656243166](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526656243166.png)
 
 看起来很完美是吧！
 
@@ -1154,21 +1154,21 @@ spring:
 
 改造：
 
-![1532242831006](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532242831006.png)
+![1532242831006](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532242831006.png)
 
 结果报错：
 
-![1532242950035](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532242950035.png)
+![1532242950035](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532242950035.png)
 
 为啥？
 
 因为在Vue范围内使用任何变量，都会默认去Vue实例中寻找，我们使用ly，但是Vue实例中没有这个变量。所以解决办法就是把ly记录到Vue实例：
 
-![1532242983324](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532242983324.png)
+![1532242983324](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532242983324.png)
 
 然后刷新页面：
 
-![1532243052100](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532243052100.png)
+![1532243052100](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532243052100.png)
 
 
 
@@ -1178,7 +1178,7 @@ spring:
 
 截取一下：
 
-![1526656959487](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526656959487.png)
+![1526656959487](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526656959487.png)
 
 最好在加个悬停展示所有内容的效果
 
@@ -1196,15 +1196,15 @@ spring:
 
 而我们的goods对象中，本身是没有selected属性的，是我们后来才添加进去的：
 
-![1532243182104](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532243182104.png)
+![1532243182104](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532243182104.png)
 
 这段代码稍微改造一下，即可：
 
-![1532243275078](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532243275078.png)
+![1532243275078](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532243275078.png)
 
 也就是说，我们先把selected属性初始化完毕，然后才把整个对象赋值给goodsList，这样，goodsList已初始化时就有selected属性，以后就会被正常监控了。
 
- ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/skus.gif)
+ ![](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/skus.gif)
 
 
 
@@ -1223,7 +1223,7 @@ spring:
 
 先看下页面关于分页部分的代码：
 
- ![1526692249371](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526692249371.png)
+ ![1526692249371](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526692249371.png)
 
 可以看到所有的分页栏内容都是写死的。
 
@@ -1254,7 +1254,7 @@ data: {
 
 要注意：我们在created钩子函数中，会读取url路径的参数，然后赋值给search。如果是第一次请求页面，page是不存在的。因此为了避免page被覆盖，我们应该这么做：
 
-![1532243978471](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532243978471.png)
+![1532243978471](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532243978471.png)
 
 不过，这个时候我们自己的search对象中的值就可有可无了
 
@@ -1266,17 +1266,17 @@ data: {
 
 在我们返回的PageResult对象中，其实是有totalPage字段的：
 
-  ![1526695144476](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526695144476.png)
+  ![1526695144476](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526695144476.png)
 
 我们在返回时，把这个值填上：
 
- ![1526695592422](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526695592422.png)
+ ![1526695592422](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526695592422.png)
 
 页面测试一下：
 
-![1573223340358](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1573223340358.png)
+![1573223340358](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1573223340358.png)
 
-![1532244453375](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532244453375.png)
+![1532244453375](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532244453375.png)
 
 OK
 
@@ -1286,13 +1286,13 @@ OK
 
 首先，把后台提供的数据保存在data中：
 
- ![1526695967230](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526695967230.png)
+ ![1526695967230](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526695967230.png)
 
 
 
 然后看下我们要实现的效果：
 
-![1526695821870](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526695821870.png)
+![1526695821870](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526695821870.png)
 
 这里最复杂的是中间的1~5的分页按钮，它需要动态变化。
 
@@ -1307,7 +1307,7 @@ OK
 
 所以，我们的页面这样来做：
 
-![1532246481241](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532246481241.png)
+![1532246481241](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532246481241.png)
 
 a标签中的分页数字通过`index`函数来计算，需要把`i`传递过去：
 
@@ -1329,7 +1329,7 @@ index(i){
 
 需要注意的是，如果总页数不足5页，我们就不应该遍历1~5，而是1~总页数，稍作改进：
 
-![1526698842013](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526698842013.png)
+![1526698842013](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526698842013.png)
 
 分页条的其它部分就比较简单了：
 
@@ -1368,7 +1368,7 @@ index(i){
 
 所以，我们在`上一页`、`下一页`按钮添加点击事件，对page进行修改，在数字按钮上绑定点击事件，点击直接修改page：
 
-![1532248549662](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532248549662.png)
+![1532248549662](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532248549662.png)
 
 
 
@@ -1447,11 +1447,11 @@ watch:{
 
 在页面商品列表的顶部，也有一个分页条：
 
- ![1526716212704](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526716212704.png)
+ ![1526716212704](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526716212704.png)
 
 我们把这一部分，也加上点击事件：
 
-![1532248435097](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1532248435097.png)
+![1532248435097](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1532248435097.png)
 
 
 
@@ -1461,7 +1461,7 @@ watch:{
 
 在搜索商品列表的顶部，有这么一部分内容：
 
- ![1526716565293](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526716565293.png)
+ ![1526716565293](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526716565293.png)
 
 这是用来做排序的，默认按照综合排序。点击新品，应该按照商品创建时间排序，点击价格应该按照价格排序。因为我们没有统计销量和评价，这里咱们以`新品`和`价格`为例，进行讲解，做法是想通的。
 
@@ -1472,7 +1472,7 @@ watch:{
 
 因此，我们首先在`search`中记录这两个信息，因为created钩子函数会对search进行覆盖，因此我们在钩子函数中对这两个信息进行初始化即可：
 
- ![1526717586493](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526717586493.png)
+ ![1526717586493](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526717586493.png)
 
 然后，在页面上给按钮绑定点击事件，修改`sortBy`和`descending`的值：
 
@@ -1504,7 +1504,7 @@ watch:{
 
 可以看到，页面请求参数中已经有了排序字段了：
 
- ![1526718252315](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526718252315.png)
+ ![1526718252315](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526718252315.png)
 
 
 
@@ -1516,7 +1516,7 @@ watch:{
 
 现在，我们的请求参数对象`SearchRequest`中，只有page、key两个字段。需要进行扩展：
 
- ![1526718448918](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526718448918.png)
+ ![1526718448918](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526718448918.png)
 
 
 
@@ -1524,7 +1524,7 @@ watch:{
 
 > SearchService
 
-![1526718637618](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526718637618.png)
+![1526718637618](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526718637618.png)
 
 
 
@@ -1533,7 +1533,7 @@ watch:{
 - 如果是价格降序，则会把数组中的最大值拿来排序
 - 如果是价格升序，则会把数组中的最小值拿来排序
 
-![1526719415219](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day12/1526719415219.png)
+![1526719415219](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day12/1526719415219.png)
 
 
 

@@ -26,11 +26,11 @@
 
 Elastic官网：https://www.elastic.co/cn/
 
-![1528546351055](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528546351055.png)
+![1528546351055](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528546351055.png)
 
 Elastic有一条完整的产品线及解决方案：Elasticsearch、Kibana、Logstash等，前面说的三个就是大家常说的ELK技术栈。
 
-![1528546493105](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528546493105.png)
+![1528546493105](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528546493105.png)
 
 
 
@@ -38,7 +38,7 @@ Elastic有一条完整的产品线及解决方案：Elasticsearch、Kibana、Log
 
 Elasticsearch官网：https://www.elastic.co/cn/products/elasticsearch
 
-![1528547087016](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528547087016.png)
+![1528547087016](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528547087016.png)
 
 如上所述，Elasticsearch具备以下特点：
 
@@ -52,7 +52,7 @@ Elasticsearch官网：https://www.elastic.co/cn/products/elasticsearch
 
 目前Elasticsearch最新的版本是6.3.1，我们就使用6.3.0
 
-![1528547283102](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528547283102.png)
+![1528547283102](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528547283102.png)
 
 需要虚拟机JDK1.8及以上
 
@@ -90,9 +90,9 @@ su - leyou
 
 我们将安装包上传到：/home/leyou目录
 
-![1528610258461](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528610258461.png)
+![1528610258461](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528610258461.png)
 
-![1528551162835](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528551162835.png)
+![1528551162835](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528551162835.png)
 
 解压缩：
 
@@ -109,11 +109,11 @@ tar -zxvf elasticsearch-6.2.4.tar.gz
 mv elasticsearch-6.3.0/ elasticsearch
 ```
 
-![1528610397414](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528610397414.png)
+![1528610397414](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528610397414.png)
 
 进入，查看目录结构：
 
-![1528551465373](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528551465373.png)
+![1528551465373](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528551465373.png)
 
 
 
@@ -123,7 +123,7 @@ mv elasticsearch-6.3.0/ elasticsearch
 
 需要修改的配置文件有两个：
 
-![1528551598931](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528551598931.png)
+![1528551598931](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528551598931.png)
 
 1. **jvm.options**
 
@@ -172,7 +172,7 @@ mkdir data
 mkdir logs
 ```
 
-![1528552839032](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528552839032.png)
+![1528552839032](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528552839032.png)
 
 
 
@@ -212,7 +212,7 @@ network.host: 0.0.0.0 # 绑定到0.0.0.0，允许任何ip来访问
 
 进入elasticsearch/bin目录，可以看到下面的执行文件：
 
-![1528553103468](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528553103468.png)
+![1528553103468](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528553103468.png)
 
 然后输入命令：
 
@@ -226,7 +226,7 @@ network.host: 0.0.0.0 # 绑定到0.0.0.0，允许任何ip来访问
 
 ### 1.3.1.错误1：内核过低
 
-![1528598315714](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528598315714.png)
+![1528598315714](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528598315714.png)
 
 我们使用的是centos6，其linux内核版本为2.6。而Elasticsearch的插件要求至少3.5以上版本。不过没关系，我们禁用这个插件即可。
 
@@ -244,7 +244,7 @@ bootstrap.system_call_filter: false
 
 再次启动，又出错了：
 
-![1528599116836](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528599116836.png)
+![1528599116836](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528599116836.png)
 
 ```
 [1]: max file descriptors [4096] for elasticsearch process likely too low, increase to at least [65536]
@@ -340,7 +340,7 @@ sysctl -p
 
 再次启动，终于成功了！
 
-![1528603044862](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528603044862.png)
+![1528603044862](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528603044862.png)
 
 可以看到绑定了两个端口:
 
@@ -349,7 +349,7 @@ sysctl -p
 
 我们在浏览器中访问：http://192.168.56.101:9200
 
-![1528611090621](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528611090621.png)
+![1528611090621](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528611090621.png)
 
 
 
@@ -357,7 +357,7 @@ sysctl -p
 
 ### 1.4.1.什么是Kibana？
 
-![1528603530298](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528603530298.png)
+![1528603530298](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528603530298.png)
 
 Kibana是一个基于Node.js的Elasticsearch索引库数据统计工具，可以利用Elasticsearch的聚合功能，生成各种图表，如柱形图，线状图，饼图等。
 
@@ -371,7 +371,7 @@ Kibana是一个基于Node.js的Elasticsearch索引库数据统计工具，可以
 
 最新版本与elasticsearch保持一致，也是6.3.0
 
-![1528611218599](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528611218599.png)
+![1528611218599](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528611218599.png)
 
 解压到特定目录即可
 
@@ -393,17 +393,17 @@ elasticsearch.url: "http://192.168.56.101:9200"
 
 进入安装目录下的bin目录：
 
-![1528612108406](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528612108406.png)
+![1528612108406](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528612108406.png)
 
 双击运行：
 
-![1528612216033](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528612216033.png)
+![1528612216033](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528612216033.png)
 
 发现kibana的监听端口是5601
 
 我们访问：http://127.0.0.1:5601
 
-![1528612265677](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528612265677.png)
+![1528612265677](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528612265677.png)
 
 
 
@@ -411,13 +411,13 @@ elasticsearch.url: "http://192.168.56.101:9200"
 
 选择左侧的DevTools菜单，即可进入控制台页面：
 
-![1528612350020](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528612350020.png)
+![1528612350020](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528612350020.png)
 
 
 
 在页面右侧，我们就可以输入请求，访问Elasticsearch了。
 
-![1528612514556](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528612514556.png)
+![1528612514556](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528612514556.png)
 
 
 
@@ -429,7 +429,7 @@ Lucene的IK分词器早在2012年已经没有维护了，现在我们要使用�
 
 上传课前资料中的zip包，解压到Elasticsearch目录的plugins目录中：
 
-![1526482432181](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528612654570.png)
+![1526482432181](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528612654570.png)
 
 使用unzip命令解压：
 
@@ -439,7 +439,7 @@ unzip elasticsearch-analysis-ik-6.3.0.zip -d ik-analyzer
 
 然后重启elasticsearch：
 
-![1528612928524](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528612928524.png)
+![1528612928524](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528612928524.png)
 
 
 
@@ -511,7 +511,7 @@ Elasticsearch提供了Rest风格的API，即http请求接口，而且也提供�
 
 文档地址：https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
 
-![1526518410240](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1526518410240.png)
+![1526518410240](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1526518410240.png)
 
 
 
@@ -519,11 +519,11 @@ Elasticsearch提供了Rest风格的API，即http请求接口，而且也提供�
 
 Elasticsearch支持的客户端非常多：https://www.elastic.co/guide/en/elasticsearch/client/index.html
 
-![1528613714338](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528613714338.png)
+![1528613714338](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528613714338.png)
 
 点击Java Rest Client后，你会发现又有两个：
 
-![1528613788606](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528613788606.png)
+![1528613788606](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528613788606.png)
 
 
 
@@ -531,7 +531,7 @@ Low Level Rest Client是低级别封装，提供一些基础功能，但更灵�
 
 High Level Rest Client，是在Low  Level Rest Client基础上进行的高级别封装，功能更丰富和完善，而且API会变的简单
 
- ![1526518875072](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1526518875072.png)
+ ![1526518875072](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1526518875072.png)
 
 
 
@@ -620,11 +620,11 @@ Elasticsearch采用Rest风格API，因此其API就是一次http请求，你可�
 
 我们先用RestClient来试试
 
-![1528615921930](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528615921930.png)
+![1528615921930](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528615921930.png)
 
 响应：
 
-![1528615945473](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528615945473.png)
+![1528615945473](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528615945473.png)
 
 可以看到索引创建成功了。
 
@@ -642,7 +642,7 @@ PUT heima2
 }
 ```
 
-![1528616088691](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528616088691.png)
+![1528616088691](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528616088691.png)
 
 相当于是省去了elasticsearch的服务器地址
 
@@ -660,13 +660,13 @@ Get请求可以帮我们查看索引信息，格式：
 GET /索引库名
 ```
 
-![1528616233409](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528616233409.png)
+![1528616233409](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528616233409.png)
 
 
 
 或者，我们可以使用*来查询所有索引库配置：
 
-![1528616305800](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528616305800.png)
+![1528616305800](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528616305800.png)
 
 
 
@@ -682,15 +682,15 @@ DELETE /索引库名
 
 > 示例
 
-![1528616383952](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528616383952.png)
+![1528616383952](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528616383952.png)
 
 再次查看heima2：
 
-![1528616452713](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528616452713.png)
+![1528616452713](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528616452713.png)
 
 当然，我们也可以用HEAD请求，查看索引是否存在：
 
-![1528616489638](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1528616489638.png)
+![1528616489638](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1528616489638.png)
 
 
 
@@ -815,7 +815,7 @@ GET /heima/_mapping
 
 Elasticsearch中支持的数据类型非常丰富：
 
-![1531712631982](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531712631982.png)
+![1531712631982](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531712631982.png)
 
 我们说几个关键的：
 
@@ -869,7 +869,7 @@ index的默认值就是true，也就是说你不进行任何配置，所有字�
 
 其它的不再一一讲解，用的不多，大家参考官方文档：
 
-![1531713176079](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531713176079.png)
+![1531713176079](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531713176079.png)
 
 
 
@@ -1140,7 +1140,7 @@ DELETE /索引库名/类型名/id值
 
 > 示例：
 
-![1531727693743](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531727693743.png)
+![1531727693743](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531727693743.png)
 
 
 
@@ -1268,7 +1268,7 @@ PUT /heima/goods/3
 
 现在，索引库中有2部手机，1台电视：
 
- ![1531728628406](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531728628406.png)
+ ![1531728628406](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531728628406.png)
 
 - or关系
 
@@ -1404,7 +1404,7 @@ GET /heima/_search
 
 结果：
 
-![1531730367614](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531730367614.png)
+![1531730367614](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531730367614.png)
 
 
 
@@ -2478,7 +2478,7 @@ GET /cars/_search
 
 如果你用kibana将结果变为柱形图，会更好看：
 
-![1531752558505](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531752558505.png)
+![1531752558505](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531752558505.png)
 
 
 
@@ -2510,7 +2510,7 @@ Spring Data Elasticsearch是Spring Data项目下的一个子模块。
 
 查看 Spring Data的官网：http://projects.spring.io/spring-data/
 
-![1531753066475](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531753066475.png)
+![1531753066475](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531753066475.png)
 
 > Spring Data的使命是为数据访问提供熟悉且一致的基于Spring的编程模型，同时仍保留底层数据存储的特殊特性。
 >
@@ -2520,13 +2520,13 @@ Spring Data 的使命是给各种数据访问提供统一的编程接口，不�
 
 包含很多不同数据操作的模块：
 
-![1531753715580](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531753715580.png)
+![1531753715580](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531753715580.png)
 
 
 
 Spring Data Elasticsearch的页面：https://projects.spring.io/spring-data-elasticsearch/
 
- ![1531754111583](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531754111583.png)
+ ![1531754111583](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531754111583.png)
 
 特征：
 
@@ -2542,9 +2542,9 @@ Spring Data Elasticsearch的页面：https://projects.spring.io/spring-data-elas
 
 我们使用spring脚手架新建一个demo，学习Elasticsearch
 
-![1531973082475](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531973082475.png)
+![1531973082475](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531973082475.png)
 
-![1531974312212](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531974312212.png)
+![1531974312212](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531974312212.png)
 
 pom依赖：
 
@@ -2674,11 +2674,11 @@ public class Item {
 
 > 创建索引
 
- ![1531985485904](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531985485904.png)
+ ![1531985485904](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531985485904.png)
 
 ElasticsearchTemplate中提供了创建索引的API：
 
-![1531984923727](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531984923727.png)
+![1531984923727](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531984923727.png)
 
 可以根据类的信息自动生成，也可以手动指定indexName和Settings
 
@@ -2686,7 +2686,7 @@ ElasticsearchTemplate中提供了创建索引的API：
 
 映射相关的API：
 
-![1531985337698](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531985337698.png)
+![1531985337698](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531985337698.png)
 
 可以根据类的字节码信息（注解配置）来生成映射，或者手动编写映射
 
@@ -2773,7 +2773,7 @@ GET /item
 
 删除索引的API：
 
-![1526544759120](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531986474606.png)
+![1526544759120](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531986474606.png)
 
 可以根据类名或索引名删除。
 
@@ -2788,7 +2788,7 @@ public void deleteIndex() {
 
 结果：
 
- ![1531986618059](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531986618059.png)
+ ![1531986618059](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531986618059.png)
 
 
 
@@ -2798,7 +2798,7 @@ Spring Data 的强大之处，就在于你不用写任何DAO处理，自动根�
 
 我们只需要定义接口，然后继承它就OK了。
 
- ![1531987244855](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531987244855.png)
+ ![1531987244855](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531987244855.png)
 
 ```java
 public interface ItemRepository extends ElasticsearchRepository<Item,Long> {
@@ -2807,11 +2807,11 @@ public interface ItemRepository extends ElasticsearchRepository<Item,Long> {
 
 来看下Repository的继承关系：
 
- ![1531986965570](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531986965570.png)
+ ![1531986965570](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531986965570.png)
 
 我们看到有一个ElasticsearchRepository接口：
 
-![1531987044693](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531987044693.png)
+![1531987044693](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531987044693.png)
 
 
 
@@ -2973,7 +2973,7 @@ GET /item/_search
 
 ElasticsearchRepository提供了一些基本的查询方法：
 
-![1531989728869](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531989728869.png)
+![1531989728869](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531989728869.png)
 
 我们来试试查询所有：
 
@@ -2994,7 +2994,7 @@ public void testFind(){
 
 结果：
 
-![1531990510740](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531990510740.png)
+![1531990510740](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531990510740.png)
 
 
 
@@ -3075,7 +3075,7 @@ public void queryByPriceBetween(){
 
 结果：
 
-![1531993518230](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1531993518230.png)
+![1531993518230](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1531993518230.png)
 
 
 
@@ -3102,13 +3102,13 @@ public void testQuery(){
 
 Repository的search方法需要QueryBuilder参数，elasticSearch为我们提供了一个对象QueryBuilders：
 
- ![1532008212626](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1532008212626.png)
+ ![1532008212626](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1532008212626.png)
 
 QueryBuilders提供了大量的静态方法，用于生成各种不同类型的查询对象，例如：词条、模糊、通配符等QueryBuilder对象。
 
 结果：
 
-![1532008415257](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1532008415257.png)
+![1532008415257](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1532008415257.png)
 
 elasticsearch提供很多可用的查询方式，但是不够灵活。如果想玩过滤或者聚合查询等就很难了。
 
@@ -3144,9 +3144,9 @@ NativeSearchQueryBuilder：Spring提供的一个查询条件构建器，帮助�
 - Iterator：迭代器，本身实现了Iterator接口，因此可直接迭代得到当前页的数据
 - 其它属性：
 
-![1532009679148](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1532009679148.png)
+![1532009679148](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1532009679148.png)
 
-结果：![1532009717623](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1532009717623.png)
+结果：![1532009717623](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1532009717623.png)
 
 
 
@@ -3184,7 +3184,7 @@ public void testNativeQuery(){
 
 结果：
 
-![1532011610028](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1532011610028.png)
+![1532011610028](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1532011610028.png)
 
 可以发现，**Elasticsearch中的分页是从第0页开始**。
 
@@ -3217,7 +3217,7 @@ public void testSort(){
 
 结果：
 
-![1532012155435](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1532012155435.png)
+![1532012155435](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1532012155435.png)
 
 
 
@@ -3259,7 +3259,7 @@ public void testAgg(){
 
 显示的结果：
 
-![1532012598213](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1532012598213.png)
+![1532012598213](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1532012598213.png)
 
 
 
@@ -3267,25 +3267,25 @@ public void testAgg(){
 
 - `AggregationBuilders`：聚合的构建工厂类。所有聚合都由这个类来构建，看看他的静态方法：
 
-  ![1526567597724](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1526567597724.png)
+  ![1526567597724](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1526567597724.png)
 
 - `AggregatedPage`：聚合查询的结果类。它是`Page<T>`的子接口：
 
-    ![1526567748355](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1526567748355.png)
+    ![1526567748355](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1526567748355.png)
 
   `AggregatedPage`在`Page`功能的基础上，拓展了与聚合相关的功能，它其实就是对聚合结果的一种封装，大家可以对照聚合结果的JSON结构来看。
 
-   ![1526567889455](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1526567889455.png)
+   ![1526567889455](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1526567889455.png)
 
   而返回的结果都是Aggregation类型对象，不过根据字段类型不同，又有不同的子类表示
 
-   ![1526568128210](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1526568128210.png)
+   ![1526568128210](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1526568128210.png)
 
 
 
 我们看下页面的查询的JSON结果与Java类的对照关系：
 
- ![1526571200130](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1526571200130.png)
+ ![1526571200130](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1526571200130.png)
 
 
 
@@ -3327,5 +3327,5 @@ public void testSubAgg(){
 
 结果：
 
- ![1526572198447](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day11/1526572198447.png)
+ ![1526572198447](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day11/1526572198447.png)
 

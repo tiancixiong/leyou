@@ -40,7 +40,7 @@
 
 消息队列，即MQ，Message Queue。
 
-![1527063872737](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1527063872737.png)
+![1527063872737](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1527063872737.png)
 
 
 
@@ -59,9 +59,9 @@
 
 MQ是消息通信的模型，并不是具体实现。现在实现MQ的有两种主流方式：AMQP、JMS。
 
-![1527064480681](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1527064480681.png)
+![1527064480681](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1527064480681.png)
 
-![1527064487042](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1527064487042.png)
+![1527064487042](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1527064487042.png)
 
 
 
@@ -75,7 +75,7 @@ MQ是消息通信的模型，并不是具体实现。现在实现MQ的有两种�
 
 ### 1.2.3.常见MQ产品
 
-![1527064606029](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1527064606029.png)
+![1527064606029](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1527064606029.png)
 
 - ActiveMQ：基于JMS
 - RabbitMQ：基于AMQP协议，erlang语言开发，稳定性好
@@ -92,11 +92,11 @@ RabbitMQ是基于AMQP的一款消息管理系统
 
 官方教程：http://www.rabbitmq.com/getstarted.html
 
-![1532758972119](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532758972119.png)
+![1532758972119](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532758972119.png)
 
 
 
- ![1527064762982](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1527064762982.png)
+ ![1527064762982](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1527064762982.png)
 
 
 
@@ -106,7 +106,7 @@ RabbitMQ是基于AMQP的一款消息管理系统
 
 官网下载地址：http://www.rabbitmq.com/download.html
 
-![1532759070767](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532759070767.png)
+![1532759070767](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532759070767.png)
 
 目前最新版本是：3.7.5
 
@@ -114,13 +114,13 @@ RabbitMQ是基于AMQP的一款消息管理系统
 
 课前资料提供了安装包：
 
-![1532761948333](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532761948333.png)
+![1532761948333](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532761948333.png)
 
 ### 1.3.2.安装
 
 详见课前资料中的：
 
-![1532761916357](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532761916357.png)
+![1532761916357](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532761916357.png)
 
 
 
@@ -130,7 +130,7 @@ RabbitMQ提供了6种消息模型，但是第6种其实是RPC，并不是MQ，�
 
 但是其实3、4、5这三种都属于订阅模型，只不过进行路由的方式不同。
 
-![1527068544487](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1527068544487.png)
+![1527068544487](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1527068544487.png)
 
 
 
@@ -138,11 +138,11 @@ RabbitMQ提供了6种消息模型，但是第6种其实是RPC，并不是MQ，�
 
 导入工程：
 
-![1532762038694](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532762038694.png)
+![1532762038694](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532762038694.png)
 
 导入后：
 
- ![1532762308507](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532762308507.png)
+ ![1532762308507](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532762308507.png)
 
 依赖：
 
@@ -212,13 +212,13 @@ public class ConnectionUtil {
 
 官方介绍：
 
- ![1532762961149](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532762961149.png)
+ ![1532762961149](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532762961149.png)
 
 RabbitMQ是一个消息代理：它接受和转发消息。 你可以把它想象成一个邮局：当你把邮件放在邮箱里时，你可以确定邮差先生最终会把邮件发送给你的收件人。 在这个比喻中，RabbitMQ是邮政信箱，邮局和邮递员。
 
 RabbitMQ与邮局的主要区别是它不处理纸张，而是接受，存储和转发数据消息的二进制数据块。
 
- ![1532762975546](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532762975546.png)
+ ![1532762975546](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532762975546.png)
 
 P（producer/ publisher）：生产者，一个发送消息的用户应用程序。
 
@@ -267,17 +267,17 @@ public class Send {
 
 控制台：
 
-![1532763328424](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532763328424.png)
+![1532763328424](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532763328424.png)
 
 ### 2.1.2.管理工具中查看消息
 
 进入队列页面，可以看到新建了一个队列：simple_queue
 
-![1532763817830](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532763817830.png)
+![1532763817830](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532763817830.png)
 
 点击队列名称，进入详情页，可以查看消息：
 
-![1532763489858](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532763489858.png)
+![1532763489858](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532763489858.png)
 
 在控制台查看消息并不会将消息消费，所以消息还在。
 
@@ -315,11 +315,11 @@ public class Recv {
 
 控制台：
 
-![1532763733443](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532763733443.png)
+![1532763733443](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532763733443.png)
 
 这个时候，队列中的消息就没了：
 
-![1532763773208](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532763773208.png)
+![1532763773208](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532763773208.png)
 
 我们发现，消费者已经获取了消息，但是程序没有停止，一直在监听队列中是否有新的消息。一旦有新的消息进入队列，就会立即打印.
 
@@ -385,7 +385,7 @@ channel.basicConsume(QUEUE_NAME, false, consumer);
 
 如果第二个参数为true，则会自动进行ACK；如果为false，则需要手动ACK。方法的声明：
 
-![1532764253019](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532764253019.png)
+![1532764253019](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532764253019.png)
 
 
 
@@ -393,19 +393,19 @@ channel.basicConsume(QUEUE_NAME, false, consumer);
 
 修改消费者，添加异常，如下：
 
-![1532764600849](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532764600849.png)
+![1532764600849](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532764600849.png)
 
 生产者不做任何修改，直接运行，消息发送成功：
 
-![1532764694290](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532764694290.png)
+![1532764694290](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532764694290.png)
 
 运行消费者，程序抛出异常。但是消息依然被消费：
 
-![1532764717995](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532764717995.png)
+![1532764717995](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532764717995.png)
 
 管理界面：
 
-![1532764734232](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532764734232.png)
+![1532764734232](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532764734232.png)
 
  
 
@@ -413,23 +413,23 @@ channel.basicConsume(QUEUE_NAME, false, consumer);
 
 修改消费者，把自动改成手动（去掉之前制造的异常）
 
-![1532764831241](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532764831241.png)
+![1532764831241](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532764831241.png)
 
 生产者不变，再次运行：
 
-![1532764895239](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532764895239.png)
+![1532764895239](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532764895239.png)
 
 运行消费者
 
-![1532764957092](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532764957092.png)
+![1532764957092](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532764957092.png)
 
 但是，查看管理界面，发现：
 
-![1532765013834](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532765013834.png)
+![1532765013834](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532765013834.png)
 
 停掉消费者的程序，发现：
 
-![1532765038088](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532765038088.png)
+![1532765038088](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532765038088.png)
 
 这是因为虽然我们设置了手动ACK，但是代码中并没有进行消息确认！所以消息并未被真正消费掉。
 
@@ -439,11 +439,11 @@ channel.basicConsume(QUEUE_NAME, false, consumer);
 
 修改代码手动ACK：
 
-![1532765123282](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532765123282.png)
+![1532765123282](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532765123282.png)
 
 执行：
 
-![1532765151039](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532765151039.png)
+![1532765151039](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532765151039.png)
 
 消息消费成功！
 
@@ -453,7 +453,7 @@ channel.basicConsume(QUEUE_NAME, false, consumer);
 
 工作队列或者竞争消费者模式
 
- ![1532765197277](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532765197277.png)
+ ![1532765197277](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532765197277.png)
 
 在第一篇教程中，我们编写了一个程序，从一个命名队列中发送并接受消息。在这里，我们将创建一个工作队列，在多个工作者之间分配耗时任务。
 
@@ -525,11 +525,11 @@ public class Send {
 
 ### 2.2.2.消费者1
 
-![1527085386747](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1527085386747.png)
+![1527085386747](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1527085386747.png)
 
 ### 2.2.3.消费者2
 
-![1527085448377](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1527085448377.png)
+![1527085448377](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1527085448377.png)
 
 与消费者1基本类似，就是没有设置消费耗时时间。
 
@@ -539,7 +539,7 @@ public class Send {
 
 接下来，两个消费者一同启动，然后发送50条消息：
 
-![1527085826462](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1527085826462.png)
+![1527085826462](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1527085826462.png)
 
 先启动两个消费者，然后启动生产者，可以发现，两个消费者各自消费了25条消息，而且各不相同，这就实现了任务的分发。
 
@@ -559,11 +559,11 @@ public class Send {
 
 我们可以使用basicQos方法和prefetchCount = 1设置。 这告诉RabbitMQ一次不要向工作人员发送多于一条消息。 或者换句话说，不要向工作人员发送新消息，直到它处理并确认了前一个消息。 相反，它会将其分派给不是仍然忙碌的下一个工作人员。
 
-![1532765689904](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532765689904.png)
+![1532765689904](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532765689904.png)
 
 再次测试：
 
-![1527086159534](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1527086159534.png)
+![1527086159534](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1527086159534.png)
 
 
 
@@ -573,7 +573,7 @@ public class Send {
 
 订阅模型示意图：
 
- ![1527086284940](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1527086284940.png)
+ ![1527086284940](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1527086284940.png)
 
 解读：
 
@@ -611,7 +611,7 @@ Fanout，也称为广播。
 
 流程图：
 
- ![1527086564505](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1527086564505.png)
+ ![1527086564505](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1527086564505.png)
 
 在广播模式下，消息发送流程是这样的：
 
@@ -737,9 +737,9 @@ public class Recv2 {
 
 我们运行两个消费者，然后发送1条消息：
 
-![1532766264386](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532766264386.png)
+![1532766264386](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532766264386.png)
 
-![1532766291204](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532766291204.png)
+![1532766291204](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532766291204.png)
 
 
 
@@ -757,7 +757,7 @@ public class Recv2 {
 
 消息的发送方在向Exchange发送消息时，也必须指定消息的routing key。
 
- ![1532766437787](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532766437787.png)
+ ![1532766437787](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532766437787.png)
 
 P：生产者，向Exchange发送消息，发送消息时，会指定一个routing key。
 
@@ -881,7 +881,7 @@ public class Recv2 {
 
 我们分别发送增、删、改的RoutingKey，发现结果：
 
- ![1527088296131](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1527088296131.png)
+ ![1527088296131](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1527088296131.png)
 
 
 
@@ -905,7 +905,7 @@ public class Recv2 {
 
 
 
- ![1532766712166](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532766712166.png)
+ ![1532766712166](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532766712166.png)
 
 在这个例子中，我们将发送所有描述动物的消息。消息将使用由三个字（两个点）组成的routing key发送。路由关键字中的第一个单词将描述速度，第二个颜色和第三个种类：“<speed>.<color>.<species>”。
 
@@ -1062,15 +1062,15 @@ public class Recv2 {
 
 ### 2.7.1.交换机持久化
 
-![1532766951432](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532766951432.png)
+![1532766951432](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532766951432.png)
 
 ### 2.7.2.队列持久化
 
-![1532766981230](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532766981230.png)
+![1532766981230](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532766981230.png)
 
 ### 2.7.3.消息持久化
 
-![1532767057491](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532767057491.png)
+![1532767057491](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532767057491.png)
 
 
 
@@ -1080,17 +1080,17 @@ public class Recv2 {
 
 Sprin有很多不同的项目，其中就有对AMQP的支持：
 
-![1532767136007](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532767136007.png)
+![1532767136007](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532767136007.png)
 
 Spring AMQP的页面：http://spring.io/projects/spring-amqp
 
-![1532767171063](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532767171063.png)
+![1532767171063](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532767171063.png)
 
 
 
 注意这里一段描述：
 
-![1532767227821](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532767227821.png)                                             
+![1532767227821](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532767227821.png)                                             
 
          Spring-amqp是对AMQP协议的抽象实现，而spring-rabbit 是对协议的具体实现，也是目前的唯一实现。底层使用的就是RabbitMQ。
 
@@ -1159,7 +1159,7 @@ Spring最擅长的事情就是封装，把他人的框架进行封装和整合�
 
 Spring为AMQP提供了统一的消息处理模板：AmqpTemplate，非常方便的发送消息，其发送方法：
 
-![1527090258083](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1527090258083.png)
+![1527090258083](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1527090258083.png)
 
 红框圈起来的是比较常用的3个方法，分别是：
 
@@ -1191,7 +1191,7 @@ public class MqDemo {
 
 运行后查看日志：
 
-![1532767726274](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532767726274.png)
+![1532767726274](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532767726274.png)
 
 
 
@@ -1282,11 +1282,11 @@ private void sendMessage(Long id, String type){
 
 然后在新增的时候调用：
 
-![1532768930797](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532768930797.png)
+![1532768930797](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532768930797.png)
 
 修改的时候调用：
 
-![1532769005960](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532769005960.png)
+![1532769005960](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532769005960.png)
 
 
 
@@ -1324,7 +1324,7 @@ spring:
 
 ### 3.3.3.编写监听器
 
- ![1532769181819](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532769181819.png)
+ ![1532769181819](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532769181819.png)
 
 代码：
 
@@ -1440,7 +1440,7 @@ spring:
 
 ### 3.4.3.编写监听器
 
- ![1532769581964](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532769581964.png)
+ ![1532769581964](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532769581964.png)
 
 代码：
 
@@ -1502,15 +1502,15 @@ public void deleteHtml(Long id) {
 
 可以看到，交换机已经创建出来了：
 
-![1532772446520](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532772446520.png)
+![1532772446520](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532772446520.png)
 
 队列也已经创建完毕：
 
-![1532772471931](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532772471931.png)
+![1532772471931](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532772471931.png)
 
 并且队列都已经绑定到交换机：
 
-![1532772521932](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day15/1532772521932.png)
+![1532772521932](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day15/1532772521932.png)
 
 ### 3.5.2.修改数据试一试
 

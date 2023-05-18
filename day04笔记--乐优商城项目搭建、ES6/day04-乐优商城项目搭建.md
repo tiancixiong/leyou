@@ -47,23 +47,23 @@
 
 中国电子商务研究中心数据显示，截止到 2012 年底，中国电子商务市场交易规模达 7.85万亿人民币，同比增长 30.83%。其中，B2B 电子商务交易额达 6.25 万亿，同比增长 27%。而 2011 年全年，中国电子商务市场交易额达 6 万亿人民币，同比增长 33%，占 GDP 比重上升到 13%；2012 年，电子商务占 GDP 的比重已经高达 15%。
 
- ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1525686041466.png)
+ ![](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1525686041466.png)
 
 
 
 ### 1.2.2.数据
 
-![1529165766652](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529165766652.png)
+![1529165766652](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529165766652.png)
 
 来看看双十一的成交数据：
 
-![1525686135308](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1525686135308.png)
+![1525686135308](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1525686135308.png)
 
-![1525686160411](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1525686160411.png)
+![1525686160411](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1525686160411.png)
 
 2016双11开场30分钟，创造**每秒交易峰值17.5万笔**，**每秒**支付峰值**12万笔**的新纪录。菜鸟单日物流订单量超过**4.67亿**，创历史新高。
 
-![1529165714679](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529165714679.png)
+![1529165714679](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529165714679.png)
 
 
 
@@ -153,13 +153,13 @@
 
 项目开发流程图：
 
- ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1525697632643.png)
+ ![](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1525697632643.png)
 
 
 
 公司现状：
 
- ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1525697681975.png)
+ ![](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1525697681975.png)
 
 
 
@@ -183,7 +183,7 @@
 
 乐优商城架构缩略图，大图请参考课前资料：
 
-![1525703759035](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1525703759035.png)
+![1525703759035](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1525703759035.png)
 
 
 
@@ -202,7 +202,7 @@
   - 后台系统会采用前后端分离开发，而且整个后台管理系统会使用Vue.js框架搭建出单页应用（SPA）。
   - 预览图：
 
-    ![1573869251147](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1573869251147.png)
+    ![1573869251147](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1573869251147.png)
 
 - 前台门户
 
@@ -213,7 +213,7 @@
     - 评价商品等等
   - 前台系统我们会使用Thymeleaf模板引擎技术来完成页面开发。出于SEO优化的考虑，我们将不采用单页应用。
 
-  ![1525704277126](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1525704277126.png)
+  ![1525704277126](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1525704277126.png)
 
 
 
@@ -294,11 +294,11 @@ switchhost可以去课前资料寻找。
 
 创建统一的父工程：leyou，用来管理依赖及其版本，注意是创建project，而不是module
 
-![1529224631578](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529224631578.png)
+![1529224631578](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529224631578.png)
 
 填写项目信息：
 
-![1529224746616](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529224746616.png)
+![1529224746616](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529224746616.png)
 
 注意：
 
@@ -308,7 +308,7 @@ switchhost可以去课前资料寻找。
 
 填写保存的位置信息：
 
-![1529224804596](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529224804596.png)
+![1529224804596](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529224804596.png)
 
 然后将pom文件修改成我这个样子：
 
@@ -406,7 +406,7 @@ switchhost可以去课前资料寻找。
 
 可以删除src目录，工程结构如下：
 
- ![1529225577524](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529225577524.png)
+ ![1529225577524](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529225577524.png)
 
 
 
@@ -418,19 +418,19 @@ switchhost可以去课前资料寻找。
 
 选择新建module：
 
-![1529225751893](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529225751893.png)
+![1529225751893](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529225751893.png)
 
 选择maven安装，但是不要选择骨架：
 
-![1529225984078](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529225984078.png)
+![1529225984078](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529225984078.png)
 
 然后填写项目坐标，我们的项目名称为leyou-registry:
 
-![1529226086759](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529226086759.png)
+![1529226086759](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529226086759.png)
 
 选择安装目录，因为是聚合项目，目录应该是在父工程leyou的下面：
 
-![1529226475238](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529226475238.png)
+![1529226475238](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529226475238.png)
 
 
 
@@ -504,7 +504,7 @@ eureka:
 
 目前，整个项目的结构如图：
 
- ![1529288386033](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529288386033.png)
+ ![1529288386033](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529288386033.png)
 
 
 
@@ -514,11 +514,11 @@ eureka:
 
 与上面类似，选择maven方式创建Module，然后填写项目名称，我们命名为：leyou-gateway
 
-![1529288749658](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529288749658.png)
+![1529288749658](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529288749658.png)
 
 填写保存的目录：
 
-![1529288865152](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529288865152.png)
+![1529288865152](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529288865152.png)
 
 
 
@@ -603,7 +603,7 @@ zuul:
 
 目前，服务的结构如图所示：
 
- ![1529294593632](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529294593632.png)
+ ![1529294593632](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529294593632.png)
 
 截止到这里，我们已经把基础服务搭建完毕，为了便于开发，统一配置中心（ConfigServer）我们留待以后添加。
 
@@ -636,7 +636,7 @@ zuul:
 
 调用关系如图所示：
 
-![1525744281610](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1525744281610.png)
+![1525744281610](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1525744281610.png)
 
 
 
@@ -644,11 +644,11 @@ zuul:
 
 依然是使用maven构建：
 
-![1529299088082](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529299088082.png)
+![1529299088082](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529299088082.png)
 
 保存的位置：
 
-![1529299138961](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529299138961.png)
+![1529299138961](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529299138961.png)
 
 因为是聚合工程，所以把项目打包方式设置为pom
 
@@ -679,21 +679,21 @@ zuul:
 
 在leyou-item工程上点击右键，选择new --> module:
 
-![1529299709029](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529299709029.png)
+![1529299709029](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529299709029.png)
 
 依然是使用maven构建，注意父工程是leyou-item：
 
-![1529299826248](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529299826248.png)
+![1529299826248](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529299826248.png)
 
 **注意**：目录结构，保存到`leyou-item`下的`leyou-item-interface`目录中：
 
-![1529299921171](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529299921171.png)
+![1529299921171](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529299921171.png)
 
 点击Finish完成。
 
 此时的项目结构：
 
- ![1529300026401](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529300026401.png)
+ ![1529300026401](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529300026401.png)
 
 
 
@@ -701,11 +701,11 @@ zuul:
 
 与`leyou-item-interface`类似，我们选择在`leyou-item`上右键，新建module，然后填写项目信息：
 
-![1529300203991](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529300203991.png)
+![1529300203991](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529300203991.png)
 
 填写存储位置
 
-![1529300292096](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529300292096.png)
+![1529300292096](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529300292096.png)
 
 点击Finish完成。
 
@@ -715,11 +715,11 @@ zuul:
 
 如图所示：
 
- ![1529300341449](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529300341449.png)
+ ![1529300341449](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529300341449.png)
 
 我们打开leyou-item的pom查看，会发现leyou-item-interface和leyou-item-service都已经成为module了：
 
-![1529300419107](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529300419107.png)
+![1529300419107](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529300419107.png)
 
 可以删除leyou-item工程的src目录
 
@@ -876,11 +876,11 @@ zuul:
 
 我们分别启动：leyou-registry，leyou-gateway，leyou-item-service
 
- ![1529335980812](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529335980812.png)
+ ![1529335980812](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529335980812.png)
 
 查看Eureka面板：
 
-![1529336014109](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529336014109.png)
+![1529336014109](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529336014109.png)
 
 
 
@@ -910,11 +910,11 @@ zuul:
 
 鼠标悬停在item-service上，会显示一个地址：
 
-![1529337273897](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529337273897.png)
+![1529337273897](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529337273897.png)
 
 这就是actuator提供的接口，我们点击访问：
 
-![1529337321847](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529337321847.png)
+![1529337321847](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529337321847.png)
 
 因为我们没有添加信息，所以是一个空的json，但是可以肯定的是：我们能够访问到item-service了。
 
@@ -922,7 +922,7 @@ zuul:
 
 http://127.0.0.1:10010/api/item/actuator/info
 
-![1529337396077](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529337396077.png)
+![1529337396077](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529337396077.png)
 
 
 
@@ -932,19 +932,19 @@ http://127.0.0.1:10010/api/item/actuator/info
 
 右键leyou工程，使用maven来构建module：
 
-![1529337583947](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529337583947.png)
+![1529337583947](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529337583947.png)
 
 位置信息：
 
-![1529337672465](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529337672465.png)
+![1529337672465](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529337672465.png)
 
 结构：
 
- ![1529337748507](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529337748507.png)
+ ![1529337748507](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529337748507.png)
 
 目前还不需要编码。
 
- ![1539770110464](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1539770110464.png)
+ ![1539770110464](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1539770110464.png)
 
 
 
@@ -1040,7 +1040,7 @@ console.log("循环外：" + i)
 
 你猜下打印的结果是什么？
 
-![1529376275020](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529376275020.png)
+![1529376275020](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529376275020.png)
 
 
 
@@ -1059,13 +1059,13 @@ console.log("循环外：" + i)
 
 结果：
 
-![1529395660265](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529395660265.png)
+![1529395660265](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529395660265.png)
 
 > const
 
 `const`声明的变量是常量，不能被修改
 
-![1529420270814](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1529420270814.png)
+![1529420270814](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1529420270814.png)
 
 
 
@@ -1081,7 +1081,7 @@ ES6为字符串扩展了几个新的API：
 
 实验一下：
 
- ![1526107640349](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1526107640349.png)
+ ![1526107640349](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1526107640349.png)
 
 
 
@@ -1089,7 +1089,7 @@ ES6为字符串扩展了几个新的API：
 
 ES6中提供了`来作为字符串模板标记。我们可以这么玩：
 
- ![1526108070980](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1526108070980.png)
+ ![1526108070980](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1526108070980.png)
 
 在两个`之间的部分都会被作为字符串的值，不管你任意换行，甚至加入js脚本
 
@@ -1115,7 +1115,7 @@ console.log(x,y,z);
 
 结果：
 
- ![1526109778368](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1526109778368.png)
+ ![1526109778368](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1526109778368.png)
 
 
 
@@ -1144,13 +1144,13 @@ console.log(language);
 
 结果：
 
- ![1526109984544](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1526109984544.png)
+ ![1526109984544](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1526109984544.png)
 
 
 
 如过想要用其它变量接收，需要额外指定别名：
 
- ![1526110159450](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1526110159450.png)
+ ![1526110159450](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1526110159450.png)
 
 `{name:n}`：name是person中的属性名，冒号后面的n是解构后要赋值给的变量。
 
@@ -1283,7 +1283,7 @@ arr = arr.map(s => parseInt(s));
 console.log(arr)
 ```
 
-  ![1526110796839](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1526110796839.png)
+  ![1526110796839](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1526110796839.png)
 
 
 
@@ -1306,11 +1306,11 @@ const arr = [1,20,-5,3]
 
 没有初始值：
 
- ![1526111537204](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1526111537204.png)
+ ![1526111537204](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1526111537204.png)
 
 指定初始值：
 
- ![1526111580742](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1526111580742.png)
+ ![1526111580742](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1526111580742.png)
 
 
 
@@ -1323,7 +1323,7 @@ ES6给Object拓展了许多新的方法，如：
 - entries(obj)：获取对象的所有key和value形成的二维数组。格式：`[[k1,v1],[k2,v2],...]`
 - assign(dest, ...src) ：将多个src对象的值 拷贝到 dest中（浅拷贝）。
 
- ![1527210872966](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day04/1527210872966.png)
+ ![1527210872966](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day04/1527210872966.png)
 
 
 

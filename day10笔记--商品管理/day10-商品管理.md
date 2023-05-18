@@ -10,11 +10,11 @@
 
 当我们点击新增商品按钮：
 
-![1528450695946](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528450695946.png)
+![1528450695946](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528450695946.png)
 
 就会出现一个弹窗：
 
-![1528450773322](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528450773322.png)
+![1528450773322](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528450773322.png)
 
 里面把商品的数据分为了4部分来填写：
 
@@ -31,7 +31,7 @@
 
 对应到页面中的四个`stepper-content`：
 
-![1528457410198](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528457410198.png)
+![1528457410198](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528457410198.png)
 
 
 
@@ -39,21 +39,21 @@
 
 弹窗是一个独立组件：
 
- ![1528084394245](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528084394245.png)
+ ![1528084394245](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528084394245.png)
 
 并且在Goods组件中已经引用它：
 
-![1528457758806](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528457758806.png)
+![1528457758806](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528457758806.png)
 
 并且在页面中渲染：
 
-![1528457859739](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528457859739.png)
+![1528457859739](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528457859739.png)
 
 在`新增商品`按钮的点击事件中，改变这个`dialog`的`show`属性：
 
-![1528457992959](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528457992959.png)
+![1528457992959](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528457992959.png)
 
-![1528458037693](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528458037693.png)
+![1528458037693](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528458037693.png)
 
 
 
@@ -61,23 +61,23 @@
 
 我们先来看下基本数据：
 
-![1528086595597](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528086595597.png)
+![1528086595597](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528086595597.png)
 
 ### 1.2.1.商品分类
 
 商品分类信息查询我们之前已经做过，所以这里的级联选框已经实现完成：
 
-![1528459846644](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528459846644.png)
+![1528459846644](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528459846644.png)
 
 刷新页面，可以看到请求已经发出：
 
-![1528460001803](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528460001803.png)
+![1528460001803](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528460001803.png)
 
-![1528460054188](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528460054188.png)
+![1528460054188](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528460054188.png)
 
 效果：
 
-![1528460159541](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528460159541.png)
+![1528460159541](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528460159541.png)
 
 
 
@@ -89,11 +89,11 @@
 
 所以页面编写了watch函数，监控商品分类的变化，每当商品分类值有变化，就会发起请求，查询品牌列表：
 
-![1528460401582](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528460401582.png)
+![1528460401582](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528460401582.png)
 
 选择商品分类后，可以看到请求发起：
 
-![1528460607735](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528460607735.png)
+![1528460607735](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528460607735.png)
 
 接下来，我们只要编写后台接口，根据商品分类id，查询对应品牌即可。
 
@@ -146,7 +146,7 @@ List<Brand> selectBrandByCid(Long cid);
 
 效果：
 
-![1528462393536](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528462393536.png)
+![1528462393536](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528462393536.png)
 
 
 
@@ -154,7 +154,7 @@ List<Brand> selectBrandByCid(Long cid);
 
 剩余的几个属性：标题、子标题等都是普通文本框，我们直接填写即可，没有需要特别注意的。
 
-![1528462474512](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528462474512.png)
+![1528462474512](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528462474512.png)
 
 
 
@@ -168,7 +168,7 @@ List<Brand> selectBrandByCid(Long cid);
 
 百度百科：
 
-![1526290914491](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1526290914491.png)
+![1526290914491](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1526290914491.png)
 
 通俗来说：富文本，就是比较丰富的文本编辑器。普通的框只能输入文字，而富文本还能给文字加颜色样式等。
 
@@ -184,7 +184,7 @@ GitHub的主页：https://github.com/surmon-china/vue-quill-editor
 
 Vue-Quill-Editor是一个基于Quill的富文本编辑器：[Quill的官网](https://quilljs.com/)
 
-![1526291232678](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1526291232678.png)
+![1526291232678](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1526291232678.png)
 
 
 
@@ -233,7 +233,7 @@ var vm = new Vue({
 
 我们这里采用局部引用：
 
-![1528465859061](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528465859061.png)
+![1528465859061](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528465859061.png)
 
 
 
@@ -249,7 +249,7 @@ var vm = new Vue({
 
 不过这个组件有个小问题，就是图片上传的无法直接上传到后台，因此我们对其进行了封装，支持了图片的上传。
 
- ![1526296083605.png](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1526296083605.png)
+ ![1526296083605.png](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1526296083605.png)
 
 使用也非常简单：
 
@@ -266,7 +266,7 @@ var vm = new Vue({
 
 ### 1.3.5.效果
 
-![1528469209005](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528469209005.png)
+![1528469209005](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528469209005.png)
 
 
 
@@ -274,13 +274,13 @@ var vm = new Vue({
 
 规格参数的查询我们之前也已经编写过接口，因为商品规格参数也是与商品分类绑定，所以需要在商品分类变化后去查询，我们也是通过watch监控来实现：
 
-![1528469560330](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528469560330.png)
+![1528469560330](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528469560330.png)
 
 可以看到这里是根据商品分类id查询规格参数：SpecParam。我们之前写过一个根据gid（分组id）来查询规格参数的接口，我们接下来完成根据分类id查询规格参数。
 
 > ### 改造查询规格参数接口
 
-![1543415396355](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1543415396355.png)
+![1543415396355](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1543415396355.png)
 
 我们在原来的根据 gid（规格组id)查询规格参数的接口上，添加一个参数：cid，即商品分类id。
 
@@ -326,13 +326,13 @@ var vm = new Vue({
 
 测试：
 
-![1528470181643](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528470181643.png)
+![1528470181643](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528470181643.png)
 
 
 
 刷新页面测试：
 
-![1528470221970](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528470221970.png)
+![1528470221970](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528470221970.png)
 
 
 
@@ -340,7 +340,7 @@ var vm = new Vue({
 
 Sku属性是SPU下的每个商品的不同特征，如图：
 
-![1528470828296](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528470828296.png)
+![1528470828296](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528470828296.png)
 
 当我们填写一些属性后，会在页面下方生成一个sku表格，大家可以计算下会生成多少个不同属性的Sku呢？
 
@@ -354,7 +354,7 @@ Sku属性是SPU下的每个商品的不同特征，如图：
 
 我们会在页面下方生成一个sku的表格：
 
-![1528470876872](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528470876872.png)
+![1528470876872](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528470876872.png)
 
 
 
@@ -362,11 +362,11 @@ Sku属性是SPU下的每个商品的不同特征，如图：
 
 在sku列表的下方，有一个提交按钮：
 
-![1528470945475](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528470945475.png)
+![1528470945475](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528470945475.png)
 
 并且绑定了点击事件：
 
-![1528471079383](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528471079383.png)
+![1528471079383](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528471079383.png)
 
 点击后会组织数据并向后台提交：
 
@@ -442,7 +442,7 @@ Sku属性是SPU下的每个商品的不同特征，如图：
 
 点击提交，查看控制台提交的数据格式：
 
-![1528472289831](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528472289831.png)
+![1528472289831](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528472289831.png)
 
 整体是一个json格式数据，包含Spu表所有数据：
 
@@ -472,7 +472,7 @@ Sku属性是SPU下的每个商品的不同特征，如图：
 
 SPU和SpuDetail实体类已经添加过，添加Sku和Stock对象：
 
- ![1528472531490](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528472531490.png)
+ ![1528472531490](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528472531490.png)
 
 > Sku
 
@@ -602,7 +602,7 @@ private void saveSkuAndStock(SpuBo spuBo) {
 
 目录结构：
 
- ![1543416129953](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1543416129953.png)
+ ![1543416129953](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1543416129953.png)
 
 
 
@@ -612,15 +612,15 @@ private void saveSkuAndStock(SpuBo spuBo) {
 
 在商品详情页，每一个商品后面，都会有一个编辑按钮：
 
-![1528476387213](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528476387213.png)
+![1528476387213](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528476387213.png)
 
 点击这个按钮，就会打开一个商品编辑窗口，我们看下它所绑定的点击事件：（在item/Goods.vue）
 
-![1528476530008](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528476530008.png)
+![1528476530008](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528476530008.png)
 
 对应的方法：
 
-![1528476579123](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528476579123.png)
+![1528476579123](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528476579123.png)
 
 可以看到这里发起了两个请求，在查询商品详情和sku信息。
 
@@ -668,7 +668,7 @@ public SpuDetail querySpuDetailBySpuId(Long spuId) {
 
 > 测试
 
-![1528477123640](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528477123640.png)
+![1528477123640](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528477123640.png)
 
 
 
@@ -720,7 +720,7 @@ public List<Sku> querySkusBySpuId(Long spuId) {
 
 > 测试：
 
-![1528477189379](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528477189379.png)
+![1528477189379](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528477189379.png)
 
 
 
@@ -728,13 +728,13 @@ public List<Sku> querySkusBySpuId(Long spuId) {
 
 随便点击一个编辑按钮，发现数据回显完成：
 
-![1528477890801](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528477890801.png)
+![1528477890801](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528477890801.png)
 
-![1528477928748](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528477928748.png)
+![1528477928748](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528477928748.png)
 
-![1528477970912](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528477970912.png)
+![1528477970912](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528477970912.png)
 
-![1528478019100](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528478019100.png)
+![1528478019100](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528478019100.png)
 
 
 
@@ -744,7 +744,7 @@ public List<Sku> querySkusBySpuId(Long spuId) {
 
 随便修改点数据，然后点击保存，可以看到浏览器已经发出请求：
 
-![1528478194128](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528478194128.png)
+![1528478194128](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528478194128.png)
 
 
 
@@ -847,9 +847,9 @@ webpack打包多页应用配置比较繁琐，项目结构也相对复杂。这�
 
 创建一个新的工程：
 
-![1528479807646](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528479807646.png)
+![1528479807646](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528479807646.png)
 
-![1528479863567](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528479863567.png)
+![1528479863567](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528479863567.png)
 
 
 
@@ -857,15 +857,15 @@ webpack打包多页应用配置比较繁琐，项目结构也相对复杂。这�
 
 将课前资料中的leyou-portal解压，并复制到这个项目下
 
-![1528479930705](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528479930705.png)
+![1528479930705](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528479930705.png)
 
 解压缩：
 
-![1528479984188](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528479984188.png)
+![1528479984188](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528479984188.png)
 
 项目结构：
 
- ![1528480139441](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528480139441.png)
+ ![1528480139441](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528480139441.png)
 
 
 
@@ -879,7 +879,7 @@ webpack打包多页应用配置比较繁琐，项目结构也相对复杂。这�
 
 地址；https://www.npmjs.com/package/live-server
 
- ![1526460917348](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1526460917348.png)
+ ![1526460917348](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1526460917348.png)
 
 这是一款带有热加载功能的小型开发服务器。用它来展示你的HTML / JavaScript / CSS，但不能用于部署最终的网站。 
 
@@ -935,7 +935,7 @@ live-server
 live-server --port=9002
 ```
 
-![1528480541193](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1528480541193.png)
+![1528480541193](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1528480541193.png)
 
 
 
@@ -972,7 +972,7 @@ server {
 
 重新加载nginx配置：`nginx.exe -s reload`
 
-![1526462774092](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1526462774092.png)
+![1526462774092](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1526462774092.png)
 
 
 
@@ -980,13 +980,13 @@ server {
 
 为了方便后续的开发，我们在前台系统中定义了一些工具，放在了common.js中：
 
- ![1526643361038](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1526643361038.png)
+ ![1526643361038](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1526643361038.png)
 
 
 
 部分代码截图：
 
- ![1526643526973](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day10/1526643526973.png)
+ ![1526643526973](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day10/1526643526973.png)
 
 首先对axios进行了一些全局配置，请求超时时间，请求的基础路径，是否允许跨域操作cookie等
 

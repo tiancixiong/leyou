@@ -23,7 +23,7 @@ SKU：Stock Keeping Unit（库存量单位），SPU商品集因具体特性不�
 
 以图为例来看：
 
-![1526085541996](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526085541996.png)
+![1526085541996](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526085541996.png)
 
 - 本页的 华为Mate10 就是一个商品集（SPU）
 - 因为颜色、内存等不同，而细分出不同的Mate10，如亮黑色128G版。（SKU）
@@ -57,7 +57,7 @@ brand_id：品牌
 
 似乎并不复杂，但是大家仔细思考一下，商品的规格字段你如何填写？
 
- ![1526086539789](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526086539789.png)
+ ![1526086539789](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526086539789.png)
 
 不同商品的规格不一定相同，数据库中要如何保存？
 
@@ -90,13 +90,13 @@ stock：库存
 
 > 华为的规格：
 
- ![1526087063700](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526087063700.png)
+ ![1526087063700](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526087063700.png)
 
 
 
 > 三星的规格：
 
- ![1526087142454](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526087142454.png)
+ ![1526087142454](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526087142454.png)
 
 
 
@@ -104,7 +104,7 @@ stock：库存
 
 如下图所示：
 
- ![1526088168565](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526088168565.png)
+ ![1526088168565](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526088168565.png)
 
 ### 1.2.3.SKU的特有属性
 
@@ -116,7 +116,7 @@ SPU中会有一些特殊属性，用来区分不同的SKU，我们称为SKU特�
 
 这样说起来，似乎SKU的特有属性也是与分类相关的？事实上，仔细观察你会发现，**SKU的特有属性是商品规格参数的一部分**：
 
-![1526088981953](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526088981953.png)
+![1526088981953](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526088981953.png)
 
 
 
@@ -125,7 +125,7 @@ SPU中会有一些特殊属性，用来区分不同的SKU，我们称为SKU特�
 - 所有sku共享的规格属性（称为全局属性）
 - 每个sku不同的规格属性（称为特有属性）
 
-![1526089506566](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526089506566.png)
+![1526089506566](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526089506566.png)
 
 
 
@@ -133,15 +133,15 @@ SPU中会有一些特殊属性，用来区分不同的SKU，我们称为SKU特�
 
 打开一个搜索页，我们来看看过滤的条件：
 
-![1526090072535](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526090072535.png)
+![1526090072535](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526090072535.png)
 
 你会发现，过滤条件中的屏幕尺寸、运行内存、网路、机身内存、电池容量、CPU核数等，在规格参数中都能找到：
 
- ![1526090228171](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526090228171.png)
+ ![1526090228171](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526090228171.png)
 
 也就是说，规格参数中的数据，将来会有一部分作为搜索条件来使用。我们可以在设计时，将这部分属性标记出来，将来做搜索的时候，作为过滤条件。要注意的是，无论是SPU的全局属性，还是SKU的特有属性，都有可能作为搜索过滤条件的，并不冲突，而是有一个交集：
 
- ![1526091216124](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526091216124.png)
+ ![1526091216124](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526091216124.png)
 
 
 
@@ -167,7 +167,7 @@ CREATE TABLE `tb_specification` (
 
 为什么是一个json？我们看下规格参数的格式：
 
-![1526092179381](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526092179381.png)
+![1526092179381](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526092179381.png)
 
 如果按照传统数据库设计，这里至少需要3张表：
 
@@ -183,7 +183,7 @@ CREATE TABLE `tb_specification` (
 
 > 先整体看一下：
 
- ![1526092693138](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526092693138.png)
+ ![1526092693138](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526092693138.png)
 
 - 因为规格参数分为很多组，所以json最外层是一个数组。
 - 数组中是对象类型，每个对象代表一个组的数据，对象的属性包括：
@@ -192,7 +192,7 @@ CREATE TABLE `tb_specification` (
 
 > 接下来是params：
 
- ![1526093111370](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526093111370.png)
+ ![1526093111370](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526093111370.png)
 
 以`主芯片`这一组为例：
 
@@ -208,7 +208,7 @@ CREATE TABLE `tb_specification` (
 
 上面的截图中所有属性都是全局属性，我们来看看内存，应该是特有属性：
 
-  ![1526262641446](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526262641446.png)
+  ![1526262641446](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526262641446.png)
 
 
 
@@ -234,11 +234,11 @@ CREATE TABLE `tb_specification` (
 
 打开规格参数页面，看到如下内容：
 
-![1526095296462](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526095296462.png)
+![1526095296462](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526095296462.png)
 
 因为规格是跟商品分类绑定的，因此首先会展现商品分类树，并且提示你要选择商品分类，才能看到规格参数的模板。一起了解下页面的实现：
 
-![1526095548672](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526095548672.png)
+![1526095548672](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526095548672.png)
 
 可以看出页面分成3个部分：
 
@@ -259,7 +259,7 @@ CREATE TABLE `tb_specification` (
 
 接下来，看看Vue实例中data定义了哪些属性，对页面会产生怎样的影响：
 
- ![1526287774316](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526287774316.png)
+ ![1526287774316](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526287774316.png)
 
 - specifications：选中一个商品分类后，需要查询后台获取规格参数信息，保存在这个对象中，Vue会完成页面渲染。
 - oldSpec：当前页兼具了规格的增、改、查等功能，这个对象记录被修改前的规格参数，以防用户撤销修改，用来恢复数据。
@@ -279,7 +279,7 @@ CREATE TABLE `tb_specification` (
 
 当我们点击树节点时，要将`v-dialog`打开，因此必须绑定一个点击事件：
 
- ![1526095959539](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526095959539.png)
+ ![1526095959539](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526095959539.png)
 
 我们来看下`handleClick`方法：
 
@@ -371,7 +371,7 @@ public interface SpecificationMapper extends Mapper<Specification> {
 
 - 返回结果：页面是直接把`resp.data`赋值给了specifications：
 
-  ![1526104087329](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526104087329.png)
+  ![1526104087329](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526104087329.png)
 
   那么我们返回的应该是规格参数的字符串
 
@@ -419,21 +419,21 @@ public class SpecificationService {
 
 目前，我们数据库只提供了3条规格参数信息：
 
- ![1526104551227](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526104551227.png)
+ ![1526104551227](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526104551227.png)
 
 我们访问：http://api.leyou.com/api/item/spec/76
 
- ![1526104475036](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526104475036.png)
+ ![1526104475036](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526104475036.png)
 
 然后在后台系统中测试：
 
-![1526104599452](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526104599452.png)
+![1526104599452](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526104599452.png)
 
 
 
 当我们点击一个还不存在的规格参数的商品分类：
 
-![1526104769276](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526104769276.png)
+![1526104769276](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526104769276.png)
 
 
 
@@ -527,13 +527,13 @@ CREATE TABLE `tb_spu_detail` (
 
 > 整体来看：
 
- ![1526262279963](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526262279963.png)
+ ![1526262279963](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526262279963.png)
 
 整体看上去与规格参数表中的数据一样，也是一个数组，并且分组，每组下有多个参数
 
 > 展开一组来看
 
- ![1526262389233](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526262389233.png)
+ ![1526262389233](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526262389233.png)
 
 可以看到，与规格参数表中的模板相比，最大的区别就是，这里指定了具体的值，因为商品确定了，其参数值肯定也确定了。
 
@@ -541,7 +541,7 @@ CREATE TABLE `tb_spu_detail` (
 
 刚才看到的是全局属性，那么特有属性在这个字段中如何存储呢？
 
- ![1526263214087](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526263214087.png)
+ ![1526263214087](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526263214087.png)
 
 我们发现特有属性也是有的，但是，注意看这里是不确定具体值的，因为特有属性只有在SKU中才能确定。这里只是保存了options，所有SKU属性的可选项。
 
@@ -549,7 +549,7 @@ CREATE TABLE `tb_spu_detail` (
 
 在哪里会用到这个字段的值呢，商品详情页的规格参数信息中：
 
- ![1526267700765](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526267700765.png)
+ ![1526267700765](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526267700765.png)
 
 
 
@@ -561,7 +561,7 @@ CREATE TABLE `tb_spu_detail` (
 
 来看数据格式：
 
- ![1526267952827](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526267952827.png)
+ ![1526267952827](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526267952827.png)
 
 可以看出，里面只保存了规格参数中的特有属性，而且格式进行了大大的简化，只有属性的key，和待选项。
 
@@ -571,7 +571,7 @@ CREATE TABLE `tb_spu_detail` (
 
 比如，商品详情页展示可选的规格参数时：
 
-   ![1526267828817](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526267828817.png)
+   ![1526267828817](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526267828817.png)
 
 
 
@@ -658,11 +658,11 @@ CREATE TABLE `tb_stock` (
 
 既然如此，我们是不是可以将不同角标串联起来，作为SPU下不同SKU的标示。这就是我们的indexes字段。
 
- ![1526266901335](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526266901335.png)
+ ![1526266901335](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526266901335.png)
 
 这个设计在商品详情页会特别有用：
 
- ![1526267180997](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526267180997.png)
+ ![1526267180997](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526267180997.png)
 
 当用户点击选中一个特有属性，你就能根据 角标快速定位到sku。
 
@@ -688,7 +688,7 @@ SPU中保存的是可选项，但不确定具体的值，而SKU中的保存的�
 
 首先，把课前资料提供的数据上传到虚拟机下：`/leyou/static`目录：
 
-![1527823423289](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1527823423289.png)
+![1527823423289](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1527823423289.png)
 
 然后，使用命令解压缩：
 
@@ -736,7 +736,7 @@ server {
 
 接下来，我们实现商品管理的页面，先看下我们要实现的效果：
 
-![1526268595873](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526268595873.png)
+![1526268595873](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526268595873.png)
 
 可以看出整体是一个table，然后有新增按钮。是不是跟昨天写品牌管理很像？
 
@@ -744,13 +744,13 @@ server {
 
 模板代码在分别在Goods.vue
 
- ![1526269215532](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526269215532.png)
+ ![1526269215532](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526269215532.png)
 
 ## 4.2.从0开始
 
 接下来，我们自己来实现一下，新建两个组件：MyGoods.vue和MyGoodsForm.vue
 
- ![1526269362233](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526269362233.png)
+ ![1526269362233](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526269362233.png)
 
 内容先随意：
 
@@ -779,15 +779,15 @@ server {
 
 然后修改menu.js,新建一个菜单：
 
- ![1526269555118](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526269555118.png)
+ ![1526269555118](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526269555118.png)
 
 修改router/index.js，添加一个路由：
 
- ![1526269615639](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526269615639.png)
+ ![1526269615639](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526269615639.png)
 
 预览一下：
 
- ![1526269739468](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526269739468.png)
+ ![1526269739468](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526269739468.png)
 
 
 
@@ -975,7 +975,7 @@ bname：品牌名称
 
 查看效果：
 
-![1526272476614](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526272476614.png)
+![1526272476614](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526272476614.png)
 
 因为没有编写查询功能，表格一直处于loading状态。
 
@@ -983,7 +983,7 @@ bname：品牌名称
 
 接下来看弹窗：
 
-![1526272537552](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526272537552.png)
+![1526272537552](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526272537552.png)
 
 
 
@@ -991,11 +991,11 @@ bname：品牌名称
 
 另外，似乎页面少了对上下架商品的过滤，在原始效果图中是有的：
 
- ![1526277614649](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526277614649.png)
+ ![1526277614649](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526277614649.png)
 
 这在Vuetify中是一组按钮，我们查看帮助文档：
 
- ![1526277713391](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526277713391.png)
+ ![1526277713391](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526277713391.png)
 
 
 
@@ -1290,7 +1290,7 @@ public interface CategoryMapper extends Mapper<Category>, SelectByIdListMapper<C
 
 刷新页面，查看效果：
 
- ![1526280777975](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526280777975.png)
+ ![1526280777975](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526280777975.png)
 
 
 
@@ -1304,7 +1304,7 @@ public interface CategoryMapper extends Mapper<Category>, SelectByIdListMapper<C
 
 新增商品窗口：
 
- ![1526268739827](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526268739827.png)
+ ![1526268739827](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526268739827.png)
 
 这个表单比较复杂，因为商品的信息比较多，分成了4个部分来填写：
 
@@ -1408,7 +1408,7 @@ addGoods() {
 
 不过弹窗中没有任何数据：
 
- ![1526281134046](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526281134046.png)
+ ![1526281134046](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526281134046.png)
 
 
 
@@ -1418,11 +1418,11 @@ addGoods() {
 
 预览效果图中，分四个步骤显示商品表单的组件，叫做stepper，看下文档：
 
-![1526281659782](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526281659782.png)
+![1526281659782](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526281659782.png)
 
 其基本结构如图：
 
-![1526282309386](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526282309386.png)
+![1526282309386](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526282309386.png)
 
 一个步骤线（v-stepper）总的分为两部分：
 
@@ -1503,7 +1503,7 @@ data() {
 
 效果：
 
-![1526283729193](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526283729193.png)
+![1526283729193](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526283729193.png)
 
 步骤线出现了！
 
@@ -1519,7 +1519,7 @@ data() {
 
 如果改变step的值与指定的步骤索引一致，就可以实现步骤切换了：
 
-![1526283971416](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526283971416.png)
+![1526283971416](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526283971416.png)
 
 
 
@@ -1541,11 +1541,11 @@ data() {
 
 改造MyGoods的对话框组件：
 
-  ![1526285123845](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526285123845.png)
+  ![1526285123845](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526285123845.png)
 
 查看页面：
 
-![1526285086042](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526285086042.png)
+![1526285086042](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526285086042.png)
 
 
 
@@ -1559,7 +1559,7 @@ props属性。
 
 我们先在父组件定义一个step属性：
 
- ![1526285364638](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526285364638.png)
+ ![1526285364638](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526285364638.png)
 
 然后在点击事件中修改它：
 
@@ -1599,11 +1599,11 @@ next(){
 
 子组件中接收属性：
 
- ![1526285994382](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526285994382.png)
+ ![1526285994382](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526285994382.png)
 
 测试效果：
 
- ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/10.gif)
+ ![](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/10.gif)
 
 ## 5.4.商品基本信息
 
@@ -1657,11 +1657,11 @@ data() {
 
 效果：
 
- ![1526290196168](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526290196168.png)
+ ![1526290196168](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526290196168.png)
 
 查看goods的属性，三级类目都在：
 
- ![1526290263252](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526290263252.png)
+ ![1526290263252](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526290263252.png)
 
 
 
@@ -1671,7 +1671,7 @@ data() {
 
 品牌不分级别，使用普通下拉选框即可。我们查看官方文档的下拉选框说明：
 
- ![1526287929674](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526287929674.png)
+ ![1526287929674](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526287929674.png)
 
 组件名：v-select
 
@@ -1704,7 +1704,7 @@ data() {
 
 我们定义一个属性，保存品牌的待选项信息：
 
- ![1526289926110](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526289926110.png)
+ ![1526289926110](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526289926110.png)
 
 然后编写一个watch，监控goods.categories的变化：
 
@@ -1796,7 +1796,7 @@ List<Brand> queryByCategoryId(Long cid);
 
 #### 测试效果
 
- ![1526290461916](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526290461916.png)
+ ![1526290461916](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526290461916.png)
 
 ### 5.4.4.标题等其它字段
 
@@ -1815,7 +1815,7 @@ List<Brand> queryByCategoryId(Long cid);
 - rows：文本域的行数
 - multi-line：把单行文本变成文本域
 
-![1526290761721](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526290761721.png)
+![1526290761721](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526290761721.png)
 
 
 
@@ -1829,7 +1829,7 @@ List<Brand> queryByCategoryId(Long cid);
 
 百度百科：
 
-![1526290914491](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526290914491.png)
+![1526290914491](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526290914491.png)
 
 通俗来说：富文本，就是比较丰富的文本编辑器。普通的框只能输入文字，而富文本还能给文字加颜色样式等。
 
@@ -1845,7 +1845,7 @@ GitHub的主页：https://github.com/surmon-china/vue-quill-editor
 
 Vue-Quill-Editor是一个基于Quill的富文本编辑器：[Quill的官网](https://quilljs.com/)
 
-![1526291232678](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526291232678.png)
+![1526291232678](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526291232678.png)
 
 
 
@@ -1904,7 +1904,7 @@ var vm = new Vue({
 
 不过这个组件有个小问题，就是图片上传的无法直接上传到后台，因此我们对其进行了封装，支持了图片的上传。
 
- ![1526296083605.png](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526296083605.png)
+ ![1526296083605.png](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526296083605.png)
 
 使用也非常简单：
 
@@ -1921,7 +1921,7 @@ var vm = new Vue({
 
 ### 5.5.5.效果：
 
-![1526297276667](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526297276667.png)
+![1526297276667](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526297276667.png)
 
 
 
@@ -1933,15 +1933,15 @@ var vm = new Vue({
 
 首先，我们在data中定义变量，记录查询到的规格参数模板：
 
- ![1526297766476](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526297766476.png)
+ ![1526297766476](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526297766476.png)
 
 然后，我们通过watch监控goods.categories的变化，然后去查询规格：
 
-  ![1526375545366](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526375545366.png)
+  ![1526375545366](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526375545366.png)
 
 查看是否查询到：
 
- ![1526297980403](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526297980403.png)
+ ![1526297980403](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526297980403.png)
 
 ### 5.6.2.页面展示规格属性
 
@@ -1957,7 +1957,7 @@ var vm = new Vue({
 
 规格参数中的属性有一些需要我们特殊处理：
 
- ![1526298277201](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526298277201.png)
+ ![1526298277201](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526298277201.png)
 
 - global：是否是全局属性，规格参数中一部分是SPU共享，属于全局属性，另一部是SKU特有，需要根据SKU来填写。因此，在当前版面中，只展示global为true的，即全局属性。sku特有属性放到最后一个面板
 - numerical：是否是数值类型，如果是，把单位补充在页面表单，不允许用户填写，并且要验证用户输入的数据格式
@@ -1992,7 +1992,7 @@ var vm = new Vue({
 
 效果：
 
- ![1526302470344](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526302470344.png)
+ ![1526302470344](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526302470344.png)
 
 
 
@@ -2004,7 +2004,7 @@ sku特有属性也存在与specifications中，但是我们现在只想展示特
 
 首先：我们在data中新建一个属性，保存特有的规格参数：
 
- ![1526306568822](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526306568822.png)
+ ![1526306568822](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526306568822.png)
 
 然后，在查询完成规格模板后，立刻对规格参数进行处理，筛选出特有规格参数，保存到specialSpecs中：
 
@@ -2033,7 +2033,7 @@ this.$http.get("/item/spec/" + this.goods.categories[2].id)
 
 查看数据：
 
- ![1526306826026](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526306826026.png)
+ ![1526306826026](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526306826026.png)
 
 
 
@@ -2043,7 +2043,7 @@ this.$http.get("/item/spec/" + this.goods.categories[2].id)
 
 我们的目标效果是这样的：
 
- ![1526307835157](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526307835157.png)
+ ![1526307835157](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526307835157.png)
 
 可以看到，
 
@@ -2078,17 +2078,17 @@ this.$http.get("/item/spec/" + this.goods.categories[2].id)
 
 我们的实现效果：
 
-![1526308151513](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526308151513.png)
+![1526308151513](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526308151513.png)
 
 
 
 测试下，勾选checkbox或填写文本会发生什么：
 
- ![1526308483766](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526308483766.png)
+ ![1526308483766](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526308483766.png)
 
 看下规格模板的值：
 
- ![1526308513342](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526308513342.png)
+ ![1526308513342](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526308513342.png)
 
 
 
@@ -2106,7 +2106,7 @@ this.$http.get("/item/spec/" + this.goods.categories[2].id)
 
 代码如下：
 
-![1526309463115](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526309463115.png)
+![1526309463115](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526309463115.png)
 
 ```html
 <v-card flat v-for="spec in specialSpecs" :key="spec.k">
@@ -2130,13 +2130,13 @@ this.$http.get("/item/spec/" + this.goods.categories[2].id)
 
 效果：
 
- ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/11.gif)
+ ![](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/11.gif)
 
 
 
 而删除文本框相对就比较简单了，只要在文本框末尾添加一个按钮，添加点击事件即可，代码：
 
- ![1526310720065](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526310720065.png)
+ ![1526310720065](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526310720065.png)
 
 添加了一些布局样式，以及一个按钮，在点击事件中删除一个值。
 
@@ -2150,7 +2150,7 @@ this.$http.get("/item/spec/" + this.goods.categories[2].id)
 
 举例：
 
-![1526311110498](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526311110498.png)
+![1526311110498](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526311110498.png)
 
 当你选择了上图中的这些选项时：
 
@@ -2162,7 +2162,7 @@ this.$http.get("/item/spec/" + this.goods.categories[2].id)
 
 因此，接下来应该由用户来对这4种sku的信息进行详细填写，比如库存和价格等。而多种sku的最佳展示方式，是表格（淘宝、京东都是这么做的），如图：
 
-![1526311330409](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526311330409.png)
+![1526311330409](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526311330409.png)
 
 而且这个表格应该随着用户选择的不同而动态变化。如何实现？
 
@@ -2197,7 +2197,7 @@ console.log(result);
 
 结果：
 
- ![1526354069684](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526354069684.png)
+ ![1526354069684](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526354069684.png)
 
 完美实现。
 
@@ -2264,7 +2264,7 @@ console.log(result);
 
 结果：
 
- ![1526355132141](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526355132141.png)
+ ![1526355132141](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526355132141.png)
 
 ### 5.8.3.算法结合业务
 
@@ -2318,7 +2318,7 @@ console.log(result);
 
 如果：
 
-![skus.](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/skus.png)
+![skus.](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/skus.png)
 
 
 
@@ -2354,7 +2354,7 @@ computed: {
 
 结果：
 
- ![1526356312119](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526356312119.png)
+ ![1526356312119](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526356312119.png)
 
 
 
@@ -2403,7 +2403,7 @@ computed:{
 
 查看生成的数据：
 
- ![1526363824808](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526363824808.png)
+ ![1526363824808](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526363824808.png)
 
 
 
@@ -2459,7 +2459,7 @@ headers(){
 
 需要注意的是，price、stock字段需要用户填写数值，不能直接展示。enable要展示为checkbox，让用户选择，如图：
 
-![1526364758744](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526364758744.png)
+![1526364758744](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526364758744.png)
 
 
 
@@ -2496,7 +2496,7 @@ headers(){
 
 效果：
 
-![1526365039421](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526365039421.png)
+![1526365039421](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526365039421.png)
 
 
 
@@ -2506,21 +2506,21 @@ headers(){
 
 Vuetify的table有一个展开功能，可以提供额外的展示空间：
 
-![1526366340741](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526366340741.png)
+![1526366340741](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526366340741.png)
 
 用法也非常简单，添加一个template，把其slot属性指定为expand即可：
 
-![1526366667064](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526366667064.png)
+![1526366667064](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526366667064.png)
 
 效果：
 
-![1526366997943](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526366997943.png)
+![1526366997943](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526366997943.png)
 
 
 
 接下来就是我们的图片上传组件：v-upload
 
-![1526367719809](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526367719809.png)
+![1526367719809](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526367719809.png)
 
 
 
@@ -2541,7 +2541,7 @@ Vuetify的table有一个展开功能，可以提供额外的展示空间：
 
 效果：
 
-![1526366187195](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526366187195.png)
+![1526366187195](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526366187195.png)
 
 
 
@@ -2630,7 +2630,7 @@ submit(){
 
 点击测试，看效果：
 
-![1526391630336](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day09/1526391630336.png)
+![1526391630336](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day09/1526391630336.png)
 
 
 

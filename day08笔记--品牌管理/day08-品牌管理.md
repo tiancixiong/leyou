@@ -19,7 +19,7 @@
 
 我们查看Vuetify官网，弹窗是如何实现：
 
-![1526115791468](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526115791468.png)
+![1526115791468](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526115791468.png)
 
 另外，我们可以通过文档看到对话框的一些属性：
 
@@ -32,7 +32,7 @@
 
 首先，我们在data中定义一个show属性，来控制对话框的显示状态：
 
- ![1526116451280](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526116451280.png)
+ ![1526116451280](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526116451280.png)
 
 然后，在页面添加一个`v-dialog`
 
@@ -111,7 +111,7 @@ addBrand(){
 
 效果：
 
-![1526118714621](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526118714621.png)
+![1526118714621](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526118714621.png)
 
 
 
@@ -146,7 +146,7 @@ closeWindow(){
 
 效果：
 
- ![1526119096686](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526119096686.png)
+ ![1526119096686](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526119096686.png)
 
 
 
@@ -170,7 +170,7 @@ closeWindow(){
 
 我们新建一个`MyBrandForm.vue`组件：
 
- ![1526119788914](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526119788914.png)
+ ![1526119788914](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526119788914.png)
 
 将MyBrandForm引入到MyBrand中，这里使用局部组件的语法：
 
@@ -195,7 +195,7 @@ components:{
 
 页面效果：
 
- ![1526128384960](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526128384960.png)
+ ![1526128384960](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526128384960.png)
 
 ### 1.1.4.编写表单
 
@@ -203,7 +203,7 @@ components:{
 
 查看文档，找到关于表单的部分：
 
-![1526128476264](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526128476264.png)
+![1526128476264](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526128476264.png)
 
 `v-form`，表单组件，内部可以有许多输入项。`v-form`有下面的属性：
 
@@ -262,7 +262,7 @@ components:{
 
 先看文本框，昨天已经用过的，叫做`v-text-field`：
 
- ![1526129519056](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526129519056.png)
+ ![1526129519056](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526129519056.png)
 
 查看文档，`v-text-field`有以下关键属性：
 
@@ -298,7 +298,7 @@ components:{
 
 效果：
 
-![1526131172190](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526131172190.png)
+![1526131172190](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526131172190.png)
 
 #### 1.1.4.3.级联下拉选框
 
@@ -310,7 +310,7 @@ components:{
 
 这样的选框，在Vuetify中并没有提供（它提供的是基本的下拉框）。因此我已经给大家编写了一个无限级联动的下拉选框，能够满足我们的需求。
 
- ![1526131637045](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526131637045.png)
+ ![1526131637045](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526131637045.png)
 
 具体请参考课前资料的《自定义组件用法指南.md》
 
@@ -335,11 +335,11 @@ components:{
 
 效果：
 
- ![1526132934902](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526132934902.png)
+ ![1526132934902](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526132934902.png)
 
 data中获取的结果：
 
- ![1526133224362](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526133224362.png)
+ ![1526133224362](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526133224362.png)
 
 
 
@@ -349,7 +349,7 @@ data中获取的结果：
 
 还好，我已经给大家写好了一个文件上传的组件：
 
- ![1526133576597](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526133576597.png)
+ ![1526133576597](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526133576597.png)
 
 详细用法，参考《自定义组件使用指南.md》
 
@@ -388,7 +388,7 @@ data中获取的结果：
 
 最终结果：
 
- ![1526136024649](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526136024649.png)
+ ![1526136024649](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526136024649.png)
 
 
 
@@ -429,11 +429,11 @@ methods:{
 
 首先，在表单上定义`ref`属性：
 
- ![1526137891067](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526137891067.png)
+ ![1526137891067](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526137891067.png)
 
 然后，在页面查看`this.$refs`属性：
 
-![1526138030853](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526138030853.png)
+![1526138030853](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526138030853.png)
 
 看到`this.$refs`中只有一个属性，就是`myBrandForm`
 
@@ -462,11 +462,11 @@ methods:{
 
 Vuetify的表单校验，是通过rules属性来指定的：
 
-![1526138441735](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526138441735.png)
+![1526138441735](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526138441735.png)
 
 校验规则的写法：
 
-![1526138475159](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526138475159.png)
+![1526138475159](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526138475159.png)
 
 说明：
 
@@ -506,7 +506,7 @@ letterRules:[
 
 效果：
 
- ![1526139379209](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526139379209.png)
+ ![1526139379209](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526139379209.png)
 
 
 
@@ -549,7 +549,7 @@ submit() {
 
 - 6、弹窗提示成功还是失败，这里用到的是我们的自定义组件功能message组件：
 
-   ![1526140298249](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526140298249.png)
+   ![1526140298249](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526140298249.png)
 
   这个插件把`$message`对象绑定到了Vue的原型上，因此我们可以通过`this.$message`来直接调用。
 
@@ -627,11 +627,11 @@ public interface BrandMapper extends Mapper<Brand> {
 
 我们填写表单并提交，发现报错了：
 
- ![1526180888663](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526180888663.png)
+ ![1526180888663](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526180888663.png)
 
 查看控制台的请求详情：
 
- ![1526180937974](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526180937974.png)
+ ![1526180937974](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526180937974.png)
 
 
 
@@ -651,7 +651,7 @@ axios处理请求体的原则会根据请求数据的格式来定：
 
 QS是一个第三方库，我们可以用`npm install qs --save`来安装。不过我们在项目中已经集成了，大家无需安装：
 
- ![1526181889564](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526181889564.png)
+ ![1526181889564](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526181889564.png)
 
 这个工具的名字：QS，即Query String，请求参数字符串。
 
@@ -673,7 +673,7 @@ created(){
 
 发现其中有3个方法：
 
- ![1526181747560](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526181747560.png)
+ ![1526181747560](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526181747560.png)
 
 这里我们要使用的方法是stringify，它可以把Object转为QueryString。
 
@@ -681,11 +681,11 @@ created(){
 
 测试一下，使用浏览器工具，把qs对象保存为一个临时变量：
 
- ![1526182053758](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526182053758.png)
+ ![1526182053758](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526182053758.png)
 
 然后调用stringify方法：
 
- ![1526182230872](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526182230872.png)
+ ![1526182230872](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526182230872.png)
 
 成功将person对象变成了 name=jack&age=21的字符串了
 
@@ -695,23 +695,23 @@ created(){
 
 修改页面，对参数处理后发送：
 
-![1526181301670](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526181301670.png)
+![1526181301670](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526181301670.png)
 
 然后再次发起请求：
 
- ![1526181331443](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526181331443.png)
+ ![1526181331443](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526181331443.png)
 
 发现请求成功：
 
- ![1526181358204](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526181358204.png)
+ ![1526181358204](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526181358204.png)
 
 参数格式：
 
- ![1526181384653](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526181384653.png)
+ ![1526181384653](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526181384653.png)
 
 数据库：
 
- ![1526181553737](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526181553737.png)
+ ![1526181553737](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526181553737.png)
 
 
 
@@ -753,7 +753,7 @@ closeWindow(){
 
 - 第三步，子组件通过`this.$emit`调用父组件的函数：
 
- ![1526216993249](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526216993249.png)
+ ![1526216993249](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526216993249.png)
 
 
 
@@ -773,9 +773,9 @@ closeWindow(){
 
 ### 2.1.1.创建module
 
-![1526192299113](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526192299113.png)
+![1526192299113](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526192299113.png)
 
-![1526192347113](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526192347113.png)
+![1526192347113](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526192347113.png)
 
 ### 2.1.2.依赖
 
@@ -851,7 +851,7 @@ public class LyUploadService {
 
 结构：
 
- ![1526192931088](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526192931088.png)
+ ![1526192931088](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526192931088.png)
 
 
 
@@ -965,15 +965,15 @@ public class UploadService {
 
 我们通过RestClient工具来测试：
 
- ![1526196967376](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526196967376.png)
+ ![1526196967376](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526196967376.png)
 
 结果：
 
- ![1526197027688](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526197027688.png)
+ ![1526197027688](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526197027688.png)
 
 去目录下查看：
 
- ![1526197060729](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526197060729.png)
+ ![1526197060729](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526197060729.png)
 
 上传成功！
 
@@ -1026,7 +1026,7 @@ zuul:
 
 查看页面的请求路径：
 
- ![1526196446765](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526196446765.png)
+ ![1526196446765](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526196446765.png)
 
 可以看到这个地址不对，依然是去找Zuul网关，因为我们的系统全局配置了URL地址。怎么办？
 
@@ -1115,7 +1115,7 @@ rewrite "用来匹配路径的正则" 重写后的路径 [指令];
 
 重启nginx，再次上传，发现报错了：
 
-![1526200471676](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526200471676.png)
+![1526200471676](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526200471676.png)
 
 不过庆幸的是，这个错误已经不是第一次见了，跨域问题。
 
@@ -1151,11 +1151,11 @@ public class GlobalCorsConfig {
 
 再次测试：
 
- ![1526200606487](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526200606487.png)
+ ![1526200606487](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526200606487.png)
 
 不过，非常遗憾的是，访问图片地址，却没有响应。
 
- ![1526200927268](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526200927268.png)
+ ![1526200927268](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526200927268.png)
 
 这是因为我们并没有任何服务器对应image.leyou.com这个域名。。
 
@@ -1205,7 +1205,7 @@ FastDFS是由淘宝的余庆先生所开发的一个轻量级、高性能的开�
 
 先上图：
 
- ![1526205318630](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526205318630.png)
+ ![1526205318630](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526205318630.png)
 
 FastDFS两个主要的角色：Tracker Server 和 Storage Server 。
 
@@ -1219,7 +1219,7 @@ FastDFS两个主要的角色：Tracker Server 和 Storage Server 。
 
 > 上传
 
- ![1526205664373](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526205664373.png)
+ ![1526205664373](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526205664373.png)
 
 1. Client通过Tracker server查找可用的Storage server。
 2. Tracker server向Client返回一台可用的Storage server的IP地址和端口号。
@@ -1228,7 +1228,7 @@ FastDFS两个主要的角色：Tracker Server 和 Storage Server 。
 
 > 下载
 
- ![1526205705687](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526205705687.png)
+ ![1526205705687](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526205705687.png)
 
 1. Client通过Tracker server查找要下载文件所在的的Storage server。
 2. Tracker server向Client返回包含指定文件的某个Storage server的IP地址和端口号。
@@ -1241,7 +1241,7 @@ FastDFS两个主要的角色：Tracker Server 和 Storage Server 。
 
 参考课前资料的：《centos安装FastDFS.md》
 
- ![1526205975025](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526205975025.png)
+ ![1526205975025](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526205975025.png)
 
 
 
@@ -1255,7 +1255,7 @@ FastDFS两个主要的角色：Tracker Server 和 Storage Server 。
 
 地址：[tobato/FastDFS_client](https://github.com/tobato/FastDFS_Client)
 
- ![1526206304954](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526206304954.png)
+ ![1526206304954](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526206304954.png)
 
 接下来，我们就用FastDFS改造**leyou-upload**工程
 
@@ -1358,11 +1358,11 @@ M00/00/00/wKg4ZVro5eCAZEMVABfYcN8vzII630_60x60.png
 
 访问第一个路径：
 
-![1526215187172](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526215187172.png)
+![1526215187172](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526215187172.png)
 
 访问最后一个路径（缩略图路径），注意加组名：
 
- ![1526215257110](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526215257110.png)
+ ![1526215257110](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526215257110.png)
 
 
 
@@ -1419,17 +1419,17 @@ public class UploadService {
 
 通过RestClient测试：
 
- ![1526215940805](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526215940805.png)
+ ![1526215940805](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526215940805.png)
 
 ## 3.6.页面测试上传
 
 发现上传成功：
 
- ![1526216133300](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526216133300.png)
+ ![1526216133300](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526216133300.png)
 
 不过，当我们访问页面时：
 
- ![1526216178123](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526216178123.png)
+ ![1526216178123](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526216178123.png)
 
 这是因为我们图片是上传到虚拟机的，ip为：192.168.56.101
 
@@ -1437,13 +1437,13 @@ public class UploadService {
 
 修改我们的hosts：
 
- ![1526216272835](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526216272835.png)
+ ![1526216272835](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526216272835.png)
 
 
 
 再次上传：
 
- ![1526216322359](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526216322359.png)
+ ![1526216322359](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526216322359.png)
 
 
 
@@ -1453,7 +1453,7 @@ public class UploadService {
 
 当我们点击编辑按钮，希望弹出窗口的同时，看到原来的数据：
 
-![1526216494380](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526216494380.png)
+![1526216494380](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526216494380.png)
 
 
 
@@ -1467,7 +1467,7 @@ public class UploadService {
 
 然后编写事件，改变show 的状态：
 
- ![1526217622765](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526217622765.png)
+ ![1526217622765](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526217622765.png)
 
 如果仅仅是这样，编辑按钮与新增按钮将没有任何区别，关键在于，如何回显呢？
 
@@ -1479,7 +1479,7 @@ public class UploadService {
 
   先在data中定义属性，用来接收用来编辑的brand数据：
 
-   ![1526218080029](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526218080029.png)
+   ![1526218080029](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526218080029.png)
 
   我们在页面触发编辑事件时，把当前的brand传递给editBrand方法：
 
@@ -1511,7 +1511,7 @@ public class UploadService {
 
   接收数据：
 
-   ![1526218243761](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526218243761.png)
+   ![1526218243761](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526218243761.png)
 
   通过watch函数监控oldBrand的变化，把值copy到本地的brand：
 
@@ -1544,7 +1544,7 @@ public class UploadService {
 
 测试：发现数据回显了，除了商品分类以外：
 
- ![1526219653994](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526219653994.png)
+ ![1526219653994](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526219653994.png)
 
 
 
@@ -1623,7 +1623,7 @@ editBrand(oldBrand){
 
 再次测试：数据成功回显了
 
- ![1526222999115](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526222999115.png)
+ ![1526222999115](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526222999115.png)
 
 
 
@@ -1662,27 +1662,27 @@ addBrand() {
 
 第一步：在父组件中记录状态：
 
- ![1526224372366](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526224372366.png)
+ ![1526224372366](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526224372366.png)
 
 
 
 第二步：在新增和修改前，更改状态：
 
- ![1526224447288](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526224447288.png)
+ ![1526224447288](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526224447288.png)
 
 第三步：传递给子组件
 
- ![1526224495244](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526224495244.png)
+ ![1526224495244](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526224495244.png)
 
 第四步，子组件接收标记：
 
- ![1526224563838](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526224563838.png)
+ ![1526224563838](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526224563838.png)
 
 
 
 标题的动态化：
 
- ![1526224628514](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day08/1526224628514.png)
+ ![1526224628514](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day08/1526224628514.png)
 
 表单提交动态：
 

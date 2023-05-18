@@ -49,7 +49,7 @@ node.js的伟大之处不在于让JS迈向了后端开发，而是构建了一�
 
 随后，在node的基础上，涌现出了一大批的前端框架：
 
- ![1525825983230](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525825983230.png)
+ ![1525825983230](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1525825983230.png)
 
 > MVVM模式
 
@@ -66,7 +66,7 @@ node.js的伟大之处不在于让JS迈向了后端开发，而是构建了一�
 
 把开发人员从繁琐的DOM操作中解放出来，把关注点放在如何操作Model上。
 
- ![1525828854056](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525828854056.png)
+ ![1525828854056](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1525828854056.png)
 
 
 
@@ -84,11 +84,11 @@ Vue (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**
 
 参考：https://cn.vuejs.org/v2/guide/
 
-![1525829249048](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525829249048.png)
+![1525829249048](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1525829249048.png)
 
 Git地址：https://github.com/vuejs
 
-![1525829030730](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525829030730.png)
+![1525829030730](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1525829030730.png)
 
 **尤雨溪**，Vue.js 创作者，Vue Technology创始人，致力于Vue的研究开发。
 
@@ -104,7 +104,7 @@ Git地址：https://github.com/vuejs
 
 下载地址：https://nodejs.org/en/
 
-![1529594451775](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529594451775.png)
+![1529594451775](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529594451775.png)
 
 推荐下载LTS版本。
 
@@ -118,7 +118,7 @@ node -v
 
 看到版本信息：
 
-![1529595770482](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529595770482.png)
+![1529595770482](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529595770482.png)
 
 
 
@@ -126,7 +126,7 @@ node -v
 
 Node自带了NPM了，在控制台输入`npm -v`查看：
 
-![1529595810923](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529595810923.png)
+![1529595810923](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529595810923.png)
 
 
 
@@ -138,19 +138,19 @@ npm默认的仓库地址是在国外网站，速度较慢，建议大家设置�
 npm install nrm -g
 ```
 
-![1529596099952](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529596099952.png)
+![1529596099952](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529596099952.png)
 
 然后通过`nrm ls`命令查看npm的仓库列表,带*的就是当前选中的镜像仓库：
 
-![1529596219439](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529596219439.png)
+![1529596219439](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529596219439.png)
 
 通过`nrm use taobao`来指定要使用的镜像源：
 
-![1529596312671](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529596312671.png)
+![1529596312671](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529596312671.png)
 
 然后通过`nrm test npm `来测试速度：
 
-![1529596566134](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529596566134.png)
+![1529596566134](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529596566134.png)
 
 
 
@@ -171,21 +171,21 @@ npm install nrm -g
 
 创建一个新的空工程：
 
-![1529596874127](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529596874127.png)
+![1529596874127](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529596874127.png)
 
-![1529597228506](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529597228506.png)
+![1529597228506](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529597228506.png)
 
 然后新建一个module：
 
-![1529597325121](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529597325121.png)
+![1529597325121](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529597325121.png)
 
 选中static web，静态web项目：
 
-![1529597573453](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529597573453.png)
+![1529597573453](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529597573453.png)
 
 位置信息：
 
-![1529597672429](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529597672429.png)
+![1529597672429](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529597672429.png)
 
 
 
@@ -221,19 +221,19 @@ npm install nrm -g
 
 在idea的左下角，有个Terminal按钮，点击打开控制台：
 
-![1529598030268](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529598030268.png)
+![1529598030268](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529598030268.png)
 
 进入hello-vue目录，先输入：`npm init -y` 进行初始化
 
-![1529598244471](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529598244471.png)
+![1529598244471](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529598244471.png)
 
 安装Vue，输入命令：`npm install vue --save`
 
-![1529598444504](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529598444504.png)
+![1529598444504](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529598444504.png)
 
 然后就会在hello-vue目录发现一个node_modules目录，并且在下面有一个vue目录。
 
- ![1529602488684](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529602488684.png)
+ ![1529602488684](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529602488684.png)
 
 node_modules是通过npm安装的所有模块的默认位置。
 
@@ -245,11 +245,11 @@ node_modules是通过npm安装的所有模块的默认位置。
 
  在hello-vue目录新建一个HTML
 
-![1529719572523](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529719572523.png)
+![1529719572523](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529719572523.png)
 
 在hello.html中，我们编写一段简单的代码：
 
-![1529719673944](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529719673944.png)
+![1529719673944](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529719673944.png)
 
 h2中要输出一句话：xx 非常帅。前面的xx是要渲染的数据。
 
@@ -285,11 +285,11 @@ h2中要输出一句话：xx 非常帅。前面的xx是要渲染的数据。
 
 打开页面查看效果：
 
-![1529722898366](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529722898366.png)
+![1529722898366](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529722898366.png)
 
 更神奇的在于，当你修改name属性时，页面会跟着变化：
 
-![1529723206508](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529723206508.png)
+![1529723206508](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529723206508.png)
 
 
 
@@ -326,7 +326,7 @@ h2中要输出一句话：xx 非常帅。前面的xx是要渲染的数据。
 
 效果：
 
-![1529723206508](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/52.gif)
+![1529723206508](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/52.gif)
 
 我们可以观察到，输入框的变化引起了data中的num的变化，同时页面输出也跟着变化。
 
@@ -350,7 +350,7 @@ h2中要输出一句话：xx 非常帅。前面的xx是要渲染的数据。
 
 效果：
 
-![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/53.gif)
+![](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/53.gif)
 
 
 
@@ -470,7 +470,7 @@ var vm = new Vue({
 
 生命周期：
 
-![Vue life cycle](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/lifecycle.png)
+![Vue life cycle](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/lifecycle.png)
 
 ### 4.5.2.钩子函数
 
@@ -517,7 +517,7 @@ updated：组件更新之后。
 
 结果：
 
-![1529835200236](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529835200236.png)
+![1529835200236](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529835200236.png)
 
 
 
@@ -536,7 +536,7 @@ updated：组件更新之后。
 
  控制台的输出：
 
-![1529835379275](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529835379275.png)
+![1529835379275](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529835379275.png)
 
  
 
@@ -593,11 +593,11 @@ var app = new Vue({
 
 我们将网速调慢一些，然后试试看刚才的案例：
 
-![1529836021593](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529836021593.png)
+![1529836021593](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529836021593.png)
 
 刷新页面：
 
-![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/54.gif)
+![](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/54.gif)
 
 
 
@@ -634,7 +634,7 @@ var vm = new Vue({
 
 效果：
 
-![1529836688083](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529836688083.png)
+![1529836688083](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529836688083.png)
 
 并且不会出现插值闪烁，当没有数据时，会显示空白。
 
@@ -686,7 +686,7 @@ html：
 
 效果：
 
-![1529837541201](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1529837541201.png)
+![1529837541201](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1529837541201.png)
 
 
 
@@ -730,7 +730,7 @@ v-on:事件名="js片段或函数名"
 
 效果：
 
-![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/55.gif)
+![](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/55.gif)
 
 另外，事件绑定可以简写，例如`v-on:click='add'`可以简写为`@click='add'`
 
@@ -779,7 +779,7 @@ v-on:事件名="js片段或函数名"
 
 效果：（右键“增加一个”，不会触发默认的浏览器右击事件；右键“减少一个”，会触发默认的浏览器右击事件）
 
-![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/56.gif)
+![](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/56.gif)
 
 
 
@@ -882,7 +882,7 @@ v-for="item in items"
 
 效果：
 
-![1530006198953](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530006198953.png)
+![1530006198953](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530006198953.png)
 
 
 
@@ -912,7 +912,7 @@ v-for="(item,index) in items"
 
 > 效果：
 
-![1530006094601](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530006094601.png)
+![1530006094601](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530006094601.png)
 
 
 
@@ -955,7 +955,7 @@ v-for="(value,key,index) in object"
 
 > 效果：
 
-![1530006251975](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530006251975.png)
+![1530006251975](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530006251975.png)
 
 
 
@@ -1018,7 +1018,7 @@ v-if="布尔表达式"
 
 > 效果：
 
-![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/57.gif)
+![](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/57.gif)
 
 
 
@@ -1038,7 +1038,7 @@ v-if="布尔表达式"
 
 效果：
 
-![1530013415911](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530013415911.png)
+![1530013415911](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530013415911.png)
 
 只显示女性用户信息
 
@@ -1096,7 +1096,7 @@ v-if="布尔表达式"
 
 演示：
 
-![1530013415911](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/58.gif)
+![1530013415911](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/58.gif)
 
 
 
@@ -1135,7 +1135,7 @@ v-if="布尔表达式"
 
 代码：
 
-![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/59.gif)
+![](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/59.gif)
 
 
 
@@ -1163,7 +1163,7 @@ html属性不能使用双大括号形式绑定，只能使用v-bind指令。
 
 效果：
 
-![1530025378843](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530025378843.png)
+![1530025378843](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530025378843.png)
 
 在将 `v-bind` 用于 `class` 和 `style` 时，Vue.js 做了专门的增强。表达式结果的类型除了字符串之外，还可以是对象或数组。 
 
@@ -1197,7 +1197,7 @@ HTML：
 
 渲染后的效果：（具有active和hasError的样式）
 
-![1530026818515](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530026818515.png)
+![1530026818515](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530026818515.png)
 
 > 对象语法
 
@@ -1386,7 +1386,7 @@ var vm = new Vue({
 
 效果：
 
-![1530029950644](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530029950644.png)
+![1530029950644](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530029950644.png)
 
 
 
@@ -1422,7 +1422,7 @@ watch可以让我们监控一个值的变化。从而做出相应的反应。
 
 效果：
 
-![1530030506879](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530030506879.png)
+![1530030506879](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530030506879.png)
 
 
 
@@ -1468,7 +1468,7 @@ watch可以让我们监控一个值的变化。从而做出相应的反应。
 
 效果：
 
-![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/60.gif)
+![](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/60.gif)
 
 
 
@@ -1487,7 +1487,7 @@ watch可以让我们监控一个值的变化。从而做出相应的反应。
 
 效果：
 
-![1530084943778](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530084943778.png)
+![1530084943778](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530084943778.png)
 
 你会发现每个组件互不干扰，都有自己的count值。怎么实现的？
 
@@ -1559,7 +1559,7 @@ var app = new Vue({
 
 通常一个单页应用会以一棵嵌套的组件树的形式来组织：
 
-![1525855149491](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525855149491.png)
+![1525855149491](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1525855149491.png)
 
 - 页面首先分成了顶部导航、左侧内容区、右侧边栏三部分
 - 左侧内容区又分为上下两个组件
@@ -1597,7 +1597,7 @@ var app = new Vue({
 
 效果：
 
-![1530093525973](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530093525973.png)
+![1530093525973](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530093525973.png)
 
 
 
@@ -1659,13 +1659,13 @@ var app = new Vue({
 
 效果：
 
-![1530107338625](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530107338625.png)
+![1530107338625](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530107338625.png)
 
 
 
 type类型，可以有：
 
-![1530108427358](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530108427358.png)
+![1530108427358](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530108427358.png)
 
 
 
@@ -1730,7 +1730,7 @@ type类型，可以有：
 
 我们尝试运行，好像没问题，点击按钮试试：
 
-![1525859093172](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530115066496.png)
+![1525859093172](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530115066496.png)
 
 子组件接收到父组件属性后，默认是不允许修改的。怎么办？
 
@@ -1789,7 +1789,7 @@ var app = new Vue({
 
 效果：
 
-![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/61.gif)
+![](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/61.gif)
 
 
 
@@ -1801,7 +1801,7 @@ var app = new Vue({
 
 一个页面，包含登录和注册，点击不同按钮，实现登录和注册页切换：
 
- ![](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/8.gif)
+ ![](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/8.gif)
 
 
 
@@ -1811,7 +1811,7 @@ var app = new Vue({
 
 然后新建一个HTML文件，作为入口：index.html
 
- ![1530148321175](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530148321175.png)
+ ![1530148321175](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530148321175.png)
 
 然后编写页面的基本结构：
 
@@ -1834,7 +1834,7 @@ var app = new Vue({
 
 样式：
 
-![1530149363817](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530149363817.png)
+![1530149363817](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530149363817.png)
 
 
 
@@ -1842,7 +1842,7 @@ var app = new Vue({
 
 接下来我们来实现登录组件，以前我们都是写在一个文件中，但是为了复用性，开发中都会把组件放入独立的JS文件中，我们新建一个user目录以及login.js及register.js：
 
- ![1530156389366](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530156389366.png)
+ ![1530156389366](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530156389366.png)
 
 编写组件，这里我们只写模板，不写功能。
 
@@ -1911,7 +1911,7 @@ const registerForm = {
 
 效果：
 
-![1530157389501](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530157389501.png)
+![1530157389501](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530157389501.png)
 
 
 
@@ -1933,7 +1933,7 @@ const registerForm = {
 
 使用npm安装：`npm install vue-router --save` 
 
-![1530161293338](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530161293338.png)
+![1530161293338](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530161293338.png)
 
 在index.html中引入依赖：
 
@@ -2000,7 +2000,7 @@ var vm = new Vue({
 
 效果：
 
-![62.gif](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/62.gif)
+![62.gif](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/62.gif)
 
 **注意**：单页应用中，页面的切换并不是页面的跳转。仅仅是地址最后的hash值变化。
 
@@ -2014,7 +2014,7 @@ Webpack 是一个前端资源的打包工具，它可以将js、image、css等�
 
 中文官方网站：https://www.webpackjs.com/
 
-![1530168661348](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530168661348.png)
+![1530168661348](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530168661348.png)
 
 官网给出的解释：
 
@@ -2036,15 +2036,15 @@ webpack支持全局安装和本地安装，官方推荐是本地安装，我们�
 
  webpack 4+ 版本，你还需要安装 CLI ，输入命令：`npm install webpack webpack-cli --save-dev`
 
-![1530187524815](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530187524815.png)
+![1530187524815](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530187524815.png)
 
 此时，我们注意下项目中文件夹下，会有一个package.json文件。（其实早就有了）
 
- ![1530187744149](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530187744149.png)
+ ![1530187744149](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530187744149.png)
 
 打开文件，可以看到我们之前用npm安装过的文件都会出现在这里：
 
- ![1525873343908](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1525873343908.png)
+ ![1525873343908](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1525873343908.png)
 
 
 
@@ -2074,7 +2074,7 @@ webpack支持全局安装和本地安装，官方推荐是本地安装，我们�
 
 接下来，我们编写一个webpack的配置，来指定一些打包的配置项。配置文件的名称，默认就是webpack.config.js，我们放到hello-vue的根目录：
 
- ![1530199761226](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530199761226.png)
+ ![1530199761226](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530199761226.png)
 
 配置文件中就是要指定上面说的四个核心概念，入口、出口、加载器、插件。
 
@@ -2088,7 +2088,7 @@ webpack打包的启点，可以有一个或多个，一般是js文件。现在�
 
 我们新建一个js，把index.html中的部分内容进行集中，然后在index.html中引用这个js不就OK了！
 
- ![1530200787599](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530200787599.png)
+ ![1530200787599](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530200787599.png)
 
 然后把原来index.html中的js代码全部移动到index.js中
 
@@ -2172,7 +2172,7 @@ module.exports={
 
 出口，就是输出的目的地。一般我们会用一个dist目录，作为打包输出的文件夹：
 
- ![1530201612391](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530201612391.png)
+ ![1530201612391](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530201612391.png)
 
 然后，编写webpack.config.js，添加出口配置：
 
@@ -2197,15 +2197,15 @@ module.exports={
 npx webpack --config webpack.config.js
 ```
 
-![1530203361613](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530203361613.png)
+![1530203361613](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530203361613.png)
 
 随后，查看dist目录：
 
- ![1530203406462](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530203406462.png)
+ ![1530203406462](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530203406462.png)
 
 尝试打开build.js，你根本看不懂：
 
-![1530203465737](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530203465737.png)
+![1530203465737](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530203465737.png)
 
 所有的js合并为1个，并且对变量名进行了随机打乱，这样就起到了 压缩、混淆的作用。
 
@@ -2242,7 +2242,7 @@ npx webpack --config webpack.config.js
 
 然后运行：
 
-![1530203553915](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530203553915.png)
+![1530203553915](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530203553915.png)
 
 
 
@@ -2250,7 +2250,7 @@ npx webpack --config webpack.config.js
 
 我们来编写一段CSS代码，对index的样式做一些美化：
 
- ![1530203880056](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530203880056.png)
+ ![1530203880056](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530203880056.png)
 
 内容：
 
@@ -2286,11 +2286,11 @@ npx webpack --config webpack.config.js
 
 命令：`npm install style-loader css-loader --save-dev`
 
-![1530204068192](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530204068192.png)
+![1530204068192](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530204068192.png)
 
 此时，在package.json中能看到新安装的：
 
-![1530204160848](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530204160848.png)
+![1530204160848](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530204160848.png)
 
 
 
@@ -2331,11 +2331,11 @@ module.exports = {
 
 再次输入打包指令：`npx webpack --config webpack.config.js`
 
-![1530204780240](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530204780240.png)
+![1530204780240](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530204780240.png)
 
 效果：
 
-![1530204813013](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530204813013.png)
+![1530204813013](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530204813013.png)
 
 
 
@@ -2345,13 +2345,13 @@ module.exports = {
 
 我们可以把webpack的命令编入其中：
 
-![1530205423730](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530205423730.png)
+![1530205423730](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530205423730.png)
 
 以后，如果要打包，就可以直接输入：`npm run build`即可。
 
 `npm run` ：执行npm脚本，后面跟的是配置脚本的名称`build`
 
-![1530205504104](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530205504104.png)
+![1530205504104](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530205504104.png)
 
 
 
@@ -2399,15 +2399,15 @@ module.exports = {
 
 2）将原来HTML中的引入js代码删除：
 
-![1530207035782](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530207035782.png)
+![1530207035782](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530207035782.png)
 
 3）再次打包：`npm run build`
 
-![1530206990349](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530206990349.png)
+![1530206990349](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530206990349.png)
 
 4）查看dist目录：
 
- ![1530207132261](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530207132261.png)
+ ![1530207132261](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530207132261.png)
 
 打开index.html，发现已经自动添加了当前目录下的build.js
 
@@ -2470,11 +2470,11 @@ webpack给我们提供了一个插件，可以帮我们运行一个web服务，�
 
 3）运行脚本：`npm run dev`
 
-![1530207667660](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530207667660.png)
+![1530207667660](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530207667660.png)
 
 4）效果：
 
-![1530207505226](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530207505226.png)
+![1530207505226](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530207505226.png)
 
 
 
@@ -2498,35 +2498,35 @@ webpack给我们提供了一个插件，可以帮我们运行一个web服务，�
 
 我们新建一个module：
 
- ![1530208068828](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530208068828.png)
+ ![1530208068828](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530208068828.png)
 
 切换到该目录：
 
-![1530208139922](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530208139922.png)
+![1530208139922](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530208139922.png)
 
 用vue-cli命令，快速搭建一个webpack的项目：`vue init webpack`
 
-![1530208556831](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530208650256.png)
+![1530208556831](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530208650256.png)
 
-![1530208708000](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530208708000.png)
+![1530208708000](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530208708000.png)
 
 前面几项都走默认或yes
 
 下面这些我们选no
 
-![1530208850418](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530208850418.png)
+![1530208850418](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530208850418.png)
 
 最后，再选yes，使用 npm安装
 
-![1530208897063](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530208897063.png)
+![1530208897063](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530208897063.png)
 
 开始初始化项目，并安装依赖，可能需要
 
-![1530208932814](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530208932814.png)
+![1530208932814](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530208932814.png)
 
 安装成功！
 
-![1530209062090](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530209062090.png)
+![1530209062090](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530209062090.png)
 
 可以使用`npm run dev`命令启动。
 
@@ -2536,13 +2536,13 @@ webpack给我们提供了一个插件，可以帮我们运行一个web服务，�
 
 安装好的项目结构：
 
- ![1530209146349](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530209146349.png)
+ ![1530209146349](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530209146349.png)
 
 
 
 入口文件：main.js
 
-![1525913687860](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530209503007.png)
+![1525913687860](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530209503007.png)
 
 
 
@@ -2550,7 +2550,7 @@ webpack给我们提供了一个插件，可以帮我们运行一个web服务，�
 
 需要注意的是，我们看到有一类后缀名为.vue的文件，我们称为单文件组件
 
-![1530209769323](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530209769323.png)
+![1530209769323](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530209769323.png)
 
 每一个.vue文件，就是一个独立的vue组件。类似于我们刚才写的login.js和register.js
 
@@ -2572,7 +2572,7 @@ webpack给我们提供了一个插件，可以帮我们运行一个web服务，�
 
 看看生成的package.json：
 
-![1530210016103](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530210016103.png)
+![1530210016103](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530210016103.png)
 
 - 可以看到这引入了非常多的依赖，绝大多数都是开发期依赖，比如大量的加载器。
 - 运行时依赖只有vue和vue-router
@@ -2583,13 +2583,13 @@ webpack给我们提供了一个插件，可以帮我们运行一个web服务，�
 
 我们执行`npm run dev` 或者 `npm start` 都可以启动项目：
 
-![1530210411076](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530210411076.png)
+![1530210411076](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530210411076.png)
 
 
 
 页面：
 
-![1530210349704](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day05/1530210349704.png)
+![1530210349704](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day05/1530210349704.png)
 
 
 

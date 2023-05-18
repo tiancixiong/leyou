@@ -16,23 +16,23 @@
 
 然后在工程内导入：
 
- ![1527849592739](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1527849592739.png)
+ ![1527849592739](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1527849592739.png)
 
 然后导入module：
 
- ![1527849713858](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1527849713858.png)
+ ![1527849713858](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1527849713858.png)
 
 选择导入module：
 
- ![1527849755740](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1527849755740.png)
+ ![1527849755740](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1527849755740.png)
 
 选择目录中的 `ly-order`：
 
- ![1527988253596](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1527988253596.png)
+ ![1527988253596](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1527988253596.png)
 
 打开父工程leyou的pom文件，添加`ly-order`模块：
 
-![1527988384844](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1527988384844.png)
+![1527988384844](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1527988384844.png)
 
 
 
@@ -58,7 +58,7 @@ OpenAPI是一个编写API文档的规范，然而如果手动去编写OpenAPI规
 
 看官方的说明：
 
- ![1528724925709](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528724925709.png)
+ ![1528724925709](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528724925709.png)
 
 Swagger包含的工具集：
 
@@ -201,15 +201,15 @@ public class OrderController {
 
 启动服务，然后访问：http://localhost:8089/swagger-ui.html
 
-![1534050474425](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534050474425.png)
+![1534050474425](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534050474425.png)
 
 点击order-controller，查看接口信息：
 
-![1534050501639](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534050501639.png)
+![1534050501639](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534050501639.png)
 
 点击任意一个接口，即可看到详细信息：
 
-![1534050571547](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534050571547.png)
+![1534050571547](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534050571547.png)
 
 
 
@@ -226,7 +226,7 @@ public class OrderController {
 
 点击`Try It Out`来测试：
 
-![1528726383029](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528726383029.png)
+![1528726383029](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528726383029.png)
 
 输入数据：
 
@@ -264,21 +264,21 @@ public class OrderController {
 
 然后点击execute：
 
-![1534050960735](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534050960735.png)
+![1534050960735](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534050960735.png)
 
 结果：
 
-![1534056625226](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534056625226.png)
+![1534056625226](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534056625226.png)
 
 下单需要登录，通过登录生成token：
 
-![1534056963545](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534056963545.png)
+![1534056963545](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534056963545.png)
 
 把token的值手动加入到浏览器的cookie中：
 
-![1534057111628](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534057111628.png)
+![1534057111628](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534057111628.png)
 
-![1534057197865](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534057197865.png)
+![1534057197865](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534057197865.png)
 
 添加成功，响应订单编号。但是和数据库保存的订单编号不太一样（后几位不一样，浏览器展示长整型会出现精度损失）
 
@@ -296,7 +296,7 @@ public class OrderController {
 
 这里的订单id是通过一个工具类生成的：
 
- ![1534057752285](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534057752285.png)
+ ![1534057752285](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534057752285.png)
 
 而工具类所采用的生成id算法，是由Twitter公司开源的snowflake（雪花）算法。
 
@@ -304,7 +304,7 @@ public class OrderController {
 
 雪花算法会生成一个64位的二进制数据，为一个Long型。(转换成字符串后长度最多19) ，其基本结构：
 
- ![1528729105237](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528729105237.png)
+ ![1528729105237](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528729105237.png)
 
 第一位：为未使用
 
@@ -371,7 +371,7 @@ public class IdWorkerConfig {
 
 > 使用：
 
-![1534057869509](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534057869509.png)
+![1534057869509](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534057869509.png)
 
 
 
@@ -386,11 +386,11 @@ public class IdWorkerConfig {
 
 测试：
 
-![1534058725566](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534058725566.png)
+![1534058725566](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534058725566.png)
 
 结果：
 
-![1534058696076](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534058696076.png)
+![1534058696076](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534058696076.png)
 
 
 
@@ -407,15 +407,15 @@ public class IdWorkerConfig {
 
 测试：
 
-![1534059150417](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534059150417.png)
+![1534059150417](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534059150417.png)
 
 结果：
 
-![1534059488506](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534059488506.png)
+![1534059488506](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534059488506.png)
 
 数据库中也发生了改变：
 
-![1534059550338](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534059550338.png)
+![1534059550338](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534059550338.png)
 
 
 
@@ -436,11 +436,11 @@ public class IdWorkerConfig {
 
 测试：
 
-![1534059762431](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534059762431.png)
+![1534059762431](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534059762431.png)
 
 结果：
 
-![1534059802562](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534059802562.png)
+![1534059802562](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534059802562.png)
 
 
 
@@ -457,11 +457,11 @@ public class IdWorkerConfig {
 
 测试：
 
-![1534059974834](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534059974834.png)
+![1534059974834](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534059974834.png)
 
 结果：
 
-![1534060051812](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534060051812.png)
+![1534060051812](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534060051812.png)
 
 
 
@@ -582,7 +582,7 @@ public class PayHelper {
 
 跟支付相关的其它几个类：
 
- ![1528796883071](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528796883071.png)
+ ![1528796883071](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528796883071.png)
 
 
 
@@ -601,11 +601,11 @@ public class PayHelper {
 
 未付款时查询，测试：
 
-![1534060875467](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534060875467.png)
+![1534060875467](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534060875467.png)
 
 结果：
 
-![1534061834503](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534061834503.png)
+![1534061834503](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534061834503.png)
 
 因为尚未付款，所以查询返回0。
 
@@ -617,17 +617,17 @@ public class PayHelper {
 
 找到课前资料提供的JS页面：
 
-![1534061965270](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534061965270.png)
+![1534061965270](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534061965270.png)
 
 进入，并输入刚刚生成的地址：
 
-![1534062028046](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534062028046.png)
+![1534062028046](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534062028046.png)
 
 #### 1.3.6.3.已付款
 
 扫码支付，然后再次查询：
 
-![1534062115599](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534062115599.png)
+![1534062115599](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534062115599.png)
 
 状态码为1，代表支付成功了！
 
@@ -641,21 +641,21 @@ public class PayHelper {
 
 在购物车页面的最下方，有一个去结算按钮：
 
-![1527990452791](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1527990452791.png)
+![1527990452791](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1527990452791.png)
 
 当点击结算，我们应该跳转到订单结算页，即：`getOrderInfo.html`
 
- ![1534062458952](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534062458952.png)
+ ![1534062458952](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534062458952.png)
 
 查看购物车的`结算`按钮：
 
-![1534063127883](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534063127883.png)
+![1534063127883](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534063127883.png)
 
 可以看到，地址是正确的。但是只有登录用户才可以去结算付款，因此我们不能直接跳转，而是在跳转前校验用户的登录状态，如果发现是未登录，应该重定向到登录页！
 
 我们给这个按钮绑定点击事件：
 
-![1534063368728](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534063368728.png)
+![1534063368728](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534063368728.png)
 
 事件中判断登录状态，进行页面跳转：
 
@@ -676,7 +676,7 @@ toOrderInfo() {
 
 登录后测试：
 
-![1534068627040](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534068627040.png)
+![1534068627040](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534068627040.png)
 
 
 
@@ -690,11 +690,11 @@ toOrderInfo() {
 
 ## 2.2.收货人信息（作业）
 
-![1528011713709](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528011713709.png)
+![1528011713709](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528011713709.png)
 
 这里的收货人信息肯定是当前登录用户的收货地址。所以需要根据当前登录用户去查询，目前我们在页面是写的假数据：
 
-![1534070259673](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534070259673.png)
+![1534070259673](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534070259673.png)
 
 大家可以在在后台提供地址的增删改查接口，然后页面加载时根据当前登录用户查询，而后赋值给addresses即可。
 
@@ -709,15 +709,15 @@ toOrderInfo() {
 
 与我们订单数据中的`paymentType`关联：
 
-![1528012065388](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528012065388.png)
+![1528012065388](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528012065388.png)
 
 所以我们可以在Vue实例中定义一个属性来记录支付方式：
 
-![1534070467947](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534070467947.png)
+![1534070467947](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534070467947.png)
 
 然后在页面渲染时与这个变量关联：
 
-![1534070743780](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534070743780.png)
+![1534070743780](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534070743780.png)
 
 
 
@@ -725,7 +725,7 @@ toOrderInfo() {
 
 效果图：
 
-![1528012881735](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528012881735.png)
+![1528012881735](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528012881735.png)
 
 这里的送货清单，其实就是购物车中用户选择的要付款的商品
 
@@ -737,17 +737,17 @@ toOrderInfo() {
 
 我们修改`cart.html`中的页面跳转逻辑，把用户选中的购物车信息传递过来：
 
-![1534071010391](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534071010391.png)
+![1534071010391](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534071010391.png)
 
 然后在`created`钩子函数中获取购物车数据，保存到本地属性，要注意的是，我们应该在获取数据前校验用户登录状态，如果发现未登录，则直接重定向到登录页：
 
-![1534071493245](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534071493245.png)
+![1534071493245](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534071493245.png)
 
 
 
 然后重新加载页面，查看控制台：
 
-![1534071647717](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534071647717.png)
+![1534071647717](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534071647717.png)
 
 
 
@@ -755,7 +755,7 @@ toOrderInfo() {
 
 要修改的页面位置：每一个li就是一件商品
 
-![1534071794146](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534071794146.png)
+![1534071794146](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534071794146.png)
 
 我们修改为：
 
@@ -794,7 +794,7 @@ toOrderInfo() {
 
 另外在商品列表下面，还有一个总金额的计算：
 
-![1534072483208](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534072483208.png)
+![1534072483208](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534072483208.png)
 
 可以看出这里主要有4个数据：
 
@@ -805,7 +805,7 @@ toOrderInfo() {
 
 不过我们没有做优惠活动，另外运费需要结合物流系统来计算，暂时我们都设置为0，在order属性中写死：
 
-![1534072753146](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534072753146.png)
+![1534072753146](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534072753146.png)
 
 我们通过计算属性来得到`totalPay`和`actualPay`值：
 
@@ -825,11 +825,11 @@ computed: {
 
 然后在页面渲染：
 
-![1534073678931](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534073678931.png)
+![1534073678931](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534073678931.png)
 
 效果：
 
-![1534073704731](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534073704731.png)
+![1534073704731](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534073704731.png)
 
 
 
@@ -839,7 +839,7 @@ computed: {
 
 来看下订单接口所需要的数据：
 
-![1534074122199](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534074122199.png)
+![1534074122199](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534074122199.png)
 
 分为3部分，分别是
 
@@ -854,7 +854,7 @@ computed: {
 
   - 就是购物车中的商品，不过购物车数据会多出一个userId，我们去除即可：
 
-  ![1534074293296](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534074293296.png)
+  ![1534074293296](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534074293296.png)
 
 - 物流信息
 
@@ -864,7 +864,7 @@ computed: {
 
 给提交按钮绑定事件：
 
-![1534074374101](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534074374101.png)
+![1534074374101](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534074374101.png)
 
 然后编写方法，组织数据并提交：
 
@@ -907,13 +907,13 @@ methods: {
 
 在页面点击提交测试：
 
- ![1528340102503](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528340102503.png)
+ ![1528340102503](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528340102503.png)
 
 成功生成订单！
 
 然后看页面跳转：
 
- ![1528340136603](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528340136603.png)
+ ![1528340136603](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528340136603.png)
 
 好像有什么不对？订单号的最后2位不正确啊！
 
@@ -923,7 +923,7 @@ methods: {
 
 因此，我们重写axios对响应的处理回调函数：
 
- ![1528340413139](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528340413139.png)
+ ![1528340413139](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528340413139.png)
 
 ```javascript
 {
@@ -947,15 +947,15 @@ methods: {
 
 微信支付官方文档：https://pay.weixin.qq.com/index.php/core/home/login?return_url=%2F
 
-![1527848350188](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1527848350188.png)
+![1527848350188](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1527848350188.png)
 
 我们选择开发文档，而后进入选择页面：
 
-![1527848358128](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1527848358128.png)
+![1527848358128](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1527848358128.png)
 
 选择扫码支付：
 
-![1527848368179](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1527848368179.png)
+![1527848368179](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1527848368179.png)
 
 此处我们使用模式二来开发：
 
@@ -971,7 +971,7 @@ methods: {
 
 流程图：
 
-![2wa23131](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/chapter6_5_1.png)
+![2wa23131](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/chapter6_5_1.png)
 
 这里我们把商户（我们）要做的事情总结一下：
 
@@ -1035,11 +1035,11 @@ var payVm = new Vue({
 
 后台已经定义好生成付款地址的接口。
 
- ![1528362159620](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528362159620.png)
+ ![1528362159620](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528362159620.png)
 
 刷新页面查看：
 
- ![1528362220886](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528362220886.png)
+ ![1528362220886](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528362220886.png)
 
 
 
@@ -1047,29 +1047,29 @@ var payVm = new Vue({
 
 这里我们使用一个生成二维码的JS插件：qrcode，官网：https://github.com/davidshimjs/qrcodejs
 
-![1534313526721](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534313526721.png)
+![1534313526721](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534313526721.png)
 
 我们把课这个js脚本引入到项目中：
 
- ![1528362348399](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528362348399.png)
+ ![1528362348399](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528362348399.png)
 
 官方使用案例：
 
-![1534313925398](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1534313925398.png)
+![1534313925398](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1534313925398.png)
 
 然后在页面引用：
 
- ![1528362377494](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528362377494.png)
+ ![1528362377494](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528362377494.png)
 
 
 
 页面定义一个div，用于展示二维码：
 
- ![1528362023061](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528362023061.png)
+ ![1528362023061](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528362023061.png)
 
 然后获取到付款链接后，根据链接生成二维码：
 
- ![1528362420151](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528362420151.png)
+ ![1528362420151](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528362420151.png)
 
 ```js
 // 判断登录状态
@@ -1098,7 +1098,7 @@ ly.http.get("/auth/verify").then(() => {
 
 刷新页面，查看效果：
 
- ![1528362464276](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528362464276.png)
+ ![1528362464276](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528362464276.png)
 
 此时，客户用手机扫描二维码，可以看到付款页面。
 
@@ -1135,7 +1135,7 @@ const taskId = setInterval(() => {
 
 当付款成功后，自动跳转到付款成功页面：
 
-![1528376883924](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day19/1528376883924.png)
+![1528376883924](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day19/1528376883924.png)
 
 
 

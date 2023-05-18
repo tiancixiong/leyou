@@ -10,9 +10,9 @@
 
 ## 1.1.创建module
 
-![1533738258872](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533738258872.png)
+![1533738258872](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533738258872.png)
 
-![1533738278599](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533738278599.png)
+![1533738278599](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533738278599.png)
 
 
 
@@ -120,7 +120,7 @@ public class LeyouCartApplication {
 
 ## 2.2.流程图
 
-![1527585343248](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1527585343248.png)
+![1527585343248](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1527585343248.png)
 
 
 
@@ -152,7 +152,7 @@ public class LeyouCartApplication {
 
 我们看下页面展示需要什么数据：
 
-![1527737419294](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1527737419294.png)
+![1527737419294](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1527737419294.png)
 
 因此每一个购物车信息，都是一个对象，包含：
 
@@ -183,7 +183,7 @@ public class LeyouCartApplication {
 
 #### 什么是web本地存储？
 
-![1527587496457](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1527587496457.png)
+![1527587496457](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1527587496457.png)
 
 
 
@@ -198,7 +198,7 @@ web本地存储主要有两种方式：
 
 语法非常简单：
 
-![1533739711101](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533739711101.png)
+![1533739711101](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533739711101.png)
 
 ```js
 localStorage.setItem("key","value"); // 存储数据
@@ -210,13 +210,13 @@ localStorage.removeItem("key"); // 删除数据
 
 不过，在我们的common.js中，已经对localStorage进行了简单的封装：
 
-![1533739810927](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533739810927.png)
+![1533739810927](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533739810927.png)
 
 
 
 示例：
 
-![1533739929733](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533739929733.png)
+![1533739929733](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533739929733.png)
 
 
 
@@ -224,15 +224,15 @@ localStorage.removeItem("key"); // 删除数据
 
 添加购物车需要知道购物的数量，所以我们需要获取数量大小。我们在Vue中定义num，保存数量：
 
-![1533740236299](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533740236299.png)
+![1533740236299](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533740236299.png)
 
 然后将num与页面的input框绑定，同时给`+`和`-`的按钮绑定事件：
 
-![1533742284781](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533742284781.png)
+![1533742284781](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533742284781.png)
 
 编写方法：
 
-![1533742493645](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533742493645.png)
+![1533742493645](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533742493645.png)
 
 
 
@@ -242,13 +242,13 @@ localStorage.removeItem("key"); // 删除数据
 
 我们看下商品详情页：
 
-![1527585864482](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1527585864482.png)
+![1527585864482](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1527585864482.png)
 
 现在点击加入购物车会跳转到购物车成功页面。
 
 不过我们不这么做，我们绑定点击事件，然后实现添加购物车功能。
 
-![1533745246878](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533745246878.png)
+![1533745246878](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533745246878.png)
 
 addCart方法中判断用户的登录状态：
 
@@ -302,7 +302,7 @@ addCart(){
 
 结果：
 
-![1533785968759](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533785968759.png)
+![1533785968759](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533785968759.png)
 
 添加完成后，页面会跳转到购物车结算页面：cart.html
 
@@ -316,11 +316,11 @@ addCart(){
 
 在common.js中：
 
-![1533788637942](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533788637942.png)
+![1533788637942](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533788637942.png)
 
 在页面item.html中使用该方法：
 
-![1533788722957](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533788722957.png)
+![1533788722957](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533788722957.png)
 
 
 
@@ -359,7 +359,7 @@ var cartVm = new Vue({
 
 刷新页面，查看控制台Vue实例：
 
-![1533806610234](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533806610234.png)
+![1533806610234](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533806610234.png)
 
 
 
@@ -367,13 +367,13 @@ var cartVm = new Vue({
 
 接下来，我们在页面中展示carts的数据：
 
-![1533806563740](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533806563740.png)
+![1533806563740](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533806563740.png)
 
 要注意，价格的展示需要进行格式化，这里使用的是我们在common.js中定义的formatPrice方法
 
 效果：
 
-![1533806670775](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533806670775.png)
+![1533806670775](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533806670775.png)
 
 
 
@@ -381,7 +381,7 @@ var cartVm = new Vue({
 
 我们给页面的 `+` 和 `-`绑定点击事件，修改num 的值：
 
-![1533806715698](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533806715698.png)
+![1533806715698](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533806715698.png)
 
 两个事件：
 
@@ -415,7 +415,7 @@ var cartVm = new Vue({
 
 给删除按钮绑定事件：
 
-![1533807671462](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533807671462.png)
+![1533807671462](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533807671462.png)
 
 
 
@@ -439,11 +439,11 @@ deleteCart(i){
 
 在页面中，每个购物车商品左侧，都有一个复选框，用户可以选择部分商品进行下单，而不一定是全部：
 
-![1533808731995](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533808731995.png)
+![1533808731995](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533808731995.png)
 
 我们定义一个变量，记录所有被选中的商品：
 
-![1533816012100](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533816012100.png)
+![1533816012100](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533816012100.png)
 
 
 
@@ -451,7 +451,7 @@ deleteCart(i){
 
 我们给商品前面的复选框与selected绑定，并且指定其值为当前购物车商品：
 
-![1533810163988](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533810163988.png)
+![1533810163988](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533810163988.png)
 
 
 
@@ -459,7 +459,7 @@ deleteCart(i){
 
 我们在加载完成购物车查询后，初始化全选：
 
-![1533809253022](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533809253022.png)
+![1533809253022](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533809253022.png)
 
 
 
@@ -477,11 +477,11 @@ computed: {
 
 在页面中展示总价格：
 
-![1533810788247](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533810788247.png)
+![1533810788247](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533810788247.png)
 
 效果：
 
-![1533810760802](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533810760802.png)
+![1533810760802](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533810760802.png)
 
 
 
@@ -518,7 +518,7 @@ leyou:
 
 ### 4.1.3.加载公钥
 
- ![1533811142851](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533811142851.png)
+ ![1533811142851](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533811142851.png)
 
 代码：
 
@@ -577,7 +577,7 @@ public class JwtProperties {
 
 因为很多接口都需要进行登录，我们直接编写SpringMVC拦截器，进行统一登录校验。同时，我们还要把解析得到的用户信息保存起来，以便后续的接口可以使用。
 
- ![1533811351500](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533811351500.png)
+ ![1533811351500](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533811351500.png)
 
 代码：
 
@@ -641,7 +641,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
 
 配置SpringMVC，使过滤器生效：
 
- ![1533811609498](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533811609498.png)
+ ![1533811609498](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533811609498.png)
 
 ```java
 @Configuration
@@ -759,7 +759,7 @@ public class Cart {
 
 已登录情况下，向后台添加购物车：
 
-![1533812224110](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533812224110.png)
+![1533812224110](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533812224110.png)
 
 ```js
 ly.http.post("/cart", {skuId: this.sku.id, num: this.num}).then(res=>{
@@ -802,7 +802,7 @@ public class CartController {
 
 在leyou-gateway中添加路由配置：
 
-![1533814103369](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533814103369.png)
+![1533814103369](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533814103369.png)
 
 
 
@@ -880,7 +880,7 @@ public class CartService {
 
 参照搜索工程，添加GoodClient，提供根据id查询sku的接口：
 
- ![1533813101222](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533813101222.png)
+ ![1533813101222](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533813101222.png)
 
 ```java
 @FeignClient("item-service")
@@ -913,7 +913,7 @@ public Sku querySkuById(Long id) {
 
 ### 4.3.5.结果
 
-![1533815211788](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533815211788.png)
+![1533815211788](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533815211788.png)
 
 
 
@@ -923,7 +923,7 @@ public Sku querySkuById(Long id) {
 
 购物车页面：cart.html
 
-![1533816059966](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533816059966.png)
+![1533816059966](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533816059966.png)
 
 ### 4.4.2.后台实现
 
@@ -973,7 +973,7 @@ public List<Cart> queryCartList() {
 
 ### 4.4.3.测试
 
-![1533815725920](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533815725920.png)
+![1533815725920](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533815725920.png)
 
 
 
@@ -981,7 +981,7 @@ public List<Cart> queryCartList() {
 
 ### 4.5.1.页面发起请求
 
-![1534304010551](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1534304010551.png)
+![1534304010551](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1534304010551.png)
 
 ### 4.5.2.后台实现
 
@@ -1020,7 +1020,7 @@ public void updateCarts(Cart cart) {
 
 ### 4.6.1.页面发起请求
 
-![1533816356869](https://tiancixiong.coding.net/p/BlogIMG/d/BlogIMG/git/raw/master/blog/20191115_leyou/day18/1533816356869.png)
+![1533816356869](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day18/1533816356869.png)
 
 注意：后台成功响应后，要把页面的购物车中数据也删除
 
