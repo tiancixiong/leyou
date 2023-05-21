@@ -27,11 +27,11 @@
 
 商品的详情页服务，命名为：`leyou-goods-web`
 
-![1532349011199](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532349011199.png)
+![1532349011199](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532349011199.png)
 
 目录：
 
-![1532349060982](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532349060982.png)
+![1532349060982](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532349060982.png)
 
 
 
@@ -121,7 +121,7 @@ eureka:
 
 我们从leyou-portal中复制item.html模板到当前项目resource目录下的templates中：
 
- ![1532353728660](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532353728660.png)
+ ![1532353728660](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532353728660.png)
 
 
 
@@ -131,13 +131,13 @@ eureka:
 
 首先我们需要修改搜索结果页的商品地址，目前所有商品的地址都是：http://www.leyou.com/item.html
 
- ![1526955707685](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1526955707685.png)
+ ![1526955707685](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1526955707685.png)
 
 我们应该跳转到对应的商品的详情页才对。
 
 那么问题来了：商品详情页是一个SKU？还是多个SKU的集合？
 
-![1526955852490](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1526955852490.png)
+![1526955852490](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1526955852490.png)
 
 通过详情页的预览，我们知道它是多个SKU的集合，即SPU。
 
@@ -147,11 +147,11 @@ eureka:
 
 这里就采用了路径占位符的方式来传递spu的id，我们打开`search.html`，修改其中的商品路径：
 
-![1526972476737](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532354937173.png)
+![1526972476737](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532354937173.png)
 
 刷新页面后再看：
 
-![1532356634734](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532356634734.png)
+![1532356634734](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532356634734.png)
 
 
 
@@ -161,7 +161,7 @@ eureka:
 
 我们在nginx.conf中添加一段逻辑：
 
-![1532356995455](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532356995455.png)
+![1532356995455](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532356995455.png)
 
 使用`nginx.exe -s reload`重载数据，把以/item开头的请求，代理到我们的8084端口。
 
@@ -196,7 +196,7 @@ public class GoodsController {
 
 启动`leyou-goods-page`，点击搜索页面商品，看是能够正常跳转：
 
-![1532490861851](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532490861851.png)
+![1532490861851](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532490861851.png)
 
 现在看到的依然是静态的数据。我们接下来开始页面的渲染
 
@@ -262,7 +262,7 @@ public Spu querySpuById(Long id) {
 
 我们在页面展示规格时，需要按组展示：
 
-![1532496187812](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532496187812.png)
+![1532496187812](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532496187812.png)
 
 组内有多个参数，为了方便展示。我们在leyou-item-service中提供一个接口，查询规格组，同时在规格组内的所有参数。
 
@@ -347,7 +347,7 @@ public List<SpecGroup> querySpecsByCid(Long cid) {
 
 我们在`leyou-goods-web`服务中，创建FeignClient：
 
- ![1529916126099](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1529916126099.png)
+ ![1529916126099](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1529916126099.png)
 
 BrandClient：
 
@@ -411,11 +411,11 @@ public interface SpecificationClient extends SpecificationApi{
 
   因为在SpuDetail中的SpecialSpec中，是以id作为规格参数id作为key，如图：
 
-  ![1532499905549](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532499905549.png)
+  ![1532499905549](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532499905549.png)
 
   但是，在页面渲染时，需要知道参数的名称，如图：
 
-   ![1529922667759](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1529922667759.png)
+   ![1529922667759](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1529922667759.png)
 
   我们就需要把id和name一一对应起来，因此需要额外查询sku的特有规格参数，然后变成一个id:name的键值对格式。也就是一个Map，方便将来根据id查找！
 
@@ -545,7 +545,7 @@ public class GoodsController {
 
 然后查看页面源码：
 
-![1532509946463](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532509946463.png)
+![1532509946463](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532509946463.png)
 
 数据都成功查到了！
 
@@ -555,7 +555,7 @@ public class GoodsController {
 
 在商品展示页的顶部，有一个商品分类、品牌、标题的面包屑
 
- ![1526978423084](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1526978423084.png)
+ ![1526978423084](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1526978423084.png)
 
 其数据有3部分：
 
@@ -585,7 +585,7 @@ public class GoodsController {
 
 先看下整体效果：
 
-![1526979330657](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1526979330657.png)
+![1526979330657](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1526979330657.png)
 
 这个部分需要渲染的数据有5块：
 
@@ -611,7 +611,7 @@ public class GoodsController {
 
 副标题中可能会有超链接，因此这里也用`th:utext`来展示，效果：
 
- ![1526980061592](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1526980061592.png)
+ ![1526980061592](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1526980061592.png)
 
 
 
@@ -646,7 +646,7 @@ public class GoodsController {
 
 我们来看下页面获取的数据：
 
-![1529923363960](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1529923363960.png)
+![1529923363960](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1529923363960.png)
 
 
 
@@ -654,7 +654,7 @@ public class GoodsController {
 
 我们把刚才获得的几个变量保存在Vue实例中：
 
-![1532531501925](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532531501925.png)
+![1532531501925](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532531501925.png)
 
 然后在页面中渲染：
 
@@ -677,7 +677,7 @@ public class GoodsController {
 
 然后刷新页面查看：
 
-![1532531590626](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532531590626.png)
+![1532531590626](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532531590626.png)
 
 数据成功渲染了。不过我们发现所有的规格都被勾选了。这是因为现在，每一个规格都有样式：`selected`，我们应该只选中一个，让它的class样式为selected才对！
 
@@ -693,7 +693,7 @@ public class GoodsController {
 
 规格参数的格式是这样的：
 
- ![1529923584730](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1529923584730.png)
+ ![1529923584730](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1529923584730.png)
 
 每一个规格项是数组中的一个元素，因此我们只要保存被选择的规格项的索引，就能判断哪个是用户选择的了！
 
@@ -711,11 +711,11 @@ public class GoodsController {
 
 我们在`head`的script标签中，对索引对象进行初始化：
 
- ![1529923658242](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1529923658242.png)
+ ![1529923658242](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1529923658242.png)
 
 然后在vue中保存：
 
- ![1529923701283](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1529923701283.png)
+ ![1529923701283](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1529923701283.png)
 
 #### 页面改造
 
@@ -742,7 +742,7 @@ public class GoodsController {
 
 效果：
 
-![1532533192037](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532533192037.png)
+![1532533192037](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532533192037.png)
 
 
 
@@ -750,13 +750,13 @@ public class GoodsController {
 
 在我们设计sku数据的时候，就已经添加了一个字段：indexes：
 
-![1532533286400](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532533286400.png)
+![1532533286400](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532533286400.png)
 
 这其实就是规格参数的索引组合。
 
 而我们在页面中，用户点击选择规格后，就会把对应的索引保存起来：
 
-![1532533340274](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532533340274.png)
+![1532533340274](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532533340274.png)
 
 因此，我们可以根据这个indexes来确定用户要选择的sku
 
@@ -773,7 +773,7 @@ computed:{
 
 在浏览器工具中查看：
 
-![1532533876765](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532533876765.png)
+![1532533876765](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532533876765.png)
 
 
 
@@ -827,19 +827,19 @@ computed: {
 
 效果：
 
- ![1526985783938](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1526985783938.png)
+ ![1526985783938](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1526985783938.png)
 
 
 
 #### 标题和价格
 
-![1526985959427](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1526985959427.png)
+![1526985959427](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1526985959427.png)
 
 
 
 #### 完整效果
 
-![1532535748931](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532535748931.png)
+![1532535748931](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532535748931.png)
 
 
 
@@ -847,7 +847,7 @@ computed: {
 
 商品详情页面如下图所示：
 
-![1526988361312](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1526988361312.png)
+![1526988361312](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1526988361312.png)
 
 分成上下两部分：
 
@@ -876,7 +876,7 @@ computed: {
 
 最终展示效果：
 
-![1532536101914](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532536101914.png)
+![1532536101914](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532536101914.png)
 
 
 
@@ -895,13 +895,13 @@ computed: {
 
 最终的效果：
 
-![1532536238386](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532536238386.png)
+![1532536238386](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532536238386.png)
 
 
 
 我们模型中有一个groups，跟这个数据结果很像：
 
- ![1529924049003](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1529924049003.png)
+ ![1529924049003](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1529924049003.png)
 
 分成8个组，组内都有params，里面是所有的参数。不过，这些参数都没有值！
 
@@ -916,11 +916,11 @@ computed: {
 
 从spuDetail中取出genericSpec并取出groups：
 
-![1532537802576](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532537802576.png)
+![1532537802576](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532537802576.png)
 
 把genericSpec引入到Vue实例：
 
-![1532537863801](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532537863801.png)
+![1532537863801](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532537863801.png)
 
 
 
@@ -973,9 +973,9 @@ groups(){
 
 最终效果：
 
-![1532538150603](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532538150603.png)
+![1532538150603](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532538150603.png)
 
-![1532538178543](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532538178543.png)
+![1532538178543](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532538178543.png)
 
 
 
@@ -992,7 +992,7 @@ groups(){
 
 效果：
 
-![1532538249704](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532538249704.png)
+![1532538249704](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532538249704.png)
 
 
 
@@ -1074,7 +1074,7 @@ templateEngine.process("模板名", context, writer);
 
 ### 2.2.2.具体实现
 
- ![1532757937331](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532757937331.png)
+ ![1532757937331](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532757937331.png)
 
 Service代码：
 
@@ -1188,7 +1188,7 @@ public String toItemPage(@PathVariable("id")Long id, Model model){
 
 访问一个商品详情，然后查看nginx目录：
 
-![1532757980379](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532757980379.png)
+![1532757980379](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532757980379.png)
 
 
 
@@ -1226,7 +1226,7 @@ server {
 
 发现请求速度得到了极大提升：
 
-![1532758206086](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day14/1532758206086.png)
+![1532758206086](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day14/1532758206086.png)
 
 
 

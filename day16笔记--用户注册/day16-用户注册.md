@@ -37,11 +37,11 @@ leyou-user：父工程，包含2个子工程：
 
 创建
 
-![1532778843008](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532778843008.png)
+![1532778843008](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532778843008.png)
 
 位置：
 
-![1532778910920](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532778910920.png)
+![1532778910920](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532778910920.png)
 
 
 
@@ -49,9 +49,9 @@ leyou-user：父工程，包含2个子工程：
 
 在leyou-user下，创建module：
 
-![1532779001951](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532779001951.png)
+![1532779001951](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532779001951.png)
 
-![1532779042843](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532779042843.png)
+![1532779042843](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532779042843.png)
 
 pom：
 
@@ -80,9 +80,9 @@ pom：
 
 创建module
 
-![1532779120507](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532779120507.png)
+![1532779120507](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532779120507.png)
 
-![1532779166910](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532779166910.png)
+![1532779166910](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532779166910.png)
 
 pom
 
@@ -221,7 +221,7 @@ mybatis:
 
 我们修改`leyou-gateway`，添加路由规则，对`leyou-user-service`进行路由:
 
-![1532779772325](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532779772325.png)
+![1532779772325](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532779772325.png)
 
 
 
@@ -233,7 +233,7 @@ mybatis:
 
 现在假设项目经理已经设计好了接口文档，详见：《用户中心接口说明.md》
 
-![1527174356711](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1527174356711.png)
+![1527174356711](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1527174356711.png)
 
 我们将根据文档直接编写后台功能，不关心页面实现。
 
@@ -260,7 +260,7 @@ CREATE TABLE `tb_user` (
 
 ## 2.3.基本代码
 
- ![1532781014342](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532781014342.png)
+ ![1532781014342](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532781014342.png)
 
 ### 2.3.1.实体类
 
@@ -410,13 +410,13 @@ public Boolean checkData(String data, Integer type) {
 
 我们在数据库插入一条假数据：
 
-![1532781696303](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532781696303.png)
+![1532781696303](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532781696303.png)
 
 然后在浏览器调用接口，测试：
 
-![1532781679924](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532781679924.png)
+![1532781679924](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532781679924.png)
 
-![1532781726835](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532781726835.png)
+![1532781726835](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532781726835.png)
 
 
 
@@ -443,9 +443,9 @@ public Boolean checkData(String data, Integer type) {
 
 ### 4.2.1.创建module
 
-![1532786840913](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532786840913.png)
+![1532786840913](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532786840913.png)
 
-![1532786877872](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532786877872.png)
+![1532786877872](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532786877872.png)
 
 
 
@@ -526,7 +526,7 @@ spring:
 
 项目结构：
 
- ![1532955721215](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532955721215.png)
+ ![1532955721215](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532955721215.png)
 
 ### 4.3.1.属性抽取
 
@@ -705,15 +705,15 @@ public class SmsListener {
 
 启动项目，然后查看RabbitMQ控制台，发现交换机已经创建：
 
-![1532953272670](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532953272670.png)
+![1532953272670](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532953272670.png)
 
 队列也已经创建：
 
-![1532953320455](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532953320455.png)
+![1532953320455](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532953320455.png)
 
 并且绑定：
 
-![1532953460407](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532953460407.png)
+![1532953460407](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532953460407.png)
 
 
 
@@ -723,7 +723,7 @@ public class SmsListener {
 
 ## 5.1.接口说明
 
-![1527238127932](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1527238127932.png)
+![1527238127932](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1527238127932.png)
 
 
 
@@ -748,7 +748,7 @@ public class SmsListener {
 
 参考课前资料中的：《centos下的redis安装配置.md》
 
-![1532955014018](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1532955014018.png)
+![1532955014018](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1532955014018.png)
 
 
 
@@ -756,7 +756,7 @@ public class SmsListener {
 
 官网：<http://projects.spring.io/spring-data-redis/>
 
- ![1527250056698](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1527250056698.png)                                    
+ ![1527250056698](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1527250056698.png)                                    
 
 Spring Data Redis，是Spring Data 家族的一部分。 对Jedis客户端进行了封装，与spring进行了整合。可以非常方便的来实现redis的配置和操作。 
 
@@ -791,13 +791,13 @@ RedisTemplate在创建时，可以指定其泛型类型：
 
 注意：这里的类型不是Redis中存储的数据类型，而是Java中的数据类型，RedisTemplate会自动将Java类型转为Redis支持的数据类型：字符串、字节、二进制等等。
 
-![1527250218215](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1527250218215.png)
+![1527250218215](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1527250218215.png)
 
 不过RedisTemplate默认会采用JDK自带的序列化（Serialize）来对对象进行转换。生成的数据十分庞大，因此一般我们都会指定key和value为String类型，这样就由我们自己把对象序列化为json字符串来存储即可。
 
 
 
-因为大部分情况下，我们都会使用key和value都为String的RedisTemplate，因此Spring就默认提供了这样一个实现： ![1527256139407](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1527256139407.png)
+因为大部分情况下，我们都会使用key和value都为String的RedisTemplate，因此Spring就默认提供了这样一个实现： ![1527256139407](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1527256139407.png)
 
 
 
@@ -805,9 +805,9 @@ RedisTemplate在创建时，可以指定其泛型类型：
 
 我们在项目中编写一个测试案例，把课前资料中的redisTest.java导入到项目中
 
-![1533013812311](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1533013812311.png)
+![1533013812311](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1533013812311.png)
 
- ![1533013709197](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1533013709197.png)
+ ![1533013709197](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1533013709197.png)
 
 需要在项目中引入Redis启动器：
 
@@ -957,15 +957,15 @@ public Boolean sendVerifyCode(String phone) {
 
 通过RestClient发送请求试试：
 
-![1533020768508](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1533020768508.png)
+![1533020768508](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1533020768508.png)
 
 查看Redis中的数据：
 
-![1533017923560](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1533017923560.png)
+![1533017923560](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1533017923560.png)
 
 查看短信：
 
- ![1533018062186](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1533018062186.png)
+ ![1533018062186](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1533018062186.png)
 
 
 
@@ -973,7 +973,7 @@ public Boolean sendVerifyCode(String phone) {
 
 ## 6.1.接口说明
 
- ![1527240855176](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1527240855176.png)
+ ![1527240855176](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1527240855176.png)
 
 基本逻辑：
 
@@ -1039,7 +1039,7 @@ public Boolean register(User user, String code) {
 
 此处使用了课前资料中的CodeUtils：
 
-![1533023141026](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1533023141026.png)
+![1533023141026](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1533023141026.png)
 
 该工具类需要apache加密工具包：
 
@@ -1056,11 +1056,11 @@ public Boolean register(User user, String code) {
 
 我们通过RestClient测试：
 
-![1533024221725](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1533024221725.png)
+![1533024221725](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1533024221725.png)
 
 查看数据库：
 
-![1533024241233](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1533024241233.png)
+![1533024241233](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1533024241233.png)
 
 查看redis中的信息也被删除
 
@@ -1074,7 +1074,7 @@ public Boolean register(User user, String code) {
 
 而SpringBoot的web启动器中已经集成了相关依赖：
 
- ![1527244265451](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1527244265451.png)
+ ![1527244265451](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1527244265451.png)
 
 ### 6.5.1.什么是Hibernate Validator
 
@@ -1082,7 +1082,7 @@ Hibernate Validator是Hibernate提供的一个开源框架，使用注解方式�
 
 官网：http://hibernate.org/validator/
 
-![1527244393041](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1527244393041.png)
+![1527244393041](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1527244393041.png)
 
 
 
@@ -1168,7 +1168,7 @@ public class User {
 
 在controller中改造register方法，只需要给User添加 @Valid注解即可。
 
-![1533030001081](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1533030001081.png)
+![1533030001081](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1533030001081.png)
 
 
 
@@ -1176,11 +1176,11 @@ public class User {
 
 我们故意填错：
 
-![1533029312208](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1533029312208.png)
+![1533029312208](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1533029312208.png)
 
 然后SpringMVC会自动返回错误信息：
 
-![1533029343713](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1533029343713.png)
+![1533029343713](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1533029343713.png)
 
 
 
@@ -1281,7 +1281,7 @@ public User queryUser(String username, String password) {
 
 ## 7.3.测试
 
-![1533030961886](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1533030961886.png)
+![1533030961886](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1533030961886.png)
 
 
 
@@ -1289,11 +1289,11 @@ public User queryUser(String username, String password) {
 
 在注册页填写信息：
 
-![1533031066018](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1533031066018.png)
+![1533031066018](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1533031066018.png)
 
 提交发现页面自动跳转到了登录页，查看数据库：
 
-![1533031705871](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day16/1533031705871.png)
+![1533031705871](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day16/1533031705871.png)
 
 
 

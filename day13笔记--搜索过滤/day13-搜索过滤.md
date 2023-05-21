@@ -13,7 +13,7 @@
 
 首先看下页面要实现的效果：
 
-![1526725119663](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526725119663.png)
+![1526725119663](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526725119663.png)
 
 整个过滤部分有3块：
 
@@ -59,7 +59,7 @@
 
 看页面：
 
- ![1526738120021](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526738120021.png)
+ ![1526738120021](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526738120021.png)
 
 
 
@@ -69,7 +69,7 @@
 
 我们新建一个类，继承PageResult，然后扩展两个新的属性：分类集合和品牌集合：
 
- ![1543671901773](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1543671901773.png)
+ ![1543671901773](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1543671901773.png)
 
 ```java
 public class SearchResult extends PageResult<Goods> {
@@ -223,7 +223,7 @@ private List<Map<String,Object>> getCategoryAggResult(Aggregation aggregation) {
 
 测试：
 
-![1532259453938](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1532259453938.png)
+![1532259453938](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1532259453938.png)
 
 
 
@@ -233,13 +233,13 @@ private List<Map<String,Object>> getCategoryAggResult(Aggregation aggregation) {
 
 来看下页面的展示效果：
 
- ![1526742664217](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526742664217.png)
+ ![1526742664217](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526742664217.png)
 
 虽然分类、品牌内容都不太一样，但是结构相似，都是key和value的结构。
 
 而且页面结构也极为类似：
 
- ![1526742817804](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526742817804.png)
+ ![1526742817804](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526742817804.png)
 
 
 
@@ -274,11 +274,11 @@ data: {
 
 然后在查询搜索结果的回调函数中，对过滤参数进行封装：
 
-![1532261937404](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1532261937404.png)
+![1532261937404](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1532261937404.png)
 
 然后刷新页面，通过浏览器工具，查看封装的结果：
 
-![1532260781128](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1532260781128.png)
+![1532260781128](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1532260781128.png)
 
 
 
@@ -286,7 +286,7 @@ data: {
 
 首先看页面原来的代码：
 
- ![1526803362517](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526803362517.png)
+ ![1526803362517](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526803362517.png)
 
 我们注意到，虽然页面元素是一样的，但是品牌会比其它搜索条件多出一些样式，因为品牌是以图片展示。需要进行特殊处理。数据展示是一致的，我们采用v-for处理：
 
@@ -322,7 +322,7 @@ data: {
 
 结果：
 
-![1532264524663](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1532264524663.png)
+![1532264524663](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1532264524663.png)
 
 
 
@@ -369,7 +369,7 @@ data: {
 
 我们直接看页面效果：
 
-![1526805322441](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526805322441.png)
+![1526805322441](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526805322441.png)
 
 我们之前存储时已经将数据分段，恰好符合这里的需求
 
@@ -465,9 +465,9 @@ public class SearchResult extends PageResult<Goods> {
 
 首先，在聚合得到商品分类后，判断分类的个数，如果是1个则进行规格聚合：
 
-![1543673893654](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1543673893654.png)
+![1543673893654](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1543673893654.png)
 
-![1543673960091](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1543673960091.png)
+![1543673960091](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1543673960091.png)
 
 我们将聚合的代码抽取到了一个`getParamAggResult`方法中。
 
@@ -477,7 +477,7 @@ public class SearchResult extends PageResult<Goods> {
 
 然后，我们需要根据商品分类，查询所有可用于搜索的规格参数：
 
-![1543674113503](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1543674113503.png)
+![1543674113503](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1543674113503.png)
 
 要注意的是，这里我们需要根据分类id查询规格，而规格参数接口需要从商品微服务提供
 
@@ -487,13 +487,13 @@ public class SearchResult extends PageResult<Goods> {
 
 因为规格参数保存时不做分词，因此其名称会自动带上一个.keyword后缀：
 
-![1543674179820](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1543674179820.png)
+![1543674179820](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1543674179820.png)
 
 
 
 ### 3.2.5.解析聚合结果
 
-![1543674250920](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1543674250920.png)
+![1543674250920](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1543674250920.png)
 
 
 
@@ -595,7 +595,7 @@ private List<Map<String,Object>> getParamAggResult(Long id, QueryBuilder basicQu
 
 ### 3.2.7.测试结果
 
-![1532270167684](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1532270167684.png)
+![1532270167684](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1532270167684.png)
 
 
 
@@ -607,11 +607,11 @@ private List<Map<String,Object>> getParamAggResult(Long id, QueryBuilder basicQu
 
 要注意：分类、品牌的option选项是对象，里面有name属性，而specs中的option是简单的字符串，所以需要进行封装，变为相同的结构：
 
-![1532271319440](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1532271319440.png)
+![1532271319440](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1532271319440.png)
 
 最后的结果：
 
-![1526836508277](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526836508277.png)
+![1526836508277](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526836508277.png)
 
 
 
@@ -619,21 +619,21 @@ private List<Map<String,Object>> getParamAggResult(Long id, QueryBuilder basicQu
 
 是不是感觉显示的太多了，我们可以通过按钮点击来展开和隐藏部分内容：
 
-![1532271362148](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1532271362148.png)
+![1532271362148](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1532271362148.png)
 
 我们在data中定义变量，记录展开或隐藏的状态：
 
-![1532271577293](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1532271577293.png)
+![1532271577293](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1532271577293.png)
 
 然后在按钮绑定点击事件，以改变show的取值：
 
-![1532272309322](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1532272309322.png)
+![1532272309322](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1532272309322.png)
 
 
 
 在展示规格时，对show进行判断：
 
-![1532272262743](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1532272262743.png)
+![1532272262743](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1532272262743.png)
 
 OK！
 
@@ -655,11 +655,11 @@ OK！
 
 我们把已选择的过滤项保存在search中：
 
-![1532273487583](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1532273487583.png)
+![1532273487583](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1532273487583.png)
 
 要注意，在created构造函数中会对search进行初始化，所以要在构造函数中对filter进行初始化：
 
-![1533566768364](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1533566768364.png)
+![1533566768364](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1533566768364.png)
 
 search.filter是一个对象，结构：
 
@@ -675,7 +675,7 @@ search.filter是一个对象，结构：
 
 给所有的过滤项绑定点击事件：
 
-![1532272879418](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1532272879418.png)
+![1532272879418](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1532272879418.png)
 
 要注意，点击事件传2个参数：
 
@@ -698,13 +698,13 @@ selectFilter(k, o){
 
 另外，这里search对象中嵌套了filter对象，请求参数格式化时需要进行特殊处理，修改common.js中的一段代码：
 
-![1532273144046](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1532273144046.png)
+![1532273144046](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1532273144046.png)
 
 
 
 我们刷新页面，点击后通过浏览器功能查看`search.filter`的属性变化：
 
-![1532274670784](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1532274670784.png)
+![1532274670784](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1532274670784.png)
 
 并且，此时浏览器地址也发生了变化：
 
@@ -714,7 +714,7 @@ http://www.leyou.com/search.html?key=%E6%89%8B%E6%9C%BA&page=1&filter.%E5%93%81%
 
 网络请求也正常发出：
 
-![1532274821104](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1532274821104.png)
+![1532274821104](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1532274821104.png)
 
 
 
@@ -726,7 +726,7 @@ http://www.leyou.com/search.html?key=%E6%89%8B%E6%9C%BA&page=1&filter.%E5%93%81%
 
 我们需要在请求类：`SearchRequest`中添加属性，接收过滤属性。过滤属性都是键值对格式，但是key不确定，所以用一个map来接收即可。
 
- ![1526910290497](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526910290497.png)
+ ![1526910290497](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526910290497.png)
 
 
 
@@ -734,7 +734,7 @@ http://www.leyou.com/search.html?key=%E6%89%8B%E6%9C%BA&page=1&filter.%E5%93%81%
 
 目前，我们的基本查询是这样的：
 
-![1533567897849](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1533567897849.png)
+![1533567897849](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1533567897849.png)
 
 现在，我们要把页面传递的过滤条件也加入进去。
 
@@ -756,9 +756,9 @@ GET /heima/_search
 
 所以，我们对原来的基本查询进行改造：（SearchService中的search方法）
 
-![1543674461682](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1543674461682.png)
+![1543674461682](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1543674461682.png)
 
-![1543674644998](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1543674644998.png)
+![1543674644998](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1543674644998.png)
 
 因为比较复杂，我们将其封装到一个方法中：
 
@@ -806,7 +806,7 @@ private BoolQueryBuilder buildBooleanQueryBuilder(SearchRequest request) {
 
 我们先不点击过滤条件，直接搜索手机：
 
- ![1526910966728](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526910966728.png)
+ ![1526910966728](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526910966728.png)
 
 总共184条
 
@@ -814,11 +814,11 @@ private BoolQueryBuilder buildBooleanQueryBuilder(SearchRequest request) {
 
 接下来，我们点击一个过滤条件：
 
- ![1526911057839](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526911057839.png)
+ ![1526911057839](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526911057839.png)
 
 得到的结果：
 
- ![1526911090064](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526911090064.png)
+ ![1526911090064](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526911090064.png)
 
 
 
@@ -828,7 +828,7 @@ private BoolQueryBuilder buildBooleanQueryBuilder(SearchRequest request) {
 
 当用户选择一个商品分类以后，我们应该在过滤模块的上方展示一个面包屑，把三级商品分类都显示出来。
 
- ![1526912181355](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526912181355.png)
+ ![1526912181355](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526912181355.png)
 
 用户选择的商品分类就存放在`search.filter`中，但是里面只有第三级分类的id：cid3
 
@@ -869,7 +869,7 @@ public List<Category> queryAllByCid3(Long id) {
 
 测试：
 
- ![1526912781014](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526912781014.png)
+ ![1526912781014](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526912781014.png)
 
 ### 5.1.2.页面展示面包屑
 
@@ -885,17 +885,17 @@ public List<Category> queryAllByCid3(Long id) {
 
 我们判断商品分类是否只有1个，如果是，则查询三级商品分类，添加到面包屑即可。
 
-![1526914910479](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526914910479.png)
+![1526914910479](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526914910479.png)
 
 渲染：
 
- ![1528416823546](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1528416823546.png)
+ ![1528416823546](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1528416823546.png)
 
 
 
 刷新页面：
 
- ![1526914954839](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526914954839.png)
+ ![1526914954839](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526914954839.png)
 
 
 
@@ -903,13 +903,13 @@ public List<Category> queryAllByCid3(Long id) {
 
 接下来，我们需要在页面展示用户已选择的过滤项，如图：
 
-![1526911364625](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526911364625.png)
+![1526911364625](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526911364625.png)
 
 我们知道，所有已选择过滤项都保存在`search.filter`中，因此在页面遍历并展示即可。
 
 但这里有个问题，filter中数据的格式：
 
- ![1526911311273](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526911311273.png)
+ ![1526911311273](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526911311273.png)
 
 基本有四类数据：
 
@@ -954,7 +954,7 @@ getFilterValue(k,v){
 
 然后刷新页面，即可看到效果：
 
- ![1526911811998](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526911811998.png)
+ ![1526911811998](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526911811998.png)
 
 
 
@@ -964,7 +964,7 @@ getFilterValue(k,v){
 
 已经选择的过滤项，在过滤列表中依然存在：
 
-![1526915075037](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526915075037.png)
+![1526915075037](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526915075037.png)
 
 
 
@@ -974,7 +974,7 @@ getFilterValue(k,v){
 
 你必须先知道用户选择了什么。用户选择的项保存在`search.filter`中：
 
- ![1526915191753](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526915191753.png)
+ ![1526915191753](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526915191753.png)
 
 我们可以编写一个计算属性，把filters中的 已经被选择的key过滤掉：
 
@@ -995,21 +995,21 @@ computed:{
 
 然后页面不再直接遍历`filters`，而是遍历`remainFilters`
 
-![1526916315470](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526916315470.png)
+![1526916315470](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526916315470.png)
 
 刷新页面：
 
-![1526916538925](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526916538925.png)
+![1526916538925](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526916538925.png)
 
 
 
 最后发现，还剩下一堆没选过的。但是都只有一个可选项，此时再过滤没有任何意义，应该隐藏，所以，在刚才的过滤条件中，还应该添加一条：如果只剩下一个可选项，不显示
 
-![1526916815264](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526916815264.png)
+![1526916815264](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526916815264.png)
 
 
 
-![1526916838222](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526916838222.png)
+![1526916838222](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526916838222.png)
 
 
 
@@ -1028,7 +1028,7 @@ computed:{
 
 > 绑定点击事件：
 
-![1526955150293](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day13/1526955150293.png)
+![1526955150293](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day13/1526955150293.png)
 
 绑定点击事件时，把k传递过去，方便删除
 

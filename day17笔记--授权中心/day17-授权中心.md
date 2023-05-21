@@ -45,7 +45,7 @@
 
 流程图：
 
- ![](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1527300483893.png)
+ ![](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1527300483893.png)
 
 整个登录过程中，最关键的点是什么？
 
@@ -65,7 +65,7 @@ token是识别客户端身份的唯一标示，如果加密不够严密，被人
 
 JWT，全称是Json Web Token， 是JSON风格轻量级的授权和身份认证规范，可实现无状态、分布式的Web应用授权；官网：https://jwt.io
 
-![1533033734163](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533033734163.png)
+![1533033734163](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533033734163.png)
 
 GitHub上jwt的java客户端：https://github.com/jwtk/jjwt
 
@@ -92,7 +92,7 @@ JWT包含三部分数据：
 
 生成的数据格式：token==个人证件  jwt=个人身份证
 
-![1527322512370](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1527322512370.png)
+![1527322512370](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1527322512370.png)
 
 可以看到分为3段，每段就是上面的一部分数据
 
@@ -102,7 +102,7 @@ JWT包含三部分数据：
 
 流程图：
 
- ![1527305891424](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1527305891424.png)
+ ![1527305891424](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1527305891424.png)
 
 步骤翻译：
 
@@ -152,7 +152,7 @@ RSA算法历史：
 
 在微服务架构中，我们可以把服务的鉴权操作放到网关中，将未通过鉴权的请求直接拦截，如图：
 
-![1527312464328](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1527312464328.png)
+![1527312464328](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1527312464328.png)
 
 - 1、用户请求登录
 - 2、Zuul将请求转发到授权中心，请求授权
@@ -174,7 +174,7 @@ RSA算法历史：
 
 直接看图：
 
-![1527313765010](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1527313765010.png)
+![1527313765010](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1527313765010.png)
 
 - 我们首先利用RSA生成公钥和私钥。私钥保存在授权中心，公钥保存在Zuul和各个信任的微服务
 - 用户请求登录
@@ -204,9 +204,9 @@ RSA算法历史：
 
 我们先创建父module，名称为：leyou-auth
 
-![1533263572529](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533263572529.png)
+![1533263572529](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533263572529.png)
 
-![1533263656410](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533263656410.png)
+![1533263656410](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533263656410.png)
 
 将pom打包方式改为pom：
 
@@ -235,9 +235,9 @@ RSA算法历史：
 
 然后是授权服务的通用模块：leyou-auth-common：
 
-![1533264701684](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533264701684.png)
+![1533264701684](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533264701684.png)
 
-![1533264779361](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533264779361.png)
+![1533264779361](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533264779361.png)
 
 pom.xml：
 
@@ -262,15 +262,15 @@ pom.xml：
 
 结构：
 
- ![1533264903853](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533264903853.png)
+ ![1533264903853](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533264903853.png)
 
 
 
 ### 2.1.3.授权服务
 
-![1533265001140](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533265001140.png)
+![1533265001140](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533265001140.png)
 
-![1533265056671](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533265056671.png)
+![1533265056671](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533265056671.png)
 
 pom.xml：
 
@@ -360,7 +360,7 @@ eureka:
 
  结构：
 
- ![1533266035185](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533266035185.png)
+ ![1533266035185](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533266035185.png)
 
 在leyou-gateway工程的application.yml中，修改路由：
 
@@ -380,7 +380,7 @@ zuul:
 
 我们在`leyou-auth-common`中导入课前资料中的工具类：
 
- ![1533268835892](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533268835892.png)
+ ![1533268835892](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533268835892.png)
 
 
 
@@ -410,7 +410,7 @@ zuul:
 
 我们在`leyou-auth-common`中编写测试类：
 
- ![1533282579972](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533282579972.png)
+ ![1533282579972](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533282579972.png)
 
 
 
@@ -459,11 +459,11 @@ public class JwtTest {
 
 测试生成公钥和私钥，我们运行这段代码：**注意需要把@Before方法注释掉**
 
-![1533282630089](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533282630089.png)
+![1533282630089](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533282630089.png)
 
 运行之后，查看目标目录：
 
-![1533282665940](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533282665940.png)
+![1533282665940](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533282665940.png)
 
 公钥和私钥已经生成了！
 
@@ -471,23 +471,23 @@ public class JwtTest {
 
 测试生成token，把@Before的注释去掉的：
 
-![1533282760203](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533282760203.png)
+![1533282760203](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533282760203.png)
 
-![1533282875434](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533282875434.png)
+![1533282875434](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533282875434.png)
 
 
 
 测试解析token：
 
-![1533282931796](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533282931796.png)
+![1533282931796](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533282931796.png)
 
 正常情况：
 
-![1533282968301](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533282968301.png)
+![1533282968301](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533282968301.png)
 
 任意改动token，发现报错了：
 
-![1533283024844](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533283024844.png)
+![1533283024844](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533283024844.png)
 
 
 
@@ -612,11 +612,11 @@ public class AuthController {
 
 这里的cookie的name和生存时间，我们配置到属性文件：application.yml：
 
-![1533295409903](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533295409903.png)
+![1533295409903](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533295409903.png)
 
 然后在`JwtProperties`中添加属性：
 
-![1533295465634](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533295465634.png)
+![1533295465634](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533295465634.png)
 
 
 
@@ -633,7 +633,7 @@ public class AuthController {
 
 代码：略
 
- ![1533295716082](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533295716082.png)
+ ![1533295716082](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533295716082.png)
 
 
 
@@ -663,7 +663,7 @@ public interface UserClient extends UserApi {
 
 在leyou-user-interface工程中添加api接口：
 
- ![1533296452053](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533296452053.png)
+ ![1533296452053](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533296452053.png)
 
 内容：
 
@@ -721,13 +721,13 @@ public class AuthService {
 
 ### 2.3.5.项目完整结构
 
- ![1533301291420](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533301291420.png)
+ ![1533301291420](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533301291420.png)
 
 
 
 ### 2.3.6.测试
 
-![1533301145953](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533301145953.png)
+![1533301145953](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533301145953.png)
 
 
 
@@ -737,11 +737,11 @@ public class AuthService {
 
 我们在页面输入登录信息，然后点击登录：
 
- ![1533301466739](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533301466739.png)
+ ![1533301466739](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533301466739.png)
 
 查看控制台：
 
-![1533301495759](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533301495759.png)
+![1533301495759](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533301495759.png)
 
 发现请求的路径不对，我们的认证接口是：
 
@@ -751,15 +751,15 @@ public class AuthService {
 
 我们打开login.html，修改路径信息：
 
- ![1527517811770](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1527517811770.png)
+ ![1527517811770](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1527517811770.png)
 
 页面ajax请求：
 
- ![1527517866435](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1527517866435.png)
+ ![1527517866435](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1527517866435.png)
 
 然后再次测试，成功跳转到了首页：
 
-![1527518012727](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1527518012727.png)
+![1527518012727](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1527518012727.png)
 
 
 
@@ -767,7 +767,7 @@ public class AuthService {
 
 接下来我们查看首页cookie：
 
-![1533302034190](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533302034190.png)
+![1533302034190](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533302034190.png)
 
 什么都没有，为什么？
 
@@ -785,19 +785,19 @@ public class AuthService {
 
 看看我们的服务端cors配置：
 
- ![1527518456220](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1527518456220.png)
+ ![1527518456220](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1527518456220.png)
 
 没有任何问题。
 
 再看客户端浏览器的ajax配置，我们在`js/common.js`中对axios进行了统一配置：
 
- ![1527518532739](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1527518532739.png)
+ ![1527518532739](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1527518532739.png)
 
 一切OK。
 
 那说明，问题一定出在响应的set-cookie头中。我们再次仔细看看刚才的响应头：
 
-![1527518649379](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1527518649379.png)
+![1527518649379](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1527518649379.png)
 
 我们发现cookie的 `domain`属性似乎不太对。
 
@@ -811,11 +811,11 @@ cookie也是有`域` 的限制，**一个网页，只能操作当前域名下的
 
 我们发现内部有一个方法，用来获取Domain：
 
-![1533303181817](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533303181817.png)
+![1533303181817](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533303181817.png)
 
 它获取domain是通过服务器的host来计算的，然而我们的地址竟然是：127.0.0.1:8087，因此后续的运算，最终得到的domain就变成了：
 
-![1533303213902](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533303213902.png)
+![1533303213902](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533303213902.png)
 
 问题找到了：我们请求时的serverName明明是：api.leyou.com，现在却被变成了：127.0.0.1，因此计算domain是错误的，从而导致cookie设置失败！
 
@@ -832,7 +832,7 @@ cookie也是有`域` 的限制，**一个网页，只能操作当前域名下的
 
 我们首先去更改nginx配置，让它不要修改我们的host：`proxy_set_header Host $host;`
 
-![1533303544219](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533303544219.png)
+![1533303544219](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533303544219.png)
 
 把nginx进行reload：
 
@@ -844,17 +844,17 @@ nginx -s reload
 
 这样就解决了nginx这里的问题。但是Zuul还会有一次转发，所以要去修改网关的配置（leyou-gateway工程）：
 
-![1533303659673](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533303659673.png)
+![1533303659673](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533303659673.png)
 
 
 
 重启后，我们再次测试。
 
-![1533716093162](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533716093162.png)
+![1533716093162](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533716093162.png)
 
 最后计算得到的domain：
 
-![1533716136698](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533716136698.png)
+![1533716136698](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533716136698.png)
 
 完美！
 
@@ -864,13 +864,13 @@ nginx -s reload
 
 我们再次登录，发现依然没有cookie！！
 
-![img](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/01348FC2.gif) 
+![img](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/01348FC2.gif) 
 
 怎么回事呢？
 
 我们通过RestClient访问下看看：
 
-![1534225751381](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1534225751381.png)
+![1534225751381](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1534225751381.png)
 
 发现，响应头中还是没有`set-cookie`。
 
@@ -882,13 +882,13 @@ nginx -s reload
 
 Zuul内部有默认的过滤器，会对请求和响应头信息进行重组，过滤掉敏感的头信息：
 
-![1533732985089](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533732985089.png)
+![1533732985089](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533732985089.png)
 
 会发现，这里会通过一个属性为`SensitiveHeaders`的属性，来获取敏感头列表，然后添加到`IgnoredHeaders`中，这些头信息就会被忽略。
 
 而这个`SensitiveHeaders`的默认值就包含了`set-cookie`：
 
-![1533733081367](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533733081367.png)
+![1533733081367](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533733081367.png)
 
 解决方案有两种：
 
@@ -903,7 +903,7 @@ Zuul内部有默认的过滤器，会对请求和响应头信息进行重组，�
 
 思路都是把敏感头设置为null
 
-![1533733356133](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533733356133.png)
+![1533733356133](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533733356133.png)
 
 
 
@@ -911,7 +911,7 @@ Zuul内部有默认的过滤器，会对请求和响应头信息进行重组，�
 
 再次重启后测试：
 
-![1533733550548](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533733550548.png)
+![1533733550548](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533733550548.png)
 
 
 
@@ -919,7 +919,7 @@ Zuul内部有默认的过滤器，会对请求和响应头信息进行重组，�
 
 虽然cookie已经成功写入，但是我们首页的顶部，登录状态依然没能判断出用户信息：
 
-![1533733618901](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533733618901.png)
+![1533733618901](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533733618901.png)
 
 这里需要向后台发起请求，获取根据cookie获取当前用户的信息。
 
@@ -929,15 +929,15 @@ Zuul内部有默认的过滤器，会对请求和响应头信息进行重组，�
 
 页面的顶部已经被我们封装为一个独立的Vue组件，在`/js/pages/shortcut.js`中
 
- ![1533733732779](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533733732779.png)
+ ![1533733732779](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533733732779.png)
 
 打开js，发现里面已经定义好了Vue组件，并且在created函数中，查询用户信息：
 
-![1533733810408](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533733810408.png)
+![1533733810408](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533733810408.png)
 
 查看网络控制台，发现发起了请求：
 
-![1533733946470](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533733946470.png)
+![1533733946470](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533733946470.png)
 
 因为token在cookie中，因此本次请求肯定会携带token信息在头中。
 
@@ -979,13 +979,13 @@ public ResponseEntity<UserInfo> verifyUser(@CookieValue("LY_TOKEN")String token)
 
 ## 3.3.测试
 
-![1533734761745](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533734761745.png)
+![1533734761745](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533734761745.png)
 
-![1533734803538](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533734803538.png)
+![1533734803538](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533734803538.png)
 
 页面效果：
 
-![1533734834479](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533734834479.png)
+![1533734834479](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533734834479.png)
 
 
 
@@ -1061,7 +1061,7 @@ leyou:
 
 编写属性类，读取公钥：
 
- ![1533736124053](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533736124053.png)
+ ![1533736124053](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533736124053.png)
 
 ```java
 @ConfigurationProperties(prefix = "leyou.jwt")
@@ -1122,7 +1122,7 @@ public class JwtProperties {
 - 通过JWT对token进行校验
 - 通过：则放行；不通过：则重定向到登录页
 
- ![1534200523009](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1534200523009.png)
+ ![1534200523009](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1534200523009.png)
 
 ```java
 @Component
@@ -1173,7 +1173,7 @@ public class LoginFilter extends ZuulFilter {
 
 重启，刷新页面，发现请求校验的接口也被拦截了：
 
-![1533737074966](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533737074966.png)
+![1533737074966](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533737074966.png)
 
 证明我们的拦截器生效了，但是，似乎有什么不对的。这个路径似乎不应该被拦截啊！
 
@@ -1213,7 +1213,7 @@ leyou:
 
 然后读取这些属性：
 
- ![1533737234087](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533737234087.png)
+ ![1533737234087](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533737234087.png)
 
 内容：
 
@@ -1306,6 +1306,6 @@ public class LoginFilter extends ZuulFilter {
 
 再次测试：
 
-![1533737743491](https://gitee.com/tiancixiong/BlogIMG/raw/master/blog/20191115_leyou/day17/1533737743491.png)
+![1533737743491](//jsd.cdn.zzko.cn/gh/tiancixiong/BlogIMG@230521/blog/20191115_leyou/day17/1533737743491.png)
 
 
